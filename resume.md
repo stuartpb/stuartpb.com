@@ -1,7 +1,4 @@
-# Stuart P. Bentley
-
 ## Education
-- Diploma, Owen J. Roberts High School, class of 2007
 - Bachelors, Real Time Interactive Simulation (incomplete), DigiPen Institute of Technology
 
 ## Work Experience
@@ -20,7 +17,11 @@
 ## Technology Experience
 - Languages: HTML5, JavaScript, CSS, SVG, Lua, C / C++, Python, Lisp (Scheme), Bash, SQL
 - Systems: Linux, Windows, Redis, MongoDB, Node.JS, Apache, Git, Mercurial, Bazaar, Subversion, CVS
-- Tools: SciTE, Visual Studio, IDLE, PythonWin, nano, Google Chrome
+- Libraries: IUP, CanvasDraw, IM, Cairo, SDL, OpenGL, dkjson, LPEG
+- Tools: SciTE, Visual Studio, IDLE, PythonWin, nano, Google Chrome, nmap, Wireshark
+- Hardware:
+  - I have worked with the internal hardware components of several desktop PC systems, and have built two complete systems from component parts.
+  - I have opened, repaired, and re-assembled three personal laptop systems that were out of warranty.
 
 ## Writing Skills
 - I have excellent spelling, grammar and proofreading skills.
