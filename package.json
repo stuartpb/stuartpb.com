@@ -1,0 +1,23 @@
+{
+  "author": "Stuart P. Bentley <stuart@testtrack4.com> (http://stuartpbentley.com)",
+  "name": "stuartpbentley.com",
+  "description": "Build script for stuartpbentley.com pages",
+  "version": "1.0.0",
+  "homepage": "http://stuartpbentley.com",
+  "main": "deploy.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stuartpb/stuartpbentley.com.git"
+  },
+  "dependencies": {
+    "marked": "~0.2.5",
+    "jsdom": "~0.2.14",
+    "sftp": "0.0.1",
+    "moment": "~1.6.2"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
