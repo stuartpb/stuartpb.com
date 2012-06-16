@@ -4,9 +4,9 @@ var fs = require('fs')
 
 // modules
 var marked = require('marked')
-var jsdom = require('jsdom')
+var jsdom = require('jsdom').jsdom
 var moment = require('moment')
-var sftp = require('sftp')
+var spawn = require('child_process').spawn
 
 //TODO: stop if the working copy has uncommitted changes or the tip isn't a tag
 
@@ -21,7 +21,7 @@ var pkgjson = rfs('package.json')
 
 var pkg = JSON.parse(pkgjson)
 
-var document = jsdom.jsdom(skelhtml);
+var document = jsdom(skelhtml);
 
 function dgebi(id) {return document.getElementById(id)}
 
@@ -33,12 +33,13 @@ dgebi('build-date').textContent = moment().format('MMM D YYYY')
 
 var doctype = "<!DOCTYPE html>\n"
 
-var pagesrc = doctype + document.documentElement.outerHTML
+var pagesrc = doctype + document.innerHTML
+
+//save the built file
+var builtname = 'build/resume.html'
+fs.writeFileSync(builtname, pagesrc)
 
 //send the page to the server
-
-console.log(document.innerHTML)
-
 var captures = pushurl.match(/^(.*?)(\/.*)$/m)
 //regex is multiline to account for a newline at the end of the file
 //I think that's only proper
@@ -47,10 +48,14 @@ var captures = pushurl.match(/^(.*?)(\/.*)$/m)
 
 var targethost = captures[1], targetpath = captures[2]
 
-sftp({
-  host: targethost
-}, function(ctn){
-  ctn.writeFile(targetpath,pagesrc,'utf8',function(err){
-    console.log(err)
-    })
-})
+//start sftp in 'batch' mode, taking actions from stdin
+var connection = spawn("sftp",['-b', '-', targethost])
+
+//pipe output from sftp directly to the console
+//don't know if there's a more glue-y way to do this, so
+connection.stdout.on('data', function (data) {
+  console.log(data);
+});
+
+connection.stdin.write('put '+builtname+' '+targetpath)
+connection.stdin.end()
