@@ -36,7 +36,7 @@ var doctype = "<!DOCTYPE html>\n"
 var pagesrc = doctype + document.innerHTML
 
 //save the built file
-var builtname = 'build/resume.html'
+var builtname = 'build/resume-' + pkg.version + '.html'
 fs.writeFileSync(builtname, pagesrc)
 
 //send the page to the server
@@ -52,9 +52,8 @@ var targethost = captures[1], targetpath = captures[2]
 var connection = spawn("sftp",['-b', '-', targethost])
 
 //pipe output from sftp directly to the console
-//don't know if there's a more glue-y way to do this, so
 connection.stdout.on('data', function (data) {
-  console.log(data);
+  process.stdout.write(data);
 });
 
 connection.stdin.write('put '+builtname+' '+targetpath)
