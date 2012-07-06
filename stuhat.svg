@@ -27,15 +27,15 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="7.35"
-     inkscape:cx="18.905317"
-     inkscape:cy="30.748126"
-     inkscape:current-layer="g3008"
+     inkscape:zoom="10.39447"
+     inkscape:cx="27.95812"
+     inkscape:cy="29.831392"
+     inkscape:current-layer="g2997"
      showgrid="true"
      inkscape:document-units="px"
      inkscape:grid-bbox="true"
-     inkscape:window-width="1280"
-     inkscape:window-height="738"
+     inkscape:window-width="1680"
+     inkscape:window-height="988"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
@@ -80,7 +80,7 @@
        style="fill:#3b5998;fill-opacity:1;stroke:none" />
   </g>
   <g
-     style="display:inline"
+     style="display:none"
      inkscape:label="red-fauxbg"
      id="g3008"
      inkscape:groupmode="layer">
@@ -93,8 +93,21 @@
        style="fill:#d91f1f;fill-opacity:1;stroke:none" />
   </g>
   <g
+     inkscape:groupmode="layer"
+     id="g2997"
+     inkscape:label="black-fauxbg"
+     style="display:inline">
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke:none"
+       id="rect2999"
+       width="64"
+       height="64"
+       x="0"
+       y="0" />
+  </g>
+  <g
      id="layer1"
-     inkscape:label="Layer 1"
+     inkscape:label="circle"
      inkscape:groupmode="layer">
     <path
        sodipodi:type="arc"
@@ -110,7 +123,7 @@
   <g
      inkscape:groupmode="layer"
      id="layer2"
-     inkscape:label="Layer">
+     inkscape:label="design">
     <path
        style="fill:#000000;stroke:none"
        d="m 31.4375,18.4375 c -4.596935,0.194809 -12.152266,1.530226 -13.34375,3.375 -1.815471,2.810892 -1.76163,9.490492 -1.75,10.1875 1.977117,1.086796 6.770338,3.521639 11.46875,4.8125 6.424817,1.765179 13.75,2.03125 13.75,2.03125 0,0 -5.702366,0.168541 -13.25,-1.65625 -4.755708,-1.149788 -10.406431,-4.024044 -12.375,-4.9375 -1.069489,-0.03842 -6.2777003,-0.165883 -6.59375,1.1875 -0.296694,1.270498 -0.041748,1.54784 2.34375,3.21875 1.806949,1.265668 6.304535,3.802024 9.716634,5.135581 4.647628,1.816441 9.062933,2.960858 14.470866,3.833169 8.638343,1.393383 16.525777,0.894061 16.125,-5.71875 -0.125,-2.0625 -0.92211,-3.33612 -2.8125,-4.75 -1.270129,-0.949968 -2.640422,-1.381722 -2.9375,-1.46875 0.105416,2.106664 0.21875,4.375 0.21875,4.375 -0.158548,-1.20099 -0.349963,-2.921686 -0.4375,-4.4375 0,0 -0.02458,-0.325947 -0.03125,-0.40625 -0.09389,-1.130889 -0.805898,-9.418227 -1.5625,-10.6875 -1.922706,-3.225524 -7.258522,-3.272727 -10.53125,-4 -0.204545,-0.04546 -0.447088,-0.0831 -0.71875,-0.09375 -0.509366,-0.01997 -1.093295,-0.02783 -1.75,0 z"
@@ -127,6 +140,12 @@
        style="fill:#ffffff;stroke:none"
        d="M 27.40625 26.03125 L 27.03125 32.28125 C 27.015758 32.27649 26.983327 32.254693 26.96875 32.25 C 24.515157 31.460061 24.09375 31.25 24.09375 31.25 C 24.09375 31.25 26.43521 32.592347 31.09375 33.28125 C 34.088121 33.724056 38.90625 34.09375 38.90625 34.09375 C 38.90625 34.09375 36.873998 33.823458 35.125 33.59375 L 35.53125 27.0625 L 27.40625 26.03125 z "
        id="path3013" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer5"
+     inkscape:label="4d-pips"
+     style="display:inline">
     <path
        sodipodi:nodetypes="ccccc"
        inkscape:connector-curvature="0"
