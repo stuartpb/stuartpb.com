@@ -5,56 +5,82 @@ var fs = require('fs')
 // modules
 var marked = require('marked')
 var jsdom = require('jsdom').jsdom
-var moment = require('moment')
+var xdate = require('xdate')
 var spawn = require('child_process').spawn
 
-//TODO: stop if the working copy has uncommitted changes or the tip isn't a tag
-
-function rfs(name){return fs.readFileSync(name,'utf8')}
+function rfs(name){
+  //TODO: wrap in try-catch, return null if no file
+  return fs.readFileSync(name,'utf8')
+}
 
 var pushurl = rfs('deploy_target')
 var skelhtml = rfs('skeletons/resume.html')
 var mdsrc = rfs('resume.md')
 var pkgjson = rfs('package.json')
 
-//assemble the components of the resume
-
 var pkg = JSON.parse(pkgjson)
 
-var document = jsdom(skelhtml);
-
-function dgebi(id) {return document.getElementById(id)}
-
-dgebi('content').innerHTML = marked(mdsrc)
-
-dgebi('version').textContent = pkg.version
-
-dgebi('build-date').textContent = moment().format('MMM D YYYY')
-
-var doctype = "<!DOCTYPE html>\n"
-
-var pagesrc = doctype + document.innerHTML
-
-//save the built file
 var builtname = 'build/resume-' + pkg.version + '.html'
-fs.writeFileSync(builtname, pagesrc)
 
-//send the page to the server
-var captures = pushurl.match(/^(.*?)(\/.*)$/m)
-//regex is multiline to account for a newline at the end of the file
-//I think that's only proper
+function isWorkDirty () {
+  //STUB: return bool for working directory status
+  //(whether or not all changes are committed)
+  //(test if "git status -s" output is empty I guess?)
+}
 
-//TODO: error if no captures (or if the destination ends with a slash too?)
+function describedVersion() {
+  //STUB: output from "git describe --tags",
+  //minus the 'v' at the fore, plus a '+work'
+  //if the working directory's dirty
+  //(concat date/time in that case?)
+}
 
-var targethost = captures[1], targetpath = captures[2]
+function build() {
+  //assemble the components of the resume
+  var doctype = "<!DOCTYPE html>\n"
 
-//start sftp in 'batch' mode, taking actions from stdin
-var connection = spawn("sftp",['-b', '-', targethost])
+  var document = jsdom(skelhtml);
 
-//pipe output from sftp directly to the console
-connection.stdout.on('data', function (data) {
-  process.stdout.write(data);
-});
+  function dgebi(id) {return document.getElementById(id)}
 
-connection.stdin.write('put '+builtname+' '+targetpath)
-connection.stdin.end()
+  dgebi('content').innerHTML = marked(mdsrc)
+
+  dgebi('version').textContent = pkg.version
+
+  dgebi('build-date').textContent = xdate().toString('MMM d yyyy')
+
+  var pagesrc = doctype + document.innerHTML
+
+  //save the built file
+  fs.writeFileSync(builtname, pagesrc)
+}
+
+function deploy () {
+  //TODO: stop if describedVersion() != pkg.version
+  //(the version that would be committed would be different from what
+  //the package manifest describes)
+
+  //send the page to the server
+  var captures = pushurl.match(/^(.*?)(\/.*)$/m)
+  //regex is multiline to account for a newline at the end of the file
+  //I think that's only proper
+
+  //TODO: error if no captures (or if the destination ends with a slash too?)
+
+  var targethost = captures[1], targetpath = captures[2]
+
+  //start sftp in 'batch' mode, taking actions from stdin
+  var connection = spawn("sftp",['-b', '-', targethost])
+
+  //pipe output from sftp directly to the console
+  connection.stdout.on('data', function (data) {
+    process.stdout.write(data);
+  });
+
+  connection.stdin.write('put '+builtname+' '+targetpath)
+  connection.stdin.end()
+}
+
+//TODO: allow separate building from deploying via command line
+build()
+deploy()

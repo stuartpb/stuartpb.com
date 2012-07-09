@@ -12,8 +12,7 @@
   "dependencies": {
     "marked": "~0.2.5",
     "jsdom": "~0.2.14",
-    "sftp": "0.0.1",
-    "moment": "~1.6.2"
+    "xdate": "~0.6.0"
   },
   "devDependencies": {},
   "optionalDependencies": {},
