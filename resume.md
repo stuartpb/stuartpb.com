@@ -1,5 +1,11 @@
-## Education
-- Bachelors, Real Time Interactive Simulation (incomplete), DigiPen Institute of Technology
+## Technology Experience
+- Languages: HTML5, JavaScript, CSS, SVG, Lua, C / C++, Python, Lisp (Scheme), Bash, SQL
+- Systems: Linux, Windows, Redis, MongoDB, Node.JS, Apache, Git, Mercurial, Bazaar, Subversion, CVS
+- Libraries: IUP, CanvasDraw, IM, Cairo, SDL, OpenGL, dkjson, LPEG
+- Tools: SciTE, Visual Studio, IDLE, PythonWin, nano, Google Chrome, Microsoft Office, nmap, Wireshark
+- Hardware:
+  - I have worked with the internal hardware components of several desktop PC systems, and have built two complete systems from component parts.
+  - I have opened, repaired, and re-assembled three personal laptop systems that were out of warranty.
 
 ## Work Experience
 - Intern, Bentley Systems, Inc., March - June 2011
@@ -14,20 +20,6 @@
   - Followed test cases and regiments
   - Wrote test cases for newly-discovered bugs
 
-## Technology Experience
-- Languages: HTML5, JavaScript, CSS, SVG, Lua, C / C++, Python, Lisp (Scheme), Bash, SQL
-- Systems: Linux, Windows, Redis, MongoDB, Node.JS, Apache, Git, Mercurial, Bazaar, Subversion, CVS
-- Libraries: IUP, CanvasDraw, IM, Cairo, SDL, OpenGL, dkjson, LPEG
-- Tools: SciTE, Visual Studio, IDLE, PythonWin, nano, Google Chrome, nmap, Wireshark
-- Hardware:
-  - I have worked with the internal hardware components of several desktop PC systems, and have built two complete systems from component parts.
-  - I have opened, repaired, and re-assembled three personal laptop systems that were out of warranty.
-
-## Writing Skills
-- I have excellent spelling, grammar and proofreading skills.
-- I am good at clear and comprehensive explanations of complex topics.
-- My sense of humor is quiet and inobtrusive, standing in the corner and appearing only when needed.
-
 ## Portfolio
 - [raybeamer][] - HTML5 + SVG + JavaScript letterman jacket designer (currently in rough prototype stage)
 - Articles for humor site Cracked.com (contains coarse language):
@@ -39,6 +31,9 @@
 [raybeamer]: http://stuartpb.github.com/raybeamer/jacket-design.html
 [cracked-1]: http://www.cracked.com/article_18808_7-reasons-computer-glitches-wont-go-away-ever.html
 [cracked-2]: http://www.cracked.com/article_18962_5-things-we-all-do-that-make-hackers-lives-incredibly-easy.html
+
+## Education
+- Bachelors, Real Time Interactive Simulation (incomplete), DigiPen Institute of Technology
 
 ## Contact Info
   - Email: [stuart@testtrack4.com](mailto:stuart@testtrack4.com)

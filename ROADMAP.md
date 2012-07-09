@@ -1,8 +1,8 @@
 ## Content
 ### Information
-- Move Education down the list
-  - Add more detail about what I learned where?
-- Remove writing experience / make different resume for non-technical stuff
+- Make different resume for non-technical stuff (writing)
+- Cooler portfolio page?
+  - Maybe something like http://hakim.se/experiments
 
 ### Presentation
 - Stylesheet!
