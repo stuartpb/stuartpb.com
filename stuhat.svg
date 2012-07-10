@@ -9,12 +9,12 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="64px"
-   height="64px"
+   width="52"
+   height="52"
    id="svg2985"
    version="1.1"
    inkscape:version="0.48.1 "
-   inkscape:export-filename="C:\Users\Stuart\Pictures\4dfb.png"
+   inkscape:export-filename="C:\Users\Stuart\Pictures\stuhat-c.png"
    inkscape:export-xdpi="1440"
    inkscape:export-ydpi="1440"
    sodipodi:docname="stuhat.svg">
@@ -27,10 +27,10 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="7.35"
-     inkscape:cx="26.689038"
-     inkscape:cy="32.423046"
-     inkscape:current-layer="layer6"
+     inkscape:zoom="8"
+     inkscape:cx="0.962188"
+     inkscape:cy="28.335423"
+     inkscape:current-layer="g3807"
      showgrid="true"
      inkscape:document-units="px"
      inkscape:grid-bbox="true"
@@ -40,7 +40,12 @@
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:snap-page="true"
-     inkscape:snap-nodes="false" />
+     inkscape:snap-nodes="false"
+     showborder="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
   <metadata
      id="metadata2990">
     <rdf:RDF>
@@ -49,7 +54,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -57,7 +62,8 @@
      inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="brown-fauxbg"
-     style="display:none">
+     style="display:none"
+     transform="translate(-5.9999995,-6)">
     <rect
        style="fill:#774411;fill-opacity:0.94117647;stroke:none"
        id="rect3032"
@@ -70,7 +76,8 @@
      inkscape:label="facebook-blue-fauxbg"
      id="g3807"
      inkscape:groupmode="layer"
-     style="display:none">
+     style="display:none"
+     transform="translate(-5.9999995,-6)">
     <rect
        y="0"
        x="0"
@@ -83,7 +90,8 @@
      style="display:none"
      inkscape:label="red-fauxbg"
      id="g3008"
-     inkscape:groupmode="layer">
+     inkscape:groupmode="layer"
+     transform="translate(-5.9999995,-6)">
     <rect
        y="0"
        x="0"
@@ -96,7 +104,8 @@
      inkscape:groupmode="layer"
      id="g2997"
      inkscape:label="black-fauxbg"
-     style="display:inline">
+     style="display:none"
+     transform="translate(-5.9999995,-6)">
     <rect
        style="fill:#000000;fill-opacity:1;stroke:none"
        id="rect2999"
@@ -108,7 +117,9 @@
   <g
      id="layer1"
      inkscape:label="circle"
-     inkscape:groupmode="layer">
+     inkscape:groupmode="layer"
+     transform="translate(-5.9999995,-6)"
+     style="display:inline">
     <path
        sodipodi:type="arc"
        style="fill:#ffffff;fill-opacity:1;stroke:none"
@@ -117,13 +128,14 @@
        sodipodi:cy="23.818182"
        sodipodi:rx="26.363636"
        sodipodi:ry="26.363636"
-       d="m 44.545454,23.818182 a 26.363636,26.363636 0 1 1 -52.727272,0 26.363636,26.363636 0 1 1 52.727272,0 z"
+       d="m 44.545454,23.818182 c 0,14.560234 -11.803402,26.363636 -26.363636,26.363636 -14.5602341,0 -26.363636,-11.803402 -26.363636,-26.363636 0,-14.5602341 11.8034019,-26.363636 26.363636,-26.363636 14.560234,0 26.363636,11.8034019 26.363636,26.363636 z"
        transform="matrix(0.98620691,0,0,0.98620691,14.068965,8.5103443)" />
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer2"
-     inkscape:label="design">
+     inkscape:label="design"
+     transform="translate(-5.9999995,-6)">
     <path
        style="fill:#000000;stroke:none"
        d="m 31.4375,18.4375 c -4.596935,0.194809 -12.152266,1.530226 -13.34375,3.375 -1.815471,2.810892 -1.76163,9.490492 -1.75,10.1875 1.977117,1.086796 6.770338,3.521639 11.46875,4.8125 6.424817,1.765179 13.75,2.03125 13.75,2.03125 0,0 -5.702366,0.168541 -13.25,-1.65625 -4.755708,-1.149788 -10.406431,-4.024044 -12.375,-4.9375 -1.069489,-0.03842 -6.2777003,-0.165883 -6.59375,1.1875 -0.296694,1.270498 -0.041748,1.54784 2.34375,3.21875 1.806949,1.265668 6.304535,3.802024 9.716634,5.135581 4.647628,1.816441 9.062933,2.960858 14.470866,3.833169 8.638343,1.393383 16.525777,0.894061 16.125,-5.71875 -0.125,-2.0625 -0.92211,-3.33612 -2.8125,-4.75 -1.270129,-0.949968 -2.640422,-1.381722 -2.9375,-1.46875 0.105416,2.106664 0.21875,4.375 0.21875,4.375 -0.158548,-1.20099 -0.349963,-2.921686 -0.4375,-4.4375 0,0 -0.02458,-0.325947 -0.03125,-0.40625 -0.09389,-1.130889 -0.805898,-9.418227 -1.5625,-10.6875 -1.922706,-3.225524 -7.258522,-3.272727 -10.53125,-4 -0.204545,-0.04546 -0.447088,-0.0831 -0.71875,-0.09375 -0.509366,-0.01997 -1.093295,-0.02783 -1.75,0 z"
@@ -138,14 +150,16 @@
        sodipodi:nodetypes="cscsc" />
     <path
        style="fill:#ffffff;stroke:none"
-       d="M 27.40625 26.03125 L 27.03125 32.28125 C 27.015758 32.27649 26.983327 32.254693 26.96875 32.25 C 24.515157 31.460061 24.09375 31.25 24.09375 31.25 C 24.09375 31.25 26.43521 32.592347 31.09375 33.28125 C 34.088121 33.724056 38.90625 34.09375 38.90625 34.09375 C 38.90625 34.09375 36.873998 33.823458 35.125 33.59375 L 35.53125 27.0625 L 27.40625 26.03125 z "
-       id="path3013" />
+       d="m 27.40625,26.03125 -0.375,6.25 c -0.01549,-0.0048 -0.04792,-0.02656 -0.0625,-0.03125 -2.453593,-0.789939 -2.875,-1 -2.875,-1 0,0 2.34146,1.342347 7,2.03125 2.994371,0.442806 7.8125,0.8125 7.8125,0.8125 0,0 -2.032252,-0.270292 -3.78125,-0.5 l 0.40625,-6.53125 -8.125,-1.03125 z"
+       id="path3013"
+       inkscape:connector-curvature="0" />
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer5"
      inkscape:label="4d-pips"
-     style="display:none">
+     style="display:none"
+     transform="translate(-5.9999995,-6)">
     <path
        sodipodi:nodetypes="ccccc"
        inkscape:connector-curvature="0"
@@ -174,7 +188,8 @@
   <g
      inkscape:groupmode="layer"
      id="layer6"
-     inkscape:label="2c-pips">
+     inkscape:label="2c-pips"
+     transform="translate(-5.9999995,-6)">
     <path
        sodipodi:nodetypes="csscscccsccccccc"
        inkscape:connector-curvature="0"
