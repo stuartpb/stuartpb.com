@@ -34,8 +34,3 @@
 
 ## Education
 - Bachelors, Real Time Interactive Simulation (incomplete), DigiPen Institute of Technology
-
-## Contact Info
-  - Email: [stuart@testtrack4.com](mailto:stuart@testtrack4.com)
-  - Phone: [+1-610-761-0054](tel:+1-610-761-0054)
-
