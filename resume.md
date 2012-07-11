@@ -4,8 +4,9 @@
 - Libraries: IUP, CanvasDraw, IM, Cairo, SDL, OpenGL, dkjson, LPEG
 - Tools: SciTE, Visual Studio, IDLE, PythonWin, nano, Google Chrome, Microsoft Office, nmap, Wireshark
 - Hardware:
-  - I have worked with the internal hardware components of several desktop PC systems, and have built two complete systems from component parts.
-  - I have opened, repaired, and re-assembled three personal laptop systems that were out of warranty.
+  - Has worked with the internal hardware components of several desktop PC systems
+  - Built two complete systems from component parts
+  - Opened, repaired, and re-assembled three personal laptop systems that were out of warranty.
 
 ## Work Experience
 - Intern, Bentley Systems, Inc., March - June 2011
