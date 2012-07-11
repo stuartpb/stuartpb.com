@@ -21,3 +21,6 @@
 ### Decided against
 - Github user profile integration
   - Rather than add all the complexity of pushing my whole resume as my bio on Github, I can just make my Github bio say "see my resume".
+- Timestamping build filenames
+  - Nah. No reason to bloat the build directory by making duplicates of identical files.
+  - if it's done with a dirty WD, it can be nice to have one file changing. Makes refreshing it easier.
