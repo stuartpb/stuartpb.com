@@ -9,14 +9,14 @@
   - Opened, repaired, and re-assembled three personal out-of-warranty notebook computers
 
 ## Work Experience
+- Underwater Intervention 2012 Technical	Webmaster, November 2011 - January 2012
+  - Created HTML5 generators for page templates in Lua
+  - Worked with 100 presenters to individually integrate each presentation's content into site
 - Intern, Bentley Systems, Inc., March - June 2011
   - Developed source-control-to-bug-tracking integration systems
     - from Mercurial and CVS, to VersionOne and in-house bug tracker
     - written in Python, using CGI to POST to RESTful APIs with commit hooks
   - Maintained ASP.NET devteam-management portal software
-- Underwater Intervention 2012 Technical	Webmaster, November 2011-January 2012
-  - Created HTML5 generators for page templates in Lua
-  - Worked with 100 presenters to individually integrate each presentation's content into site
 - Volt VMC, on call 2007-2010
   - Followed test cases and regiments
   - Wrote test cases for newly-discovered bugs
