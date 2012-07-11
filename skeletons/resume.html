@@ -17,12 +17,16 @@
     background: left no-repeat url("stuhat.svg");
     background-size: 78px;
     padding-left: 100px;
-    text-shadow: black 0 0 4px;
   }
 
   body {
     margin: 0; padding: 2em;
-    background-color: #822;
+    background-color: #771818;
+    background-image:
+      repeating-linear-gradient(-30deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+      repeating-linear-gradient(30deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+      linear-gradient(30deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
+      linear-gradient(-30deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
     background-image:
       -webkit-repeating-linear-gradient(-30deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
       -webkit-repeating-linear-gradient(30deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
@@ -38,7 +42,6 @@
     background-color: white;
     border-radius: 10px;
     clear: both;
-    box-shadow: 2px 2px 12px black;
   }
 
   address {
@@ -71,7 +74,7 @@
   </header>
   <div id="content"><!-- This bit gets replaced with the Markdown for my resume --></div>
   <footer>
-    Version <span id="version"><!-- X.X.X --></span>, <span id="build-date"><!-- %M %d %Y --></span>. The latest version of this resume is kept at <a href="http://stuartpbentley.com/resume.html">http://stuartpbentley.com/resume.html</a>
+    Version <span id="version"><!-- X.X.X --></span>, <span id="build-date"><!-- %M %d %Y --></span>. The latest version of this resume is kept at <a href="http://stuartpbentley.com/resume.html">http://stuartpbentley.com/resume.html</a> and on GitHub at <a href="https://github.com/stuartpb/stuartpbentley.com">https://github.com/stuartpb/stuartpbentley.com</a>
   </footer>
   </body>
 </html>
