@@ -4,7 +4,7 @@
   "description": "Build script for stuartpbentley.com pages",
   "version": "1.2.2",
   "homepage": "http://stuartpbentley.com",
-  "main": "deploy.js",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/stuartpb/stuartpbentley.com.git"
