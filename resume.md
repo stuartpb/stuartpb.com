@@ -5,8 +5,8 @@
 - Tools: SciTE, Visual Studio, IDLE, PythonWin, nano, Google Chrome, Microsoft Office, nmap, Wireshark
 - Hardware:
   - Has worked with the internal hardware components of several desktop PC systems
-  - Built two complete systems from component parts
-  - Opened, repaired, and re-assembled three personal laptop systems that were out of warranty.
+  - Built two complete PC towers from component parts
+  - Opened, repaired, and re-assembled three personal out-of-warranty notebook computers
 
 ## Work Experience
 - Intern, Bentley Systems, Inc., March - June 2011
