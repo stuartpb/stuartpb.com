@@ -15,7 +15,7 @@ function rfs(name){
 
 var pushurl = rfs('deploy_target')
 var skelhtml = rfs('skeletons/resume.html')
-var mdsrc = rfs('resume.md')
+var mdsrc = rfs('data/resume.md')
 var pkgjson = rfs('package.json')
 
 var pkg = JSON.parse(pkgjson)
