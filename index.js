@@ -1,9 +1,7 @@
 // Node builtins
 var fs = require('fs')
-//JSON doesn't have to be required, as it's a global builtin in V8. Who knew?
-
-// modules
 var spawn = require('child_process').spawn
+var exec = require('child_process').exec
 
 // page constructors
 // TODO: this could be turned into a whole automated system,
@@ -16,14 +14,24 @@ function rfs(name){
   //TODO: wrap in try-catch, return null if no file
   return fs.readFileSync(name,'utf8')
 }
-var pkgjson = rfs('package.json')
 
-var pkg = JSON.parse(pkgjson)
+var pkg = require('./package.json')
 
-function describedVersion() {
-  //STUB: output from "git describe --tags --dirty=+work",
-  //minus the 'v' at the fore
-}
+// As far as I can tell this is basically my only choice to get the
+// output from git describe.
+// In fact, I'm taking it on faith this doesn't cause a race condition,
+// and node somehow magically blocks when I try to read describeVersion
+// until the exec returns. (UPDATE: It doesn't.)
+// node really needs an execsync.
+var describedVersion
+exec("git describe --tags --dirty=+work",
+  function (error, stdout, stderr) {
+    if (error !== null) {
+      error('exec error: ' + error);
+    }
+    describedVersion = stdout.toString().replace(/^v|\n$/,'')
+});
+
 
 //See note below on the deploy() function signature for explanation/apology
 function get_deploy_target() {
@@ -73,4 +81,4 @@ function deploy (builtname) {
 
 //TODO: allow separate building from deploying via command line
 var builtname = resume.build({version: pkg.version})
-deploy(builtname)
+//deploy(builtname)
