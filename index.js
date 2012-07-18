@@ -105,6 +105,6 @@ function deploy (env) {
 //TODO: allow separate building from deploying via command line
 envChain([
   describeVersion,
-  build//,
-  //deploy
+  build,
+  deploy
 ])
