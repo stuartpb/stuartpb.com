@@ -9,7 +9,7 @@
   - Opened, repaired, and re-assembled three personal out-of-warranty notebook computers
 
 ## Work Experience
-- Underwater Intervention 2012 Technical	Webmaster, November 2011 - January 2012
+- Underwater Intervention 2012 Technical Webmaster, November 2011 - January 2012
   - Created HTML5 generators for page templates in Lua
   - Worked with 100 presenters to individually integrate each presentation's content into site
 - Intern, Bentley Systems, Inc., March - June 2011
