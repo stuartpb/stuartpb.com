@@ -12,7 +12,8 @@
   "dependencies": {
     "marked": "~0.2.5",
     "jsdom": "~0.2.14",
-    "xdate": "~0.6.0"
+    "xdate": "~0.6.0",
+    "js-yaml": "~1.0.1"
   },
   "devDependencies": {},
   "optionalDependencies": {},
