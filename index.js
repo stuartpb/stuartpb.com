@@ -17,21 +17,35 @@ function rfs(name){
 
 var pkg = require('./package.json')
 
-// As far as I can tell this is basically my only choice to get the
-// output from git describe.
-// In fact, I'm taking it on faith this doesn't cause a race condition,
-// and node somehow magically blocks when I try to read describeVersion
-// until the exec returns. (UPDATE: It doesn't.)
-// node really needs an execsync.
-var describedVersion
-exec("git describe --tags --dirty=+work",
-  function (error, stdout, stderr) {
-    if (error !== null) {
-      error('exec error: ' + error);
+//envChain function to fight literal-call-stack paren-bloat.
+//Takes an array, then calls each function in the array
+//with the next function as a callback (or a nop for the
+//last function's callback).
+function envChain(steps){
+  var complationCb
+  completionCb = function(i){
+    return function(env) {
+        return steps[i](env,
+          i < steps.length-1 ? completionCb(i+1) : function(env){})
     }
-    describedVersion = stdout.toString().replace(/^v|\n$/,'')
-});
+  }
+  completionCb(0)({})
+}
 
+// Just because of this stupid lack of a synchronous exec,
+// I have to write a whole chained-environment system to
+// be able to reliably include the version as git-described.
+// THANKS A LOT, NODE.JS.
+function describeVersion(env,cb) {
+  exec("git describe --tags --dirty=+work",
+    function (error, stdout, stderr) {
+      if (error !== null) {
+        console.log('exec error: ', error);
+      }
+      env.describedVersion = stdout.toString().replace(/^v|\n$/g,'')
+      cb(env)
+  })
+}
 
 //See note below on the deploy() function signature for explanation/apology
 function get_deploy_target() {
@@ -50,13 +64,22 @@ function get_deploy_target() {
   return {host: captures[1], path: captures[2]}
 }
 
+function build(env,cb) {
+
+  env.pages = [{built: resume.build(env)}]
+
+  return cb(env)
+}
+
 //NOTE: everything about this function signature is wrong, and is only like so
 //  because it's caught between what it used to do (one script that
 //  builds one fixed file and puts it to one fixed filename online) and what
 //  it should be doing (generally uploading local files to remote locations).
 //  Right now it generally uploads a local file to one fixed filename online,
 //  like some sort of half-transformed pig-boy.
-function deploy (builtname) {
+function deploy (env) {
+  //The filename of the built page.
+  var builtname = env.pages[0].built
 
   //TODO: stop if describedVersion() != pkg.version
   //(the version that would be committed would be different from what
@@ -80,5 +103,8 @@ function deploy (builtname) {
 }
 
 //TODO: allow separate building from deploying via command line
-var builtname = resume.build({version: pkg.version})
-//deploy(builtname)
+envChain([
+  describeVersion,
+  build//,
+  //deploy
+])

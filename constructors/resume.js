@@ -17,16 +17,12 @@ var pagename = 'resume'
 var extension = '.html'
 
 function construct(env) {
-  //read in the data at build time (rather than require time)
-  //  (No real good reason to cache it like that)
-
   //The skeletal HTML for the page.
   var skelhtml = rfs('skeletons/' + pagename + extension)
   //The data (currently just one big Markdown blob).
   var mdsrc = rfs('data/resume.md')
 
   //assemble the components of the resume
-  var doctype = "<!DOCTYPE html>\n"
 
   var document = jsdom(skelhtml);
 
@@ -35,11 +31,11 @@ function construct(env) {
 
   dgebi('content').innerHTML = marked(mdsrc)
 
-  dgebi('version').textContent = env.version
+  dgebi('version').textContent = env.describedVersion
 
   dgebi('build-date').textContent = xdate().toString('MMM d yyyy')
 
-  return doctype + document.innerHTML
+  return "<!DOCTYPE html>\n" + document.innerHTML
 }
 
 exports.construct = construct
@@ -48,7 +44,7 @@ exports.construct = construct
 exports.filename = function(env){return pagename + extension}
 
 exports.build = function(env) {
-  var builtname = 'build/'+ pagename + '-' + env.version + extension
+  var builtname = 'build/'+ pagename + '-' + env.describedVersion + extension
 
   //save the built file
   fs.writeFileSync(builtname, construct(env))
