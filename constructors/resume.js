@@ -69,13 +69,7 @@ function construct(env) {
       jobitem.appendChild(document.createTextNode(
         job.position + ', ' + job.organization + ', ' + timespan(job.timespan)))
 
-      var tasklist = document.createElement('ul')
-      for (var j=0; j < job.tasks.length; j++) {
-        var taskitem = document.createElement('li')
-        taskitem.textContent = job.tasks[j]
-        tasklist.appendChild(taskitem)
-      }
-      jobitem.appendChild(tasklist)
+      jobitem.innerHTML += marked(job.tasks)
 
       joblist.appendChild(jobitem)
     }
