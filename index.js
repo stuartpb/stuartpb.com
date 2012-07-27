@@ -15,13 +15,11 @@ function rfs(name){
   return fs.readFileSync(name,'utf8')
 }
 
-var pkg = require('./package.json')
-
 //envChain function to fight literal-call-stack paren-bloat.
 //Takes an array, then calls each function in the array
 //with the next function as a callback (or a nop for the
 //last function's callback).
-function envChain(steps){
+function envChain(startenv,steps){
   var complationCb
   completionCb = function(i){
     return function(env) {
@@ -29,22 +27,34 @@ function envChain(steps){
           i < steps.length-1 ? completionCb(i+1) : function(env){})
     }
   }
-  completionCb(0)({})
+  completionCb(0)(startenv)
 }
 
-// Just because of this stupid lack of a synchronous exec,
-// I have to write a whole chained-environment system to
-// be able to reliably include the version as git-described.
-// THANKS A LOT, NODE.JS.
+// Environment setup /////////////////////////////////
+
 function describeVersion(env,cb) {
   exec("git describe --tags --dirty=+work",
     function (error, stdout, stderr) {
       if (error !== null) {
-        console.log('exec error: ', error);
+        console.log('exec error: ', error)
       }
       env.describedVersion = stdout.toString().replace(/^v|\n$/g,'')
       cb(env)
   })
+}
+
+function importPackageInfo(env,cb)
+{
+  env.pkg = require('./package.json')
+  cb(env)
+}
+
+function setupEnv(env,cb) {
+  envChain(env,[
+    describeVersion,
+    importPackageInfo,
+    cb
+  ])
 }
 
 //See note below on the deploy() function signature for explanation/apology
@@ -64,7 +74,7 @@ function get_deploy_target() {
   return {host: captures[1], path: captures[2]}
 }
 
-function build(env,cb) {
+function buildStep(env,cb) {
 
   env.pages = [{built: resume.build(env)}]
 
@@ -77,13 +87,22 @@ function build(env,cb) {
 //  it should be doing (generally uploading local files to remote locations).
 //  Right now it generally uploads a local file to one fixed filename online,
 //  like some sort of half-transformed pig-boy.
-function deploy (env) {
+function deployStep(env, cb) {
   //The filename of the built page.
   var builtname = env.pages[0].built
 
-  //TODO: stop if describedVersion() != pkg.version
-  //(the version that would be committed would be different from what
-  //the package manifest describes)
+  if (env.describedVersion != env.pkg.version){
+  //the version that would be committed would be different from what
+  //the package manifest describes
+    if ('--force' in process.argv){
+      //just continue without throwing an error, this is just as planned
+    }
+    else {
+      console.error("Working copy does not match tag, aborting deployment\n" +
+        "(Use --force to override)")
+      process.exit(0)
+    }
+  }
 
   //Get the deploy target info from the file that specifies it
   //(yes, that's messed up, not changing it right now)
@@ -102,9 +121,20 @@ function deploy (env) {
   connection.stdin.end()
 }
 
-//TODO: allow separate building from deploying via command line
-envChain([
-  describeVersion,
-  build,
-  deploy
+function handleArgs(env,cb) {
+  switch (process.argv[2]) {
+    case "build":
+      buildStep(env,cb)
+      break
+    case "deploy":
+      envChain(env,[buildStep,deployStep,cb])
+      break
+    default:
+      console.log('index.js expects the first argv to be either "build" or "deploy"')
+  }
+}
+
+envChain({},[
+  setupEnv,  //put data in the environment
+  handleArgs //take whatever action was specified on the command line
 ])
