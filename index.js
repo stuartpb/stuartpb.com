@@ -94,7 +94,7 @@ function deployStep(env, cb) {
   if (env.describedVersion != env.pkg.version){
   //the version that would be committed would be different from what
   //the package manifest describes
-    if ('--force' in process.argv){
+    if (~process.argv.indexOf('--force')){
       //just continue without throwing an error, this is just as planned
     }
     else {
