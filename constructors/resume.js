@@ -16,14 +16,13 @@ function rfs(name){
 // constants
 var pagename = 'resume'
 var extension = '.html'
-// this is stupid, but nothing can be done
-var dataModDir = '../data/'+pagename+'/'
-var dataFileDir = 'data/'+pagename+'/'
-
 function construct(env) {
 
   //The skeletal HTML for the page.
   var skelhtml = rfs('skeletons/' + pagename + extension)
+
+  //The data for the page.
+  var data = require('../data/resume.yaml')
 
   var document = jsdom(skelhtml);
 
@@ -32,7 +31,7 @@ function construct(env) {
 
   //Helper functions to construct elements
   function techex() {
-    var techsets = require(dataModDir + 'tech-experience.yaml')
+    var techsets = data.techs
     var setlist = document.createElement('ul')
     for (var i=0; i < techsets.length; i++){ for(var name in techsets[i]){
       var set = techsets[i][name]
@@ -59,7 +58,7 @@ function construct(env) {
     function timespan(times) {
       return times.from + ' - ' + times.to
     }
-    var jobs = require(dataModDir + 'work-experience.yaml')
+    var jobs = data.work
     var joblist = document.createElement('ul')
     for (var i=0; i < jobs.length; i++){
       var job = jobs[i]
@@ -75,7 +74,7 @@ function construct(env) {
   }
 
   function education() {
-    var edus = require(dataModDir + 'education.yaml')
+    var edus = data.education
     var edulist = document.createElement('ul')
     for (var i=0; i < edus.length; i++){
       var edu = edus[i]
@@ -91,7 +90,7 @@ function construct(env) {
 
   dgebi('work-experience').appendChild(workex())
 
-  var mdPortfolio = rfs(dataFileDir + 'portfolio.md')
+  var mdPortfolio = data.portfolio
   dgebi('portfolio').innerHTML += marked(mdPortfolio)
 
   dgebi('education').appendChild(education())
