@@ -25,7 +25,7 @@
   - Dust.js:
     - See http://goo.gl/e2K5P and http://akdubya.github.com/dustjs/
     - I don't want to use LinkedIn's fork to have a maintained library.
-    - I still don't see that many advantages over Dust.
+    - I still don't see that many advantages over Mustache.
   - Jade:
     - See https://github.com/visionmedia/jade#readme
     - Under consideration.
@@ -33,7 +33,6 @@
 
 ## Build / deploy system
 ### Planned
-- Change script to take commands: build (makes the page), and deploy (builds, then deploys to server via sftp)
 - Generate Markdown (plaintext) from data alongside HTML generation
 
 ### Unforseeable
