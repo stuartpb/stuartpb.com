@@ -24,8 +24,6 @@ function construct(env) {
 
   //The skeletal HTML for the page.
   var skelhtml = rfs('skeletons/' + pagename + extension)
-  //The data (currently just one big Markdown blob).
-  var mdsrc = rfs("data/resume.md")
 
   var document = jsdom(skelhtml);
 
