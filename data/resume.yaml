@@ -13,8 +13,13 @@ work:
     position: Technical Webmaster
     timespan: {from: November 2011, to: January 2012}
     tasks: |
+      - Designed minimalist site for 2012 conference
+      - Wrote CSS3 stylesheet for site
       - Created HTML5 generators for page templates in Lua
       - Worked with 100 presenters to individually integrate each presentation's content into site
+      - Links:
+        - Front-end mirror: http://stuartpbentley.com/mirror/ui2012/schedule.html
+        - Back-end Github: https://github.com/stuartpb/u20n-12
 
   - organization: Bentley Systems, Inc.
     position: Intern
