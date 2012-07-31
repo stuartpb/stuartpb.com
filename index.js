@@ -68,7 +68,7 @@ function buildStep(env,cb) {
   env.pages = [
     {
       built: resume.build(env),
-      filename: resume.filename
+      filename: resume.filename()
     }
   ]
 
@@ -105,6 +105,7 @@ function deployStep(env, cb) {
     connection.stdin.write('put '+page.built+' '+env.config.deploy.path+page.filename)
   }
   connection.stdin.end()
+  return cb()
 }
 
 function handleArgs(env,cb) {
