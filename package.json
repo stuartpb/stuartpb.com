@@ -2,7 +2,7 @@
   "author": "Stuart P. Bentley <stuart@testtrack4.com> (http://stuartpbentley.com)",
   "name": "stuartpbentley.com",
   "description": "Build script for stuartpbentley.com pages",
-  "version": "3.2.1",
+  "version": "3.2.2",
   "homepage": "http://stuartpbentley.com",
   "main": "index.js",
   "repository": {
