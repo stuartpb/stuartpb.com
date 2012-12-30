@@ -1,7 +1,7 @@
 techs:
-  - Languages: [HTML5, JavaScript, CSS, SVG, Lua, C / C++, Python, Lisp (Scheme), Bash, SQL]
-  - Systems: [Linux, Windows, Redis, MongoDB, Node.JS, Apache, Git, Mercurial, Bazaar, Subversion, CVS]
-  - Libraries: [IUP, CanvasDraw, IM, Cairo, SDL, OpenGL, dkjson, LPEG]
+  - Languages: [HTML5, JavaScript, CSS, SVG, Lua, Jade, JSON, YAML, C / C++, Python, Lisp (Scheme), Bash, SQL]
+  - Systems: [Node.JS, MongoDB, Redis, Linux, Windows, Apache, Git, Mercurial, Bazaar, Subversion, CVS]
+  - Libraries: [Express, IUP, CanvasDraw, IM, Cairo, SDL, OpenGL, dkjson, LPEG]
   - Tools: [SciTE, Visual Studio, IDLE, PythonWin, nano, Google Chrome, Microsoft Office, nmap, Wireshark]
   - Hardware: |
       - Has worked with the internal hardware components of several desktop PC systems
@@ -38,13 +38,16 @@ work:
       - Wrote test cases for newly-discovered bugs
 
 portfolio: |
-  - [raybeamer][] - HTML5 + SVG + JavaScript letterman jacket designer (currently in rough prototype stage)
+  - Github profile: https://github.com/stuartpb
+    - Selected projects:
+    - [stuartpbentley.com][] - The custom Git + Jade + YAML + Markdown page generation system used to build and deploy this resume
+    - [raybeamer][] - HTML5 + SVG + JavaScript letterman jacket designer (currently in rough prototype stage)
+  - Stack Overflow profile: http://stackoverflow.com/users/34799/stuart-p-bentley
   - Articles for humor site Cracked.com (contains coarse language):
     - [7 Reasons Computer Glitches Won't Go Away (Ever)][cracked-1]
     - [5 Things We All Do That Make Hackers' Lives Incredibly Easy][cracked-2]
-  - Github profile: https://github.com/stuartpb
-  - Stack Overflow profile: http://stackoverflow.com/users/34799/stuart-p-bentley
 
+  [stuartpbentley.com]: https://github.com/stuartpb/stuartpbentley.com
   [raybeamer]: http://stuartpb.github.com/raybeamer/jacket-design.html
   [cracked-1]: http://www.cracked.com/article_18808_7-reasons-computer-glitches-wont-go-away-ever.html
   [cracked-2]: http://www.cracked.com/article_18962_5-things-we-all-do-that-make-hackers-lives-incredibly-easy.html
