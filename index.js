@@ -20,7 +20,7 @@ function rfs(name){
 //with the next function as a callback (or a nop for the
 //last function's callback).
 function envChain(startenv,steps){
-  var complationCb
+  var completionCb
   completionCb = function(i){
     return function(env) {
         return steps[i](env,
@@ -50,7 +50,7 @@ function importPackageInfo(env,cb)
 }
 
 function importConfigData(env,cb) {
-  env.config = {deploy: require('./config/deploy.json')}
+  env.config = require('./config.json')
   cb(env)
 }
 
@@ -68,7 +68,7 @@ function buildStep(env,cb) {
   env.pages = [
     {
       built: resume.build(env),
-      filename: resume.filename()
+      filename: resume.filename(env)
     }
   ]
 
@@ -102,6 +102,7 @@ function deployStep(env, cb) {
   for (var i = 0; i<env.pages.length; i++) {
     var page = env.pages[i]
     //Command sftp to send the file to the deploy path
+    //TODO: ensure slash before filename
     connection.stdin.write('put '+page.built+' '+env.config.deploy.path+page.filename)
   }
   connection.stdin.end()

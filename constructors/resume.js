@@ -29,7 +29,7 @@ function construct(env) {
 exports.construct = construct
 
 //The destination filename of the page
-exports.filename = function(env){return pagename + extension}
+exports.filename = function(env){return '/'+pagename + extension}
 
 exports.build = function(env) {
   var builtname = 'build/'+ pagename + '-' + env.describedVersion + extension
