@@ -68,7 +68,7 @@ function buildStep(env,cb) {
   env.pages = [
     {
       built: resume.build(env),
-      filename: resume.filename
+      filename: resume.filename(env)
     }
   ]
 
