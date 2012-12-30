@@ -50,7 +50,7 @@ function importPackageInfo(env,cb)
 }
 
 function importConfigData(env,cb) {
-  env.config = {deploy: require('./config/deploy.json')}
+  env.config = require('./config.json')
   cb(env)
 }
 

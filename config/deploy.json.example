@@ -1,2 +1,0 @@
-{ "host": "sftp://username@server.example.net",
-  "path": "/home/username/example.com/" }
