@@ -20,7 +20,7 @@ function rfs(name){
 //with the next function as a callback (or a nop for the
 //last function's callback).
 function envChain(startenv,steps){
-  var complationCb
+  var completionCb
   completionCb = function(i){
     return function(env) {
         return steps[i](env,
