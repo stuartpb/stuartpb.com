@@ -17,10 +17,10 @@ var extension = '.html'
 function construct(env) {
 
   //The skeletal HTML for the page.
-  var skelhtml = rfs('templates/resume.jade')
+  var skelhtml = rfs(__dirname+'template.jade')
 
   //The data for the page.
-  var data = require('../data/resume.yaml')
+  var data = require('./data.yaml')
 
   var fn = jade.compile(skelhtml,{pretty: true})
   return fn({data: data, env: env, require: require})

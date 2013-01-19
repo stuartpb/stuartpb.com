@@ -8,7 +8,7 @@ var exec = require('child_process').exec
 //       reading in the contents of the constructors directory,
 //       and loading, like, only what's being built on the
 //       command line
-var resume = require('./constructors/resume.js')
+var resume = require('./routes/resume/constructor.js')
 
 function rfs(name){
   //TODO: wrap in try-catch, return null if no file
