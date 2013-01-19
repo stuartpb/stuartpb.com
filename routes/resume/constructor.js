@@ -17,7 +17,7 @@ var extension = '.html'
 function construct(env) {
 
   //The skeletal HTML for the page.
-  var skelhtml = rfs(__dirname+'template.jade')
+  var skelhtml = rfs(__dirname+'/template.jade')
 
   //The data for the page.
   var data = require('./data.yaml')
