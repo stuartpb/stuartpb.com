@@ -102,25 +102,29 @@ html
         h2 Tech Experience
         ul: for techset in data.techs
           for items, category in techset
-            li #{category+": "}
+            li= category + ": "
               if typeof(items) == "string"
-                | !{marked(items)}
+                != marked(items)
               else
                 for item, i in items
-                  span.skill #{item}
-                  | #{i < items.length-1 ? ", " : ""}
+                  span.skill= item
+                  = i < items.length-1 ? ", " : ""
       section#work-experience
         h2 Work Experience
         - function timespan(times) { return times.from + ' - ' + times.to }
         ul: for job in data.work
           li= job.position + ', ' + job.organization + ', ' + timespan(job.timespan)
-            | !{marked(job.tasks)}
+            != marked(job.tasks)
       section#portfolio
         h2 Portfolio
-        | !{marked(data.portfolio)}
+        != marked(data.portfolio)
       section#education
         h2 Education
         ul: for edu in data.education
           li= edu.accolade + ', ' + edu.institution
     footer.
-      Version <span id="version">#{env.describedVersion}<span>, <span id="build-date">#{xdate().toString('MMM d yyyy')}</span>. The latest version of this resume is kept at <a href="http://stuartpbentley.com/resume.html">http://stuartpbentley.com/resume.html</a> and on GitHub at <a href="https://github.com/stuartpb/stuartpbentley.com">https://github.com/stuartpb/stuartpbentley.com</a>
+      Version <span id="version">#{env.describedVersion}<span>,
+      <span id="build-date">#{xdate().toString('MMM d yyyy')}</span>.
+      the latest version of this resume is kept at
+      <a href="http://stuartpbentley.com/resume.html">http://stuartpbentley.com/resume.html</a>
+      and on GitHub at <a href="https://github.com/stuartpb/stuartpbentley.com">https://github.com/stuartpb/stuartpbentley.com</a>
