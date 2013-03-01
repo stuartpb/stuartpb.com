@@ -1,0 +1,23 @@
+{
+  "name": "stuartpb.com",
+  "version": "0.0.0",
+  "description": "Stuart P. Bentley's personal site",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stuartpb/stuartpb.com.git"
+  },
+  "author": "Stuart P. Bentley",
+  "license": "LITL",
+  "dependencies": {
+    "marked": "~0.2.8",
+    "xdate": "~0.7.0",
+    "jade": "~0.28.1",
+    "express": "~3.1.0",
+    "js-yaml": "~2.0.3"
+  }
+}
