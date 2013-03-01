@@ -1,42 +1,35 @@
 // Node builtins
-var fs = require('fs')
+var fs = require('fs');
 
 // modules
-var jade = require('jade')
-var yaml = require('js-yaml')
+var jade = require('jade');
 
-// helpers / shortened functions
-function rfs(name){
-  //TODO: wrap in try-catch, return null if no file
-  return fs.readFileSync(name,'utf8')
-}
+//extend `require` with YAML
+require('js-yaml');
 
 // constants
-var pagename = 'resume'
-var extension = '.html'
-function construct(env) {
-
-  //The skeletal HTML for the page.
-  var skelhtml = rfs(__dirname+'/template.jade')
-
+var pagename = 'resume';
+var extension = '.html';
+function construct(req,res) {
   //The data for the page.
-  var data = require('./data.yaml')
+  var data = require('./data.yaml');
 
-  var fn = jade.compile(skelhtml,{pretty: true})
-  return fn({data: data, env: env, require: require})
+  return jade.renderFile({data: data, env: req, require: require},res.send);
 }
 
-exports.construct = construct
+exports.construct = construct;
 
 //The destination filename of the page
-exports.filename = function(env){return '/'+pagename + extension}
+exports.filename = function(env){return '/'+pagename + extension};
 
 exports.build = function(env) {
-  var builtname = 'build/'+ pagename + '-' + env.describedVersion + extension
+  var builtname = 'build/'+ pagename + '-' + env.describedVersion + extension;
 
   //save the built file
-  fs.writeFileSync(builtname, construct(env))
+  construct(env,{send: function(content){
+    fs.writeFileSync(builtname, content)}
+  });
 
   //return the path to the output file
-  return builtname
-}
+  return builtname;
+};
