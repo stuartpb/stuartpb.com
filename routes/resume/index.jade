@@ -1,0 +1,107 @@
+!!! html
+- var marked = require("marked")
+- var xdate = require("xdate")
+html
+  head
+    meta(charset="utf-8")
+    title Stuart P. Bentley: résumé
+    link(rel="icon", href="stuhat.svg", size="any", type="image/svg+xml")
+    link(rel="icon", href="stuhat256b.png", sizes="256x256", type="image/png")
+    link(rel="icon", href="stuhat16b.png", sizes="16x16", type="image/png")
+    style
+      h1, h2, h3, h4, h5, h6, header, address {
+        margin: 0;
+        padding: 0;
+      }
+
+      abbr {
+        text-decoration: none;
+        border: none;
+      }
+
+      h1 {
+        font: bolder 78px sans-serif;
+        text-transform: uppercase;
+        color: white;
+        line-height: 100%;
+        background: left no-repeat url("stuhat.svg");
+        background-size: 78px;
+        padding-left: 100px;
+      }
+
+      body {
+        margin: 0; padding: 24px 32px;
+        background-color: #771818;
+        background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="70" height="120"><path d="M 35,0 70,60 35,120 0,60 z" style="fill:#000000;fill-opacity:0.1;stroke:none" /><path d="M 0,0 70,120" style="fill:none;stroke:#ffffff;stroke-width:1.5;stroke-opacity:0.1" /><path d="M 70,0 0,120" style="fill:none;stroke:#ffffff;stroke-width:1.5;stroke-opacity:0.1" /></svg>');
+        background-size: 70px 120px;
+        background-position: 35px 60px;
+        font-family: sans-serif;
+      }
+
+      #content {
+        margin: 16px 0;
+        padding: 16px;
+        background-color: white;
+        border-radius: 12px;
+        clear: both;
+      }
+
+      address {
+        font-style: normal;
+        display: inline;
+        float: right;
+        margin-top: -8px;
+        margin-bottom: 16px;
+        padding: 8px 16px;
+        background-color: rgba(255,255,255,.5);
+        border-radius: 6px;
+      }
+
+      footer {
+        margin: 16px 0;
+        padding: 8px 16px;
+        background-color: rgba(255,255,255,.5);
+        border-radius: 6px;
+      }
+  body
+    header.vcard
+      address.adr
+        span.street-address 500 Wall St, Apt. 1209
+        br
+        | <span class="locality">Seattle</span>, <abbr class="region" title="Washington">WA</abbr> <span class="postal-code">98121</span>
+        br
+        | Email: <a class="email" href="mailto:stuart@testtrack4.com">stuart@testtrack4.com</a>
+        br
+        | Phone: <a class="tel" href="tel:+1-610-761-0054">+1-610-761-0054</a>
+      h1.fn: <span class="given-name">Stuart</span> <span class="additional-name">P.</span> <span class="family-name">Bentley</span>
+    #content
+      section#tech-experience
+        h2 Tech Experience
+        ul: for techset in techs
+          for items, category in techset
+            li= category + ": "
+              if typeof(items) == "string"
+                != marked(items)
+              else
+                for item, i in items
+                  span.skill= item
+                  = i < items.length-1 ? ", " : ""
+      section#work-experience
+        h2 Work Experience
+        - function timespan(times) { return times.from + ' - ' + times.to }
+        ul: for job in work
+          li= job.position + ', ' + job.organization + ', ' + timespan(job.timespan)
+            != marked(job.tasks)
+      section#portfolio
+        h2 Portfolio
+        != marked(portfolio)
+      section#education
+        h2 Education
+        ul: for edu in education
+          li= edu.accolade + ', ' + edu.institution
+    footer.
+      Version <span id="version">#{version}<span>,
+      <span id="build-date">#{xdate().toString('MMM d yyyy')}</span>.
+      the latest version of this resume is kept at
+      <a href="http://stuartpbentley.com/resume.html">http://stuartpbentley.com/resume.html</a>
+      and on GitHub at <a href="https://github.com/stuartpb/stuartpbentley.com">https://github.com/stuartpb/stuartpbentley.com</a>

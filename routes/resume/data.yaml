@@ -1,0 +1,58 @@
+version: "4.0.0"
+techs:
+  - Languages: [HTML5, JavaScript, CSS, SVG, Lua, Jade, JSON, YAML, C / C++, Python, Lisp (Scheme), Bash, SQL]
+  - Systems: [Node.JS, MongoDB, Redis, Linux, Windows, Apache, Git, Mercurial, Bazaar, Subversion, CVS]
+  - Libraries: [Express, IUP, CanvasDraw, IM, Cairo, SDL, OpenGL, dkjson, LPEG]
+  - Tools: [SciTE, Visual Studio, IDLE, PythonWin, nano, Google Chrome, Microsoft Office, nmap, Wireshark]
+  - Hardware: |
+      - Has worked with the internal hardware components of several desktop PC systems
+      - Built two complete PC towers from component parts
+      - Opened, repaired, and re-assembled three personal out-of-warranty notebook computers
+
+work:
+  - organization: Underwater Intervention 2012
+    position: Technical Webmaster
+    timespan: {from: November 2011, to: January 2012}
+    tasks: |
+      - Designed minimalist site for 2012 conference
+      - Wrote CSS3 stylesheet for site
+      - Created HTML5 generators for page templates in Lua
+      - Worked with 100 presenters to individually integrate each presentation's content into site
+      - Links:
+        - Front-end mirror: http://stuartpbentley.com/mirror/ui2012/schedule.html
+        - Back-end Github: https://github.com/stuartpb/u20n-12
+
+  - organization: Bentley Systems, Inc.
+    position: Intern
+    timespan: {from: March 2011, to: June 2011}
+    tasks: |
+      - Developed source-control-to-bug-tracking integration systems
+        - from Mercurial and CVS, to VersionOne and in-house bug tracker
+        - written in Python, using CGI to POST to RESTful APIs with commit hooks
+      - Maintained ASP.NET devteam-management portal software
+
+  - organization: Volt VMC
+    position: On-Call Tester
+    timespan: {from: "2007", to: "2010"}
+    tasks: |
+      - Followed test cases and regiments
+      - Wrote test cases for newly-discovered bugs
+
+portfolio: |
+  - Github profile: https://github.com/stuartpb
+    - Selected projects:
+    - [stuartpbentley.com][] - The custom Git + Jade + YAML + Markdown page generation system used to build and deploy this resume
+    - [raybeamer][] - HTML5 + SVG + JavaScript letterman jacket designer (currently in rough prototype stage)
+  - Stack Overflow profile: http://stackoverflow.com/users/34799/stuart-p-bentley
+  - Articles for humor site Cracked.com (contains coarse language):
+    - [7 Reasons Computer Glitches Won't Go Away (Ever)][cracked-1]
+    - [5 Things We All Do That Make Hackers' Lives Incredibly Easy][cracked-2]
+
+  [stuartpbentley.com]: https://github.com/stuartpb/stuartpbentley.com
+  [raybeamer]: http://stuartpb.github.com/raybeamer/jacket-design.html
+  [cracked-1]: http://www.cracked.com/article_18808_7-reasons-computer-glitches-wont-go-away-ever.html
+  [cracked-2]: http://www.cracked.com/article_18962_5-things-we-all-do-that-make-hackers-lives-incredibly-easy.html
+
+education:
+  - accolade: Bachelors, Real Time Interactive Simulation (incomplete)
+    institution: DigiPen Institute of Technology
