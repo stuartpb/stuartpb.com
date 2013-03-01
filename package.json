@@ -1,6 +1,6 @@
 {
   "name": "stuartpb.com",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Stuart P. Bentley's personal site",
   "main": "index.js",
   "scripts": {
