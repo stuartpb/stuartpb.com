@@ -106,6 +106,7 @@ function deployStep(env, cb) {
     connection.stdin.write('put '+page.built+' '+env.config.deploy.path+page.filename)
   }
   connection.stdin.end()
+  return cb()
 }
 
 function handleArgs(env,cb) {
