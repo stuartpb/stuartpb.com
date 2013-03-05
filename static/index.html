@@ -24,6 +24,9 @@
     h1 {
       font-weight: 800;
       text-transform: uppercase;
+      line-height: 100%;
+      margin-top: 1em;
+      margin-bottom:0;
     }
     .halfpage {
       display: table-cell;
@@ -33,14 +36,82 @@
     .inner {
       padding: 64px;
     }
+    .sitelist {
+      list-style-type: none;
+      margin: 0 0 0 -16px;
+      padding: 0;
+    }
+    .sitelist li {
+      display: inline-block;
+      position: relative;
+      list-style-type: none;
+      padding: 0;
+      margin: 8px;
+    }
     #westside {
       text-align: right;
     }
     #westside .inner {
       border-right: 1px solid white;
+      float: right;
     }
     #eastside {
       text-align:left;
+    }
+    #eastside .inner {
+      float: left;
+    }
+    .offsite, .detail {
+      position: absolute;
+      left: 20%;
+      color:#333;
+    	writing-mode:tb-rl;
+
+    	white-space: nowrap;
+    	display: inline-block;
+    	font-size: 24px;
+    	font-weight: normal;
+      line-height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    .offsite{
+      text-transform: lowercase;
+      bottom: 125%;
+      -webkit-transform-origin: 0% 100%;
+      -moz-transform-origin: 0% 100%;
+      -ms-transform-origin: 0% 100%;
+      -o-transform-origin: 0% 100%;;
+      transform-origin: 0% 100%;
+      -webkit-transform: rotate(90deg) translateX(-100%);
+    	-moz-transform: rotate(90deg) translateX(-100%);
+    	-ms-transform: rotate(90deg) translateX(-100%);
+    	-o-transform: rotate(90deg) translateX(-100%);
+    	transform: rotate(90deg) translateX(-100%);
+    }
+    .detail{
+      top: 105%;
+      -webkit-transform-origin: 0% 0%;
+      -moz-transform-origin: 0% 0%;
+      -ms-transform-origin: 0% 0%;
+      -o-transform-origin: 0% 0%;
+      transform-origin: 0% 0%;
+      -webkit-transform:rotate(90deg) translateY(-100%);
+    	-moz-transform:rotate(90deg);
+    	-ms-transform:rotate(90deg);
+    	-o-transform: rotate(90deg);
+    	transform: rotate(90deg);
+    }
+    a {
+      text-decoration:none;
+      color: inherit;
+    }
+    a img {
+      border: none;
+    }
+    .sitelist img {
+      display: inline-block;
+      position: relative;
     }
   </style>
 </head>
@@ -52,10 +123,28 @@
   </div>
 </div>
 <div class="halfpage" id="eastside"><div class="inner">
-  <img src='/stuhat.svg' height="32px" width="32px">
-  <img src='/stuhat.svg' height="32px" width="32px">
-  <img src='/stuhat.svg' height="32px" width="32px">
-  <img src='/stuhat.svg' height="32px" width="32px">
+  <ul class='sitelist'>
+  <li><a href='https://github.com/stuartpb'>
+    <span class='offsite'>GitHub</span>
+    <img src='/stuhat.svg' height="32px" width="32px">
+    <span class='detail'>stuartpb</span>
+  </a></li>
+  <li><a href='http://stackoverflow.com/users/34799/stuart-p-bentley'>
+    <span class='offsite'>Stack Overflow</span>
+    <img src='/stuhat.svg' height="32px" width="32px">
+    <span class='detail'>Stuart P. Bentley</span>
+  </a></li>
+  <li><a href='https://facebook.com/stuartpb'>
+    <span class='offsite'>Facebook</span>
+    <img src='/stuhat.svg' height="32px" width="32px">
+    <span class='detail'>stuartpb</span>
+  </a></li>
+  <li><a href='http://www.cracked.com/members/Stuart+P.+Bentley/'>
+    <span class='offsite'>Cracked</span>
+    <img src='/stuhat.svg' height="32px" width="32px">
+    <span class='detail'>Stuart P. Bentley</span>
+  </a></li>
+  </ul>
 </div></div>
 </body>
 </html>
