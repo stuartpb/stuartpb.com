@@ -38,7 +38,7 @@
     }
     .sitelist {
       list-style-type: none;
-      margin: 0 0 0 -16px;
+      margin: 0;
       padding: 0;
     }
     .sitelist li {
@@ -61,7 +61,11 @@
     #eastside .inner {
       float: left;
     }
+    a:hover .offsite, a:hover .detail {
+      visibility: visible;
+    }
     .offsite, .detail {
+      visibility: hidden;
       position: absolute;
       left: 20%;
       color:#333;
@@ -124,24 +128,24 @@
 </div>
 <div class="halfpage" id="eastside"><div class="inner">
   <ul class='sitelist'>
-  <li><a href='https://github.com/stuartpb'>
+  <li><a href='https://github.com/stuartpb' alt="GitHub">
     <span class='offsite'>GitHub</span>
-    <img src='/stuhat.svg' height="32px" width="32px">
+    <img src='/whiteicons/github.svg' height="32px" width="32px">
     <span class='detail'>stuartpb</span>
   </a></li>
-  <li><a href='http://stackoverflow.com/users/34799/stuart-p-bentley'>
+  <li><a href='http://stackoverflow.com/users/34799/stuart-p-bentley' alt="Stack Overflow">
     <span class='offsite'>Stack Overflow</span>
-    <img src='/stuhat.svg' height="32px" width="32px">
+    <img src='/whiteicons/stackoverflow.svg' height="32px" width="32px">
     <span class='detail'>Stuart P. Bentley</span>
   </a></li>
-  <li><a href='https://facebook.com/stuartpb'>
+  <li><a href='https://facebook.com/stuartpb' alt="Facebook">
     <span class='offsite'>Facebook</span>
-    <img src='/stuhat.svg' height="32px" width="32px">
+    <img src='/whiteicons/facebook.svg' height="32px" width="32px">
     <span class='detail'>stuartpb</span>
   </a></li>
-  <li><a href='http://www.cracked.com/members/Stuart+P.+Bentley/'>
+  <li><a href='http://www.cracked.com/members/Stuart+P.+Bentley/' alt="Cracked">
     <span class='offsite'>Cracked</span>
-    <img src='/stuhat.svg' height="32px" width="32px">
+    <img src='/whiteicons/cracked.svg' height="32px" width="32px">
     <span class='detail'>Stuart P. Bentley</span>
   </a></li>
   </ul>
