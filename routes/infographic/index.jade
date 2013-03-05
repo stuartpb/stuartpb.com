@@ -1,0 +1,16 @@
+!!!
+html
+  head
+    meta(charset="utf-8")
+    link(href='http://fonts.googleapis.com/css?family=Roboto',rel='stylesheet',type='text/css')
+    style
+      body, text {font-family: Roboto, sans-serif};
+    include hair.js
+  body
+    h1 Stuart P. Bentley
+    include base.svg
+    script
+      updateHair();
+      //update every 6 hours the page is open,
+      //keeping the hair status accurate live to a tenth of a millimeter
+      setInterval(updateHair,21600000);
