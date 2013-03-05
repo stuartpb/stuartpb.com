@@ -1,9 +1,61 @@
 <!DOCTYPE html>
-<html style="height: 100%;">
+<html>
 <head>
-<meta charset="utf-8">
-<title>stuartpb.com</title>
+  <meta charset="utf-8">
+  <title>stuartpb.com</title>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800'
+    rel='stylesheet' type='text/css'>
+  <style>
+    html {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      display: table;
+      background: black;
+      color: white;
+      height: 100%;
+      width: 100%;
+      font-family: Open Sans, Futura, sans-serif;
+    }
+    h1 {
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+    .halfpage {
+      display: table-cell;
+      vertical-align: middle;
+      width: 50%;
+    }
+    .inner {
+      padding: 64px;
+    }
+    #westside {
+      text-align: right;
+    }
+    #westside .inner {
+      border-right: 1px solid white;
+    }
+    #eastside {
+      text-align:left;
+    }
+  </style>
 </head>
-<body style="background: black url(/stuhat.svg) no-repeat center; background-size:50%;">
+<body>
+<div class="halfpage" id="westside">
+  <div class="inner">
+  <img src='/stuhat.svg' height="256px" width="256px">
+  <h1>Stuart P. Bentley</h1>
+  </div>
+</div>
+<div class="halfpage" id="eastside"><div class="inner">
+  <img src='/stuhat.svg' height="32px" width="32px">
+  <img src='/stuhat.svg' height="32px" width="32px">
+  <img src='/stuhat.svg' height="32px" width="32px">
+  <img src='/stuhat.svg' height="32px" width="32px">
+</div></div>
 </body>
 </html>
