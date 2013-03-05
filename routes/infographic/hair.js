@@ -8,6 +8,16 @@ function spbHairInMillimeters() {
     27/256 * (Date.now() - lastHaircut.time) / 21600000;
 }
 
-function updateHair(){
-  //todo
+function updateHair(testLength){
+  var hairLength = testLength || spbHairInMillimeters();
+  
+  //set the shape size
+  document.getElementById("hairellipse").rx.baseVal.value = 50 +
+    hairLength / 5;
+    
+  document.getElementById("hairlength").textContent = hairLength.toFixed(2)
+    + ' mm';
+    
+  document.getElementById("hair-label-group").transform.baseVal.getItem(0)
+    .setTranslate(hairLength / 5,0);
 }

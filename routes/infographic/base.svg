@@ -49,11 +49,10 @@
     <ellipse
        style="fill:#241c1c;fill-opacity:1;stroke:none"
        id="hairellipse"
-       cx="787.71698"
-       cy="191.66573"
-       rx="73.223862"
-       ry="45.254833"
-       transform="matrix(0.72653912,0,0,0.99436893,26.859804,-14.911637)" />
+       cx="599.167"
+       cy="173.313"
+       rx="53.2"
+       ry="45" />
     <path
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccccssz"
@@ -490,26 +489,28 @@
          x="933.85522"
          y="320.88797"
          id="tspan3864">44 WPM</tspan></text>
-    <text
-       sodipodi:linespacing="125%"
-       class="start-align"
-       id="text3831"
-       y="174.59441"
-       x="757.36169"
-       xml:space="preserve"><tspan
+    <g id="hair-label-group" transform="translate(0,0)";>
+      <text
+         sodipodi:linespacing="125%"
+         class="start-align"
+         id="text3831"
          y="174.59441"
          x="757.36169"
-         id="tspan3833"
-         sodipodi:role="line">Hair length:</tspan><tspan
-         y="199.59441"
-         x="757.36169"
-         sodipodi:role="line"
-         id="hairlength">16 mm</tspan></text>
-    <path
-       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline"
-       d="m 752.64117,179.97309 -82,0 -13.25,-13.25"
-       id="path3829"
-       inkscape:connector-curvature="0" />
+         xml:space="preserve"><tspan
+           y="174.59441"
+           x="757.36169"
+           id="tspan3833"
+           sodipodi:role="line">Hair length:</tspan><tspan
+           y="199.59441"
+           x="757.36169"
+           sodipodi:role="line"
+           id="hairlength">16 mm</tspan></text>
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline"
+         d="m 752.64117,179.97309 -82,0 -13.25,-13.25"
+         id="path3829"
+         inkscape:connector-curvature="0" />
+    </g>
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 280.71751,478.1906 -22,-22 -45.90812,0"
