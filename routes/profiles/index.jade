@@ -1,0 +1,87 @@
+!!! html
+html
+  head
+    meta(charset="utf-8")
+    title Stuart P. Bentley: profiles
+    link(rel="icon", href="stuhat.svg", size="any", type="image/svg+xml")
+    link(rel="icon", href="stuhat256b.png", sizes="256x256", type="image/png")
+    link(rel="icon", href="stuhat16b.png", sizes="16x16", type="image/png")
+    link(href='http://fonts.googleapis.com/css?family=Open+Sans:400,800',
+      rel='stylesheet', type='text/css')
+    style
+      body {
+        margin: 0; padding: 24px 32px;
+        background-color: #38c;
+        font-family: Open Sans, sans-serif;
+      }
+
+      table {
+        border-spacing: 0;
+        border: solid #ccc 1px;
+        box-shadow: 0 1px 1px #ccc;
+        border-radius: 6px;
+        margin: auto;
+        background-color: white;
+      }
+
+      td, th {
+        border-left: 1px solid #ccc;
+        border-top: 1px solid #ccc;
+        padding: 10px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #dce9f9;
+        background-image: -webkit-linear-gradient(top, #ebf3fc, #dce9f9);
+        background-image:    -moz-linear-gradient(top, #ebf3fc, #dce9f9);
+        background-image:     -ms-linear-gradient(top, #ebf3fc, #dce9f9);
+        background-image:      -o-linear-gradient(top, #ebf3fc, #dce9f9);
+        background-image:         linear-gradient(top, #ebf3fc, #dce9f9);
+        box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
+        border-top: none;
+        text-shadow: 0 1px 0 rgba(255,255,255,.5);
+      }
+
+      td:first-child, th:first-child {
+        border-left: none;
+      }
+
+      th:first-child {
+        border-radius: 6px 0 0 0;
+      }
+
+      th:last-child {
+        border-radius: 0 6px 0 0;
+      }
+
+      th:only-child{
+        border-radius: 6px 6px 0 0;
+      }
+
+      tr:last-child td:first-child {
+        border-radius: 0 0 0 6px;
+      }
+
+      tr:last-child td:last-child {
+        border-radius: 0 0 6px 0;
+      }
+
+      td img {
+        vertical-align: -2px;
+        margin-right: 6px;
+      }
+
+  body: table
+    thead: tr
+      th On...
+      th I am...
+      th Link
+    tbody: for profile in profiles
+      tr
+        td= profile.site
+        td= profile.name
+        td: a(href=profile.url)
+          img(src="http://g.etfv.co/" + encodeURIComponent(profile.url) + "?defaulticon=lightpng",
+            height='16', width='16')
+          = profile.url
