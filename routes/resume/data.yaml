@@ -1,4 +1,4 @@
-version: "4.0.0"
+version: "4.0.1"
 techs:
   - Languages: [HTML5, JavaScript, CSS, SVG, Lua, Jade, JSON, YAML, C / C++, Python, Lisp (Scheme), Bash, SQL]
   - Systems: [Node.JS, MongoDB, Redis, Linux, Windows, Apache, Git, Mercurial, Bazaar, Subversion, CVS]
@@ -19,7 +19,7 @@ work:
       - Created HTML5 generators for page templates in Lua
       - Worked with 100 presenters to individually integrate each presentation's content into site
       - Links:
-        - Front-end mirror: http://stuartpbentley.com/mirror/ui2012/schedule.html
+        - Front-end mirror: http://nondynamic.com/mirror/ui2012/schedule.html
         - Back-end Github: https://github.com/stuartpb/u20n-12
 
   - organization: Bentley Systems, Inc.
