@@ -86,12 +86,11 @@
       position: absolute;
       left: 20%;
       color:#333;
-    	writing-mode:tb-rl;
 
-    	white-space: nowrap;
-    	display: inline-block;
-    	font-size: 24px;
-    	font-weight: normal;
+      white-space: nowrap;
+      display: inline-block;
+      font-size: 24px;
+      font-weight: normal;
       line-height: 100%;
       margin: 0;
       padding: 0;
@@ -105,10 +104,10 @@
       -o-transform-origin: 0% 100%;;
       transform-origin: 0% 100%;
       -webkit-transform: rotate(90deg) translateX(-100%);
-    	-moz-transform: rotate(90deg) translateX(-100%);
-    	-ms-transform: rotate(90deg) translateX(-100%);
-    	-o-transform: rotate(90deg) translateX(-100%);
-    	transform: rotate(90deg) translateX(-100%);
+      -moz-transform: rotate(90deg) translateX(-100%);
+      -ms-transform: rotate(90deg) translateX(-100%);
+      -o-transform: rotate(90deg) translateX(-100%);
+      transform: rotate(90deg) translateX(-100%);
     }
     .detail{
       top: 105%;
@@ -118,10 +117,10 @@
       -o-transform-origin: 0% 0%;
       transform-origin: 0% 0%;
       -webkit-transform:rotate(90deg) translateY(-100%);
-    	-moz-transform:rotate(90deg);
-    	-ms-transform:rotate(90deg);
-    	-o-transform: rotate(90deg);
-    	transform: rotate(90deg);
+      -moz-transform:rotate(90deg);
+      -ms-transform:rotate(90deg);
+      -o-transform: rotate(90deg);
+      transform: rotate(90deg);
     }
     a {
       text-decoration:none;
@@ -133,6 +132,64 @@
     .sitelist img {
       display: inline-block;
       position: relative;
+    }
+    @media screen and (max-width: 720px), handheld and (orientation: portrait), (max-device-width: 720px)  {
+      .halfpage {
+        display: block;
+        margin: auto;
+        width: auto;
+      }
+      .inner {
+        padding: 16px 0;
+      }
+      #westside .inner {
+        border: none;
+        float: none;
+        text-align: center;
+      }
+      .pagelist {
+        margin-top: 8px;
+      }
+      .pagelist li {
+        display: inline;
+      }
+      #eastside .inner {
+        width: 50%;
+        margin: auto;
+        border-top: 1px solid white;
+        text-align: center;
+        float: none;
+      }
+      .sitelist li {
+        width: 32px;
+        display: block;
+        position: relative;
+        list-style-type: none;
+        padding: 0;
+        margin: 8px auto;
+      }
+      .offsite, .detail {
+        visibility: visible;
+        bottom: 25%;
+      }
+      .offsite{
+        left: auto;
+        right: 125%;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+        transform: none;
+      }
+      .detail {
+        top: auto;
+        left: 125%;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+        transform: none;
+      }
     }
   </style>
 </head>
