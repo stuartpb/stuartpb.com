@@ -4,7 +4,7 @@ var fs = require('fs');
 var xdate = require('xdate');
 
 var dataFilename = __dirname+'/resume.yaml';
-var dataSource = fs.readFileSync(dataFilename);
+var dataSource = fs.readFileSync(dataFilename,{encoding: "utf8"});
 var locals = yaml.load(dataSource, {filename: dataFilename});
 
 //allow Jade template to load marked and xdate by exposing require
