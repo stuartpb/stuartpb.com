@@ -1,3 +1,9 @@
+%YAML 1.2
+online:
+  html: http://stuartpb.com/resume
+  markdown: http://stuartpb.com/resume.md
+  yaml: http://stuartpb.com/resume.yaml
+  code: 
 version: "4.1.0"
 techs:
   - Languages: [HTML5, JavaScript, CSS, SVG, Lua, Jade, JSON, YAML, C / C++, Python, Lisp (Scheme), Bash, SQL]
