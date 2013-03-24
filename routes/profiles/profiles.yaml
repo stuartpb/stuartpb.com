@@ -46,13 +46,17 @@
   name: Stuart Bentley
   url: https://plus.google.com/117089477951137457045
 
-- site: Seattle Public Library
-  name: stuartpb
-  url: http://seattle.bibliocommons.com/collection/show/94601702_stuartpb/library/completed
+- site: CodePen
+  name: spb
+  url: http://codepen.io/spb
 
 - site: Coderwall
   name: stuartpb
   url: https://coderwall.com/stuartpb
+
+- site: Seattle Public Library
+  name: stuartpb
+  url: http://seattle.bibliocommons.com/collection/show/94601702_stuartpb/library/completed
 
 - site: Geeklist
   name: stuartpb
