@@ -121,8 +121,15 @@ html
         h2 Education
         ul: for edu in education
           li= edu.accolade + ', ' + edu.institution
-    footer.
-      Version <span id="version">#{version}<span>,
-      <span id="build-date">#{xdate().toString('MMM d yyyy')}</span>.
-      The latest version of this resume is kept at
-      <a href="http://stuartpb.com/resume">http://stuartpb.com/resume</a>.
+    footer
+      div.
+        Version <span id="version">#{version}<span>,
+        <span id="build-date">#{xdate().toString('MMM d yyyy')}</span>.
+        The latest version of this resume is kept at
+        <a href="#{online.html}">#{online.html}</a>.
+      div.
+        Plain text / Markdown version: <a href="#{online.markdown}">#{online.markdown}</a> |
+        YAML source: <a href="#{online.yaml}">#{online.yaml}</a>
+      div.
+        The code used to generate this resume is online at
+        <a href="#{online.code}">#{online.code}</a>
