@@ -25,7 +25,7 @@ exports.md = function(req,res,cb) {
     "Email: stuart@testtrack4.com Phone: +1-610-761-0054",
     "",
     "Tech Experience:",
-    locals.tech.map(function(category){for(var name in category){
+    locals.techs.map(function(category){for(var name in category){
       return '- ' + name + ': ' + (Array.isArray(category[name]) ?
         category[name].join(', ') :
         "\n" + indent(category[name]));
