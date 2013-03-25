@@ -9,31 +9,6 @@ html
     link(rel="icon", href="stuhat256b.png", sizes="256x256", type="image/png")
     link(rel="icon", href="stuhat16b.png", sizes="16x16", type="image/png")
     style
-      h1, h2, h3, h4, h5, h6, header, address {
-        margin: 0;
-        padding: 0;
-      }
-
-      header {
-        position: relative;
-        margin-bottom: 21px;
-      }
-
-      abbr {
-        text-decoration: none;
-        border: none;
-      }
-
-      h1 {
-        font: bolder 78px sans-serif;
-        text-transform: uppercase;
-        color: white;
-        line-height: 100%;
-        background: left no-repeat url("stuhat.svg");
-        background-size: 78px;
-        padding-left: 100px;
-      }
-
       body {
         margin: 0; padding: 21px 32px;
         background-color: #771818;
@@ -43,27 +18,57 @@ html
         font-family: sans-serif;
       }
 
+      header {
+        margin: 0 0 21px 0; padding: 0;
+        position: relative;
+      }
+
+      header address {
+        margin: 0; padding: 8px 16px;
+        font-style: normal;
+        position: absolute;
+        top: -8px;
+        right: 0;
+        background-color: rgba(255,255,255,.5);
+        border-radius: 6px;
+      }
+
+      abbr {
+        text-decoration: none;
+        border: none;
+      }
+
+      h1 {
+        margin: 0; padding: 0 0 0 100px;
+        font: bolder 78px sans-serif;
+        text-transform: uppercase;
+        color: white;
+        line-height: 100%;
+        background: left no-repeat url("stuhat.svg");
+        background-size: 78px;
+      }
+
       #content {
-        margin: 16px 0;
-        padding: 16px;
+        margin: 16px 0; padding: 16px;
         background-color: white;
         border-radius: 12px;
         clear: both;
       }
 
-      address {
-        font-style: normal;
-        position: absolute;
-        top: -8px;
-        right: 0;
-        padding: 8px 16px;
-        background-color: rgba(255,255,255,.5);
-        border-radius: 6px;
+      h2, h3, h4, h5, h6 {
+        margin: 0 0 1rem 0; padding: 0;
+      }
+
+      ul {
+       margin: 1rem 0; padding: 0 0 0 40px;
+      }
+
+      ul ul {
+        margin: 0;
       }
 
       footer {
-        margin: 16px 0;
-        padding: 8px 16px;
+        margin: 16px 0; padding: 8px 16px;
         background-color: rgba(255,255,255,.5);
         border-radius: 6px;
       }
@@ -119,4 +124,3 @@ html
       <span id="build-date">#{xdate().toString('MMM d yyyy')}</span>.
       The latest version of this resume is kept at
       <a href="http://stuartpb.com/resume">http://stuartpb.com/resume</a>.
-
