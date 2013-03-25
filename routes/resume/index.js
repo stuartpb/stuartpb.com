@@ -46,7 +46,7 @@ exports.md = function(req,res,cb) {
     locals.education.map(function(edu){
       return '- '+edu.accolade + ', ' + edu.institution;
     }).join('\n'),
-    "\n## About Resume ##\n",
+    "\n---\n",
     "Version "+locals.version+", "+xdate().toString('MMM d yyyy')+".",
     "The latest version of this resume is available in HTML format at " +
       locals.online.html+" and in Markdown format at " +
