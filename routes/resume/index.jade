@@ -69,15 +69,26 @@ html
       }
   body
     header.vcard
-      h1.fn: <span class="given-name">Stuart</span> <span class="additional-name">P.</span> <span class="family-name">Bentley</span>
+      h1.fn
+        span.given-name= contact.name.first
+        =' '
+        abbr.additional-name= contact.name.mi
+        =' '
+        span.family-name= contact.name.last
       address.adr
-        span.street-address 500 Wall St, Apt. 1209
+        span.street-address= contact.address.street + (contact.address.ext? ', ' + contact.address.ext : '')
         br
-        | <span class="locality">Seattle</span>, <abbr class="region" title="Washington">WA</abbr> <span class="postal-code">98121</span>
+        span.locality= contact.address.city
+        =', '
+        abbr.region(title=contact.address.state.name)= contact.address.state.abbr
+        =' '
+        span.postal-code= contact.address.zip
         br
-        | Email: <a class="email" href="mailto:stuart@testtrack4.com">stuart@testtrack4.com</a>
+        ='Email: '
+        a.email(href="mailto:"+contact.email)= contact.email
         br
-        | Phone: <a class="tel" href="tel:+1-610-761-0054">+1-610-761-0054</a>
+        ='Phone: '
+        a.tel(href="tel:"+contact.phone)= contact.phone
     #content
       section#tech-experience
         h2 Tech Experience
@@ -107,4 +118,5 @@ html
       Version <span id="version">#{version}<span>,
       <span id="build-date">#{xdate().toString('MMM d yyyy')}</span>.
       The latest version of this resume is kept at
-      <a href="http://stuartpb.com/resume">http://stuartpb.com/resume</a>
+      <a href="http://stuartpb.com/resume">http://stuartpb.com/resume</a>.
+

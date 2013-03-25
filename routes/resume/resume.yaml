@@ -1,11 +1,29 @@
 %YAML 1.2
 ---
+version: "4.2.0"
+
 online:
   html: http://stuartpb.com/resume
   markdown: http://stuartpb.com/resume.md
   yaml: http://stuartpb.com/resume.yaml
-  code: 
-version: "4.1.0"
+  code: https://github.com/stuartpb/stuartpb.com/tree/master/routes/resume
+
+contact:
+  name:
+    first: Stuart
+    mi:    P.
+    last:  Bentley
+
+  address:
+    street: 500 Wall St.
+    ext:    Apt. 1209
+    city:   Seattle
+    state:  {name: Washington, abbr: WA}
+    zip:    "98121"
+
+  email: stuart@testtrack4.com
+  phone: +1-610-761-0054
+
 techs:
   - Languages: [HTML5, JavaScript, CSS, SVG, Lua, Jade, JSON, YAML, C / C++, Python, Lisp (Scheme), Bash, SQL]
   - Systems: [Node.JS, MongoDB, Redis, Linux, Windows, Apache, Git, Mercurial, Bazaar, Subversion, CVS]
@@ -52,8 +70,6 @@ portfolio: |
     - [7 Reasons Computer Glitches Won't Go Away (Ever)][cracked-1]
     - [5 Things We All Do That Make Hackers' Lives Incredibly Easy][cracked-2]
 
-  [stuartpbentley.com]: https://github.com/stuartpb/stuartpbentley.com
-  [raybeamer]: http://stuartpb.github.com/raybeamer/jacket-design.html
   [cracked-1]: http://www.cracked.com/article_18808_7-reasons-computer-glitches-wont-go-away-ever.html
   [cracked-2]: http://www.cracked.com/article_18962_5-things-we-all-do-that-make-hackers-lives-incredibly-easy.html
 
