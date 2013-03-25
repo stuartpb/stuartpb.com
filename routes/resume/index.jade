@@ -82,19 +82,20 @@ html
         =' '
         span.family-name= contact.name.last
       address.adr
-        span.street-address= contact.address.street + (contact.address.ext? ', ' + contact.address.ext : '')
-        br
-        span.locality= contact.address.city
-        =', '
-        abbr.region(title=contact.address.state.name)= contact.address.state.abbr
-        =' '
-        span.postal-code= contact.address.zip
-        br
-        ='Email: '
-        a.email(href="mailto:"+contact.email)= contact.email
-        br
-        ='Phone: '
-        a.tel(href="tel:"+contact.phone)= contact.phone
+        div
+          span.street-address= contact.address.street + (contact.address.ext? ', ' + contact.address.ext : '')
+        div
+          span.locality= contact.address.city
+          =', '
+          abbr.region(title=contact.address.state.name)= contact.address.state.abbr
+          =' '
+          span.postal-code= contact.address.zip
+        div
+          ='Email: '
+          a.email(href="mailto:"+contact.email)= contact.email
+        div
+          ='Phone: '
+          a.tel(href="tel:"+contact.phone)= contact.phone
     main
       section#tech-experience
         h2 Tech Experience
