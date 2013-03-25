@@ -109,9 +109,9 @@ html
       section#work-experience
         h2 Work Experience
         - function timespan(times) { return times.from + ' - ' + times.to }
-        ul: for job in work
-          li= job.position + ', ' + job.organization + ', ' + timespan(job.timespan)
-            != marked(job.tasks)
+        for job in work
+          h3= job.position + ', ' + job.organization + ', ' + timespan(job.timespan)
+          != marked(job.tasks)
       section#portfolio
         h2 Portfolio
         != marked(portfolio)

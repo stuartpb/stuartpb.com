@@ -36,10 +36,10 @@ exports.md = function(req,res,cb) {
     }}).join('\n'),
     "\n## Work Experience ##\n",
     locals.work.map(function(job){
-      return '- '+job.position + ', ' + job.organization + ', ' +
-        job.timespan.from + ' - ' + job.timespan.to + '\n' +
-        indent(job.tasks);
-    }).join('\n'),
+      return '### '+job.position + ', ' + job.organization + ', ' +
+        job.timespan.from + ' - ' + job.timespan.to + ' ###\n' +
+        job.tasks.trim();
+    }).join('\n\n'),
     "\n## Portfolio ##\n",
     locals.portfolio.trim(),
     "\n## Education ##\n",
