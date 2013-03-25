@@ -25,9 +25,10 @@ exports.md = function(req,res,cb) {
   var addr = locals.contact.address;
   res.send([
     '# '+[name.first,name.mi,name.last].join(' ')+ ' #',
-    addr.street + (addr.ext ? ", " + addr.ext : ' ') + ', '+
-      addr.city + ', ' + addr.state.abbr + ' ' + addr.zip,
-    "Email: " + locals.contact.email + " Phone: " + locals.contact.phone,
+    addr.street + (addr.ext ? ", " + addr.ext : ''),
+    addr.city + ', ' + addr.state.abbr + ' ' + addr.zip,
+    "Email: " + locals.contact.email,
+    "Phone: " + locals.contact.phone,
     "\n## Tech Experience ##\n",
     locals.techs.map(function(category){for(var name in category){
       return '- ' + name + ': ' + (Array.isArray(category[name]) ?
