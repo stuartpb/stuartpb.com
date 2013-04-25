@@ -100,7 +100,7 @@
 
 - site: Xbox Live
   name: Snacman
-  url: http://live.xbox.com/member/Snacman
+  url: https://live.xbox.com/Profile?gamertag=Snacman
 
 - site: Rosetta Code
   name: Stuart P. Bentley
