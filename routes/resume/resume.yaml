@@ -1,6 +1,6 @@
 %YAML 1.2
 ---
-version: "4.2.0"
+version: "5.0.0"
 
 online:
   html: http://stuartpb.com/resume
@@ -26,9 +26,9 @@ contact:
 
 techs:
   - Languages: [HTML5, JavaScript, CSS, SVG, Lua, Jade, JSON, YAML, C / C++, Python, Lisp (Scheme), Bash, SQL]
-  - Systems: [Node.JS, MongoDB, Redis, Linux, Windows, Apache, Git, Mercurial, Bazaar, Subversion, CVS]
+  - Systems: [Node.js, MongoDB, Redis, Linux, Windows, Apache, Git, Mercurial, Bazaar, Subversion, CVS]
   - Libraries: [Express, IUP, CanvasDraw, IM, Cairo, SDL, OpenGL, dkjson, LPEG]
-  - Tools: [SciTE, Visual Studio, IDLE, PythonWin, nano, Google Chrome, Microsoft Office, nmap, Wireshark]
+  - Tools: [Cloud9, SciTE, Visual Studio, IDLE, PythonWin, nano, Google Chrome, Microsoft Office, nmap, Wireshark]
   - Hardware: |
       - Has worked with the internal hardware components of several desktop PC systems
       - Built two complete PC towers from component parts
@@ -56,7 +56,7 @@ work:
         - written in Python, using CGI to POST to RESTful APIs with commit hooks
       - Maintained ASP.NET devteam-management portal software
 
-  - organization: Volt VMC
+  - organization: VMC Consulting, Inc.
     position: On-Call Tester
     timespan: {from: "2007", to: "2010"}
     tasks: |
@@ -76,3 +76,20 @@ portfolio: |
 education:
   - accolade: Bachelors, Real Time Interactive Simulation (incomplete)
     institution: DigiPen Institute of Technology
+    timespan: {from: '2007'}
+
+links:
+  Bentley Systems, Inc.: http://www.bentley.com/
+  Cloud9: https://c9.io/
+  DigiPen Institute of Technology: http://www.digipen.edu/
+  Express: http://expressjs.com/
+  Git: http://git-scm.com/
+  Google Chrome: http://www.google.com/chrome
+  Jade: http://jade-lang.com/
+  Lua: http://lua.org/
+  nmap: http://nmap.org/
+  Node.js: http://nodejs.org/
+  Redis: http://redis.io/
+  Underwater Intervention 2012: http://www.nondynamic.com/mirror/ui2012/schedule.html
+  VMC Consulting, Inc.: http://www.vmc.com/
+  YAML: http://www.yaml.org/

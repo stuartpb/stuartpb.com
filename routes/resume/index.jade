@@ -1,6 +1,11 @@
 !!! html
+
 - var marked = require("marked")
 - var xdate = require("xdate")
+
+mixin microdate(datestr)
+  abbr(attributes, title=xdate(datestr).toUTCString("yyyy-MM-dd"))= datestr
+
 html
   head
     meta(charset="utf-8")
@@ -67,6 +72,11 @@ html
       ul ul {
         margin: 0;
       }
+      
+      a:link, a:visited {
+        color: navy;
+        text-decoration: none;
+      }
 
       footer {
         margin: 16px 0; padding: 8px 16px;
@@ -75,7 +85,7 @@ html
       }
   body
     header.vcard
-      h1.fn
+      h1.fn#spb-name
         span.given-name= contact.name.first
         =' '
         abbr.additional-name= contact.name.mi
@@ -106,21 +116,36 @@ html
                 != marked(items)
               else
                 for item, i in items
-                  span.skill= item
+                  a.skill(href=links[item], ref='tag')= item
                   = i < items.length-1 ? ", " : ""
-      section#work-experience
+      section.vcalendar#work-experience
         h2 Work Experience
-        - function timespan(times) { return times.from + ' - ' + times.to }
         for job in work
-          h3= job.position + ', ' + job.organization + ', ' + timespan(job.timespan)
+          div.experience.vevent
+            h3
+              span.vcard
+                a.include(href='#sbp-name')
+                span.title= job.position
+                =', '
+                a.url.org(href=links[job.organization])= job.organization
+              =', '
+              +microdate.dtstart(job.timespan.from)
+              =' - '
+              +microdate.dtend(job.timespan.to)
           != marked(job.tasks)
       section#portfolio
         h2 Portfolio
         != marked(portfolio)
       section#education
         h2 Education
-        ul: for edu in education
-          li= edu.accolade + ', ' + edu.institution
+        ul.vcalendar: for edu in education
+          li.education.vevent
+            span.summary.vcard
+              = edu.accolade + ', '
+              a.url.fn.org(href=links[edu.institution])= edu.institution
+            =' '
+            +microdate.dtstart(edu.timespan.from)
+            =' -'
     footer
       div.
         Version <span id="version">#{version}<span>,
@@ -131,5 +156,5 @@ html
         Plain text / Markdown version: <a href="#{online.markdown}">#{online.markdown}</a> |
         YAML source: <a href="#{online.yaml}">#{online.yaml}</a>
       div.
-        The code used to generate this resume is online at
+        The Node.js code that creates this resume, from YAML, through Jade, to HTML5, CSS3, and SVG is online at
         <a href="#{online.code}">#{online.code}</a>
