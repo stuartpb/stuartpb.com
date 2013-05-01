@@ -129,9 +129,9 @@ html
                 =', '
                 a.url.org(href=links[job.organization])= job.organization
               =', '
-              +microdate.dtstart(job.timespan.from)
+              +microdate(job.timespan.from).dtstart
               =' - '
-              +microdate.dtend(job.timespan.to)
+              +microdate(job.timespan.to).dtend
           != marked(job.tasks)
       section#portfolio
         h2 Portfolio
@@ -144,7 +144,7 @@ html
               = edu.accolade + ', '
               a.url.fn.org(href=links[edu.institution])= edu.institution
             =' '
-            +microdate.dtstart(edu.timespan.from)
+            +microdate(edu.timespan.from).dtstart
             =' -'
     footer
       div.

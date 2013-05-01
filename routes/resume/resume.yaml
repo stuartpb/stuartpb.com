@@ -1,6 +1,6 @@
 %YAML 1.2
 ---
-version: "5.0.0"
+version: "5.0.1"
 
 online:
   html: http://stuartpb.com/resume
