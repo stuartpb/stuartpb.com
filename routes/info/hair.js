@@ -1,5 +1,5 @@
 var lastHaircut = {
-  time: 1362355200000, //March 4, 2013 00:00 GMT
+  time: 1370649600000, //June 8, 2013 00:00 GMT
   hairMillimeters: 16
 };
 
@@ -10,14 +10,14 @@ function spbHairInMillimeters() {
 
 function updateHair(testLength){
   var hairLength = testLength || spbHairInMillimeters();
-  
+
   //set the shape size
   document.getElementById("hairellipse").rx.baseVal.value = 50 +
     hairLength / 5;
-    
+
   document.getElementById("hairlength").textContent = hairLength.toFixed(3)
     + ' mm';
-    
+
   document.getElementById("hair-label-group").transform.baseVal.getItem(0)
     .setTranslate(hairLength / 5,0);
 }
