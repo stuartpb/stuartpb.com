@@ -1,27 +1,10 @@
-module.exports = function (req, res){
-  res.send('<head><title>NO BLOGS HERE</title></head><body>'+
-  '<svg viewBox="0 0 240 140">'+
-  '<text font-family="Impact, sans-serif" font-size="72" '+
-      'x="120" y="95" '+
-      'style="stroke: black; stroke-width: 10px; '+
-      'text-anchor: middle;">SOON</text>'+
-  '<text font-family="Impact, sans-serif" font-size="72" '+
-      'x="120" y="95" '+
-      'style="fill: white; text-anchor: middle;">SOON</text>'+
-      '</svg></body>');
-};
+var express = require('express');
+var poet = require('poet');
 
-/*
+var app = express();
 
-var jackman = require("jackman");
+app.use('/s/current',poet(express(),{
+  posts: './s/current'
+}).init());
 
-module.exports = jackman({publish: false})
-  .posts('./s/:category/:slug')
-  .views('./s/:category/:view')
-  .views('.')
-  .configs('./s/:category/config')
-  .route('/s/:category/:slug','post')
-  .route('/s/:category/:page','list')
-  .route('/s/:category','list');
-
-*/
+module.exports = app;

@@ -18,9 +18,25 @@
   name: Stuart P. Bentley
   url: http://stackoverflow.com/users/34799/stuart-p-bentley
 
+- site: Coderbits
+  name: spb
+  url: https://coderbits.com/spb
+
+- site: about.me
+  name: stuartpb
+  url: http://about.me/stuartpb
+
 - site: Foursquare
   name: stuartpb
   url: https://foursquare.com/stuartpb
+
+- site: PlugMap
+  name: stuartpb
+  url: http://plugmap.com/user/stuartpb
+
+- site: Cloud9
+  name: stuartpb
+  url: http://c9.io/stuartpb
 
 - site: Clipboard
   name: stuartpb
@@ -33,6 +49,14 @@
 - site: Wikipedia
   name: Stuart P. Bentley
   url: http://en.wikipedia.org/wiki/User:Stuart_P._Bentley
+
+- site: Gittip
+  name: stuartpb
+  url: https://www.gittip.com/stuartpb/
+
+- site: Bountysource
+  name: stuartpb
+  url: https://www.bountysource.com/#users/17953-stuartpb
 
 - site: Flattr
   name: stuartpb
