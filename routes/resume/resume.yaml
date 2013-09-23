@@ -1,6 +1,6 @@
 %YAML 1.2
 ---
-version: "5.0.1"
+version: "5.1.0"
 
 online:
   html: http://stuartpb.com/resume
@@ -35,6 +35,14 @@ techs:
       - Opened, repaired, and re-assembled three personal out-of-warranty notebook computers
 
 work:
+  - organization: Plexipixel
+    position: Contractor
+    timespan: {from: "August 5, 2013", to: "August 16, 2013"}
+    tasks: |
+      - Architected HTML5 layout of e-commerce site
+      - Wrote Django templates for abstract models
+      - Created CSS rules to match site elements to PSD mockups
+
   - organization: Underwater Intervention 2012
     position: Technical Webmaster
     timespan: {from: November 2011, to: January 2012}
@@ -64,8 +72,14 @@ work:
       - Wrote test cases for newly-discovered bugs
 
 portfolio: |
-  - Github profile: https://github.com/stuartpb
-  - Stack Overflow profile: http://stackoverflow.com/users/34799/stuart-p-bentley
+  - Chatphrase, a zero-setup video chat portal: http://chatphrase.com
+  - PlugMap, a map of publicly-accessible power outlets: http://plugmap.com
+  - The logo for the NodeJS Passport authentication library: https://passportjs.com
+  - An automation system for my apartment's admission system: https://github.com/stuartpb/mellonine
+  - [StepDub](https://github.com/stuartpb/stepdub), a PhoneGap app for playing sounds with your footsteps (popular with cosplayers)
+  - [s/keyboard/leopard/g](http://userscripts.org/scripts/show/128626), the browser extension described in http://xkcd.com/1031/
+  - All these projects and more on GitHub: https://github.com/stuartpb
+  - Over 2,000 reputation on Stack Overflow: http://stackoverflow.com/users/34799/stuart-p-bentley
   - Articles for humor site Cracked.com (contains coarse language):
     - [7 Reasons Computer Glitches Won't Go Away (Ever)][cracked-1]
     - [5 Things We All Do That Make Hackers' Lives Incredibly Easy][cracked-2]
