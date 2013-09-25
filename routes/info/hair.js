@@ -1,6 +1,6 @@
 var lastHaircut = {
-  time: 1370649600000, //June 8, 2013 00:00 GMT
-  hairMillimeters: 16
+  time: 1380164400000, //26 Sep 2013 03:00:00 GMT
+  hairMillimeters: 10
 };
 
 function spbHairInMillimeters() {
