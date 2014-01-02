@@ -1,5 +1,5 @@
 var lastHaircut = {
-  time: 1380164400000, //26 Sep 2013 03:00:00 GMT
+  time: 1388620800000, //2 Jan 2014 00:00:00 GMT
   hairMillimeters: 10
 };
 
