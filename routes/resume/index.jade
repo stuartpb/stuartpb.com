@@ -72,7 +72,7 @@ html
       ul ul {
         margin: 0;
       }
-      
+
       a:link, a:visited {
         color: navy;
         text-decoration: none;
@@ -145,7 +145,8 @@ html
               a.url.fn.org(href=links[edu.institution])= edu.institution
             =' '
             +microdate(edu.timespan.from).dtstart
-            =' -'
+            =' - '
+            +microdate(edu.timespan.to).dtend
     footer
       div.
         Version <span id="version">#{version}<span>,

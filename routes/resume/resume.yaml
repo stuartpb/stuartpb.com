@@ -1,6 +1,6 @@
 %YAML 1.2
 ---
-version: "5.1.0"
+version: "5.2.0"
 
 online:
   html: http://stuartpb.com/resume
@@ -26,7 +26,7 @@ contact:
 
 techs:
   - Languages: [HTML5, JavaScript, CSS, SVG, Lua, Jade, JSON, YAML, C / C++, Python, Lisp (Scheme), Bash, SQL]
-  - Systems: [Node.js, MongoDB, Redis, Linux, Windows, Apache, Git, Mercurial, Bazaar, Subversion, CVS]
+  - Systems: [Node.js, RethinkDB, Redis, MongoDB, Linux, Docker, Windows, Apache, Git, Mercurial, Bazaar, Subversion, CVS]
   - Libraries: [Express, IUP, CanvasDraw, IM, Cairo, SDL, OpenGL, dkjson, LPEG]
   - Tools: [Cloud9, SciTE, Visual Studio, IDLE, PythonWin, nano, Google Chrome, Microsoft Office, nmap, Wireshark]
   - Hardware: |
@@ -35,6 +35,14 @@ techs:
       - Opened, repaired, and re-assembled three personal out-of-warranty notebook computers
 
 work:
+  - organization: Concurix
+    position: Contractor
+    timespan: {from: "November 2, 2013", to: "November 9, 2013"}
+    tasks: |
+      - Streamlined and updated information content
+      - Informed Node.JS site architecture
+      - Aligned presentation with desired structure
+
   - organization: Plexipixel
     position: Contractor
     timespan: {from: "August 5, 2013", to: "August 16, 2013"}
@@ -88,15 +96,22 @@ portfolio: |
   [cracked-2]: http://www.cracked.com/article_18962_5-things-we-all-do-that-make-hackers-lives-incredibly-easy.html
 
 education:
-  - accolade: Bachelors, Real Time Interactive Simulation (incomplete)
+  - accolade: Bachelors, Real Time Interactive Simulation
     institution: DigiPen Institute of Technology
-    timespan: {from: '2007'}
+    timespan: {from: '2007', to: '(incomplete)'}
+
+  - accolade: Graduate
+    institution: Founder Institute
+    timespan: {from: 'December 2, 2013', to: 'April 7, 2014'}
 
 links:
   Bentley Systems, Inc.: http://www.bentley.com/
+  Concurix: http://concurix.com/
   Cloud9: https://c9.io/
   DigiPen Institute of Technology: http://www.digipen.edu/
+  Docker: https://www.docker.io/
   Express: http://expressjs.com/
+  Founder Institute: http://fi.co/
   Git: http://git-scm.com/
   Google Chrome: http://www.google.com/chrome
   Jade: http://jade-lang.com/
@@ -104,6 +119,7 @@ links:
   nmap: http://nmap.org/
   Node.js: http://nodejs.org/
   Redis: http://redis.io/
+  RethinkDB: http://www.rethinkdb.com/
   Underwater Intervention 2012: http://www.nondynamic.com/mirror/ui2012/schedule.html
   VMC Consulting, Inc.: http://www.vmc.com/
   YAML: http://www.yaml.org/
