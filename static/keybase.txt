@@ -1,0 +1,65 @@
+==================================================================
+https://keybase.io/stuartpb
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://stuartpb.com
+  * I am stuartpb (https://keybase.io/stuartpb) on keybase.
+  * I have a public key with fingerprint C8C7 AD2C 91B1 545A 72F0  B3EF D957 B96C EE60 B088
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "c8c7ad2c91b1545a72f0b3efd957b96cee60b088",
+            "host": "keybase.io",
+            "key_id": "d957b96cee60b088",
+            "uid": "b2c09cd5d14737062bcd47f473d41d00",
+            "username": "stuartpb"
+        },
+        "service": {
+            "hostname": "stuartpb.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1403367536,
+    "expire_in": 157680000,
+    "prev": "3c6532e8437a63bd1927846cf2da0ee97d2f4bf46969dc783836c8edddfb754f",
+    "seqno": 3,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v0.1.22
+Comment: https://keybase.io/crypto
+
+yMHuAnicbZFfSBxXFMZnNTapRbA0VmxphRFbHxZ3du78XYPF+KCINFHBIEZ3Z+69
+s051Z8aZ2V2ttbbCFqFILRSLpohgtiD1oUSwtGZbW/9RQ8mDwT8JSNNS40P6ULGt
+ESHekeQl5L4M5zu/7ztzOEt52VSu76ec4v69ou4C362Ff+JUU/pbq49WTdRLh/ro
+Tnz60XQjim3L1g2XDtFQgqKCWCgH1SDP8YrIaowKsIZkXlRlAWIsMCojSbSf7jAd
+z0FiVMXB5bpJNFKEdUTU5/Dx04bKQkaGiEdBTgQiI7AqRJyokQJxQcQwHuhg21Bi
+mNCOG1ds11Lpfj9N1IQOidp3OvoZohyaMeK1bNM1odlFOh2ua4U8o9treWQSq+En
+GWFVNxDZmxgS2HZ006BDQUJCV/dCgxwDgCDyQPDTuMfSbRzWPYIXBYkhzxuDEyQS
+QIEHLJY4ICoCUFFQZkWJE6DGIoXBWBYRq3GqxgmyICMoSkACApQwQkhTRZ7TyHwH
+dxsmHQLkN5Wot48eNRQ3bmO6/5eFq2coXy71Qk6Wdzkq98X8p/dM1Z+jUssr4wVj
+nTMvN3ZVrienMh8NDVXcvpvB15o/5gs/G9tZv3n5/eyd8cGJw5I9ZvLK8b/ti8ZX
+scY3NpYmDxoGX70jV/ydOvh8Znf0m+L2/MjIzArldy/sfPqz/737hb0v1VYVbb1Z
+kyg5v/onHTncWt4DD2ZLN75fPWoY6kmWwUh9YybZejGQeiVamX3v6//+CO/XFNYd
+Z8l5iebpS8Vtre9cr0oP35hG1MOuL4e3//99s8WxYtvzA0X+xBECtbOvffju25n4
+r9W//TiyD0Z/mHvru7OPfJ84s1+sbT1uYjfF3fRaXVkLKK2q/oCKxAI9E+uvD8zP
+TaXr2ioDbuCvgsX0CR8jEuI=
+=t2dq
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/stuartpb
+
+==================================================================
