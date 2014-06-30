@@ -1,22 +1,30 @@
-- site: Facebook
-  name: Stuart P. Bentley
-  url: http://facebook.com/stuartpb
+- site: GitHub
+  name: stuartpb
+  url: https://github.com/stuartpb
 
 - site: Twitter
   name: stuartpb
   url: https://twitter.com/stuartpb
 
-- site: GitHub
+- site: Stack Overflow
+  name: Stuart P. Bentley
+  url: http://stackoverflow.com/users/34799/stuart-p-bentley
+
+- site: Tumblr
   name: stuartpb
-  url: https://github.com/stuartpb
+  url: http://stuartpb.tumblr.com
+
+- site: Facebook
+  name: Stuart P. Bentley
+  url: http://facebook.com/stuartpb
+
+- site: Reddit
+  name: StuartPBentley
+  url: http://reddit.com/u/StuartPBentley
 
 - site: LinkedIn
   name: stuartpb
   url: http://linkedin.com/in/stuartpb
-
-- site: Stack Overflow
-  name: Stuart P. Bentley
-  url: http://stackoverflow.com/users/34799/stuart-p-bentley
 
 - site: Coderbits
   name: spb
@@ -41,6 +49,10 @@
 - site: Cloud9
   name: stuartpb
   url: http://c9.io/stuartpb
+
+- site: Trello
+  name: stuartpb
+  url: https://trello.com/stuartpb
 
 - site: YouTube
   name: YOUsTUBEntley
@@ -74,6 +86,10 @@
   name: Stuart Bentley
   url: https://plus.google.com/117089477951137457045
 
+- site: Koding
+  name: stuartpb
+  url: https://koding.com/stuartpb
+
 - site: CodePen
   name: spb
   url: http://codepen.io/spb
@@ -81,6 +97,10 @@
 - site: Coderwall
   name: stuartpb
   url: https://coderwall.com/stuartpb
+
+- site: CodeCombat
+  name: stuartpb
+  url: http://codecombat.com/account/profile/537bfd3a0ff88b2c0628708c
 
 - site: Seattle Public Library
   name: stuartpb
