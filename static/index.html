@@ -7,6 +7,17 @@
   <link href='//fonts.googleapis.com/css?family=Open+Sans:400,800'
     rel='stylesheet' type='text/css'>
   <style>
+    @font-face {
+      font-family: 'League Spartan';
+      src: url('/fonts/leaguespartan-bold.eot');
+      src: url('/fonts/leaguespartan-bold.eot?#iefix') format('embedded-opentype'),
+           url('/fonts/leaguespartan-bold.woff2') format('woff2'),
+           url('/fonts/leaguespartan-bold.woff') format('woff'),
+           url('/fonts/leaguespartan-bold.ttf') format('truetype'),
+           url('/fonts/leaguespartan-bold.svg#league_spartanbold') format('svg');
+      font-weight: bold;
+      font-style: normal;
+    }
     html {
       height: 100%;
       margin: 0;
@@ -20,13 +31,13 @@
       color: white;
       height: 100%;
       width: 100%;
-      font-family: Open Sans, Futura, sans-serif;
+      font-family: League Spartan, Futura, Open Sans, sans-serif;
+      font-weight: 800;
     }
     img {
       vertical-align: middle;
     }
     h1 {
-      font-weight: 800;
       text-transform: uppercase;
       line-height: 100%;
       margin: 1em 0 0.67em;
@@ -93,7 +104,6 @@
       white-space: nowrap;
       display: inline-block;
       font-size: 24px;
-      font-weight: normal;
       line-height: 100%;
       margin: 0;
       padding: 0;
@@ -173,7 +183,7 @@
       }
       .offsite, .detail {
         visibility: visible;
-        bottom: 20%;
+        bottom: 0%;
       }
       .offsite {
         left: auto;
