@@ -1,7 +1,7 @@
 //extend `require` with YAML
 var yaml = require('js-yaml');
 var fs = require('fs');
-var xdate = require('xdate');
+var moment = require('moment');
 
 var dataFilename = __dirname+'/resume.yaml';
 var dataSource = fs.readFileSync(dataFilename,"utf8");
@@ -48,7 +48,7 @@ exports.md = function(req,res,cb) {
       return '- '+edu.accolade + ', ' + edu.institution;
     }).join('\n'),
     "\n---\n",
-    "Version "+locals.version+", "+xdate().toString('MMM d yyyy')+".",
+    "Version "+locals.version+", "+moment().format('MMM D YYYY')+".",
     "The latest version of this resume is available in HTML format at " +
       locals.online.html+" and in Markdown format at " +
       locals.online.markdown,

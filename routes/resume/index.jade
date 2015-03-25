@@ -1,10 +1,10 @@
 !!! html
 
 - var marked = require("marked")
-- var xdate = require("xdate")
+- var moment = require("moment")
 
 mixin microdate(datestr)
-  abbr(attributes, title=xdate(datestr).toUTCString("yyyy-MM-dd"))= datestr
+  abbr(attributes, title=moment(datestr).format("YYYY-MM-DD"))= datestr
 
 html
   head
@@ -151,7 +151,7 @@ html
     footer
       div.
         Version <span id="version">#{version}<span>,
-        <span id="build-date">#{xdate().toString('MMM d yyyy')}</span>.
+        <span id="build-date">#{moment().format('MMM D YYYY')}</span>.
         The latest version of this resume is kept at
         <a href="#{online.html}">#{online.html}</a>.
       div.

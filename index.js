@@ -15,6 +15,5 @@ app.get('/resume.yaml', resume.yaml);
 
 app.get('/info',require('./routes/info/index.js'));
 app.get('/profiles',require('./routes/profiles/index.js'));
-//app.use('/blog', require('./routes/blog/index.js'));
 
 module.exports = app;
