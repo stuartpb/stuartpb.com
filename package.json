@@ -4,7 +4,7 @@
   "description": "Stuart P. Bentley's personal site",
   "main": "index.js",
   "scripts": {
-    "start": "node server",
+    "start": "envigorate",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
