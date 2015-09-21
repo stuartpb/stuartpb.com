@@ -1,7 +1,8 @@
 extends ../layout.jade
 
 mixin microdate(datestr)
-  abbr(attributes, title=moment(datestr).format("YYYY-MM-DD"))= datestr
+  abbr(attributes,
+    title=moment(new Date(datestr)).format("YYYY-MM-DD"))= datestr
 
 block head
   title Stuart P. Bentley: résumé
