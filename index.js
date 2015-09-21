@@ -14,7 +14,10 @@ module.exports = function appctor(cfg){
   app.get('/resume.txt',      resume.md);
   app.get('/resume.yaml', resume.yaml);
 
-  app.get('/info',require('./routes/info/index.js'));
-  app.get('/profiles',require('./routes/profiles/index.js'));
+  app.get('/info', function(req, res) {
+    res.redirect('/specs');
+  });
+  app.get('/specs', require('./routes/specs/index.js'));
+  app.get('/profiles', require('./routes/profiles/index.js'));
   return app;
 };
