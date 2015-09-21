@@ -1,4 +1,4 @@
-extends ../layout.jade
+extends layout
 
 block head
   link(href='https://fonts.googleapis.com/css?family=Arimo',rel='stylesheet',type='text/css')
@@ -9,9 +9,9 @@ block head
 
 block body
   h1 Stuart P. Bentley
-  include base.svg
+  include ../data/specs-base.svg
   script
-    include hair.js
+    include ../lib/specs/hair.js
     | updateHair();
     | //update every 36 minutes the page is open,
     | //keeping the hair status accurate live to a hundredth of a millimeter
