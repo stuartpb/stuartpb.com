@@ -6,13 +6,13 @@ block head
     h1 {font-weight: normal;}
     body, text {font-family: Arimo, sans-serif;}
     svg {display: block; margin: auto;}
-  include hair.js
 
 block body
   h1 Stuart P. Bentley
   include base.svg
-  script.
-    updateHair();
-    //update every 36 minutes the page is open,
-    //keeping the hair status accurate live to a hundredth of a millimeter
-    setInterval(updateHair,2160000);
+  script
+    include hair.js
+    | updateHair();
+    | //update every 36 minutes the page is open,
+    | //keeping the hair status accurate live to a hundredth of a millimeter
+    | setInterval(updateHair,2160000);
