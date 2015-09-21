@@ -1,4 +1,3 @@
-//extend `require` with YAML
 var yaml = require('js-yaml');
 var fs = require('fs');
 var moment = require('moment');
