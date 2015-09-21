@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -9,26 +7,14 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 160 160"
+   height="160"
+   width="160"
+   xml:space="preserve"
+   id="svg2"
    version="1.1"
-   width="64"
-   height="64"
-   viewBox="0 0 64 64"
-   id="svg3715"
-   inkscape:version="0.48.2 r9819"
-   sodipodi:docname="stackoverflow.svg">
-  <metadata
-     id="metadata14">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <sodipodi:namedview
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="Stack_Overflow_whiteicon.svg"><sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1"
@@ -39,70 +25,37 @@
      inkscape:pageshadow="2"
      inkscape:window-width="1680"
      inkscape:window-height="987"
-     id="namedview12"
+     id="namedview14"
      showgrid="false"
-     inkscape:zoom="3.6875"
-     inkscape:cx="32"
-     inkscape:cy="32"
+     units="px"
+     inkscape:object-nodes="true"
+     inkscape:snap-grids="true"
+     inkscape:zoom="4.925"
+     inkscape:cx="80"
+     inkscape:cy="80"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg3715" />
-  <defs
-     id="defs3717" />
-  <g
-     id="layer1"
-     style="fill:#ffffff">
-    <path
-       d="m 9.3049611,36.847632 4.4013079,0.04316 -0.153442,19.598393 29.291259,0 0,-19.527506 4.637782,0 0,24.287331 -38.2006795,0 0.023777,-24.401371 z"
-       id="path2830"
-       style="fill:#ffffff;fill-opacity:1;stroke:none" />
-    <rect
-       width="22.944817"
-       height="4.881876"
-       x="16.481951"
-       y="48.434078"
-       id="rect3604"
-       style="fill:#ffffff;fill-opacity:1;stroke:none" />
-    <rect
-       width="23.066864"
-       height="5.0039229"
-       x="20.749949"
-       y="37.830307"
-       transform="matrix(0.9953749,0.09606666,-0.09606666,0.9953749,0,0)"
-       id="rect3606"
-       style="fill:#ffffff;fill-opacity:1;stroke:none" />
-    <rect
-       width="23.066864"
-       height="5.0039229"
-       x="26.472515"
-       y="23.401554"
-       transform="matrix(0.96240291,0.27162592,-0.27162592,0.96240291,0,0)"
-       id="rect3606-1"
-       style="fill:#ffffff;fill-opacity:1;stroke:none" />
-    <rect
-       width="23.066864"
-       height="5.0039229"
-       x="30.528769"
-       y="3.1535864"
-       transform="matrix(0.85597805,0.51701216,-0.51701216,0.85597805,0,0)"
-       id="rect3606-1-3"
-       style="fill:#ffffff;fill-opacity:1;stroke:none" />
-    <rect
-       width="23.066864"
-       height="5.0039229"
-       x="27.191883"
-       y="-24.475019"
-       transform="matrix(0.58242689,0.81288309,-0.81288309,0.58242689,0,0)"
-       id="rect3606-1-3-7"
-       style="fill:#ffffff;fill-opacity:1;stroke:none" />
-    <rect
-       width="23.066864"
-       height="5.0039229"
-       x="11.174569"
-       y="-50.183693"
-       transform="matrix(0.16480989,0.98632535,-0.98632535,0.16480989,0,0)"
-       id="rect3606-1-3-7-6"
-       style="fill:#ffffff;fill-opacity:1;stroke:none" />
-  </g>
-</svg>
+     inkscape:current-layer="svg2"><inkscape:grid
+       type="xygrid"
+       id="grid4160"
+       spacingx="1"
+       spacingy="1"
+       empspacing="4" /></sodipodi:namedview><metadata
+     id="metadata8"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+     id="defs6"><clipPath
+       id="clipPath20"
+       clipPathUnits="userSpaceOnUse"><path
+         id="path18"
+         d="M 0,1178.69 0,0 l 6000.85,0 0,1178.69 z"
+         inkscape:connector-curvature="0" /></clipPath></defs><path
+     id="path24"
+     style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+     d="m 129.92356,145.72245 0,-42.82869 14.27538,0 0,57.10624 -128.397873,0 0,-57.10624 14.275373,0 0,42.82869 99.84712,0"
+     inkscape:connector-curvature="0" /><path
+     id="path26"
+     style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+     d="m 44.367696,131.44504 71.377004,0 0,-14.27537 -71.377004,0 z M 108.33919,-3.66e-6 96.88471,8.5192847 139.48347,65.791545 150.93781,57.272121 Z M 72.932832,33.765074 127.77976,79.443446 136.91546,68.473573 82.068533,22.795472 Z m -17.905438,31.743308 64.704246,30.1342 6.02675,-12.940739 -64.704236,-30.1342 z M 45.785134,98.954463 115.63651,113.63503 118.57252,99.664538 48.721139,84.98397 45.785134,98.954463"
+     inkscape:connector-curvature="0" /></svg>
