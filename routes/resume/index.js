@@ -48,7 +48,7 @@ exports.md = function(req,res,cb) {
       return '- '+edu.accolade + ', ' + edu.institution;
     }).join('\n'),
     "\n---\n",
-    "Version "+locals.version+", "+moment().format('MMM D YYYY')+".",
+    "Version "+locals.version+", rendered "+moment().format('MMM D YYYY')+".",
     "The latest version of this resume is available in HTML format at " +
       locals.online.html+" and in Markdown format at " +
       locals.online.markdown,

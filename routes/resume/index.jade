@@ -54,7 +54,7 @@ block body
         div.experience.vevent
           h3
             span.vcard
-              a.include(href='#sbp-name')
+              a.include(href='#spb-name')
               span.title= job.position
               =', '
               a.url.org(href=links[job.organization])= job.organization
@@ -79,7 +79,7 @@ block body
           +microdate(edu.timespan.to).dtend
   footer
     div.
-      Version <span id="version">#{version}<span>,
+      Version <span id="version">#{version}<span>, rendered
       <span id="build-date">#{moment().format('MMM D YYYY')}</span>.
       The latest version of this resume is kept at
       <a href="#{online.html}">#{online.html}</a>.
@@ -87,5 +87,5 @@ block body
       Plain text / Markdown version: <a href="#{online.markdown}">#{online.markdown}</a> |
       YAML source: <a href="#{online.yaml}">#{online.yaml}</a>
     div.
-      The Node.js code that creates this resume, from YAML, through Jade, to HTML5, CSS3, and SVG is online at
+      The Node.js code that creates this resume, from YAML, through Jade, to HTML, is online at
       <a href="#{online.code}">#{online.code}</a>

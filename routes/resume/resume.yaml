@@ -1,6 +1,6 @@
 %YAML 1.2
 ---
-version: "5.2.0"
+version: "5.2.1"
 
 online:
   html: http://stuartpb.com/resume
@@ -25,7 +25,7 @@ contact:
   phone: +1-610-761-0054
 
 techs:
-  - Languages: [HTML5, JavaScript, CSS, SVG, Lua, Jade, JSON, YAML, C / C++, Python, Lisp (Scheme), Bash, SQL]
+  - Languages: [HTML, JavaScript, CSS, SVG, Lua, Jade, JSON, YAML, Bash, C / C++, Python, Lisp (Scheme), SQL]
   - Systems: [Node.js, RethinkDB, Redis, MongoDB, Linux, Docker, Windows, Apache, Git, Mercurial, Bazaar, Subversion, CVS]
   - Libraries: [Express, IUP, CanvasDraw, IM, Cairo, SDL, OpenGL, dkjson, LPEG]
   - Tools: [Cloud9, SciTE, Visual Studio, IDLE, PythonWin, nano, Google Chrome, Microsoft Office, nmap, Wireshark]
@@ -47,7 +47,7 @@ work:
     position: Contractor
     timespan: {from: "August 5, 2013", to: "August 16, 2013"}
     tasks: |
-      - Architected HTML5 layout of e-commerce site
+      - Architected HTML layout of e-commerce site
       - Wrote Django templates for abstract models
       - Created CSS rules to match site elements to PSD mockups
 
@@ -56,8 +56,8 @@ work:
     timespan: {from: November 2011, to: January 2012}
     tasks: |
       - Designed minimalist site for 2012 conference
-      - Wrote CSS3 stylesheet for site
-      - Created HTML5 generators for page templates in Lua
+      - Wrote CSS stylesheet for site
+      - Created HTML generators for page templates in Lua
       - Worked with 100 presenters to individually integrate each presentation's content into site
       - Links:
         - Front-end mirror: http://nondynamic.com/mirror/ui2012/schedule.html
@@ -82,7 +82,6 @@ work:
 portfolio: |
   - Chatphrase, a zero-setup video chat portal: http://chatphrase.com
   - PlugMap, a map of publicly-accessible power outlets: http://plugmap.com
-  - The logo for the NodeJS Passport authentication library: https://passportjs.com
   - An automation system for my apartment's admission system: https://github.com/stuartpb/mellonine
   - [StepDub](https://github.com/stuartpb/stepdub), a PhoneGap app for playing sounds with your footsteps (popular with cosplayers)
   - [s/keyboard/leopard/g](http://userscripts.org/scripts/show/128626), the browser extension described in http://xkcd.com/1031/
