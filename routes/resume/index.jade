@@ -1,162 +1,160 @@
-!!! html
-
-- var marked = require("marked")
-- var moment = require("moment")
+extends ../layout.jade
 
 mixin microdate(datestr)
   abbr(attributes, title=moment(datestr).format("YYYY-MM-DD"))= datestr
 
-html
-  head
-    meta(charset="utf-8")
-    title Stuart P. Bentley: résumé
-    link(rel="icon", href="stuhat.svg", size="any", type="image/svg+xml")
-    link(rel="icon", href="stuhat256b.png", sizes="256x256", type="image/png")
-    link(rel="icon", href="stuhat16b.png", sizes="16x16", type="image/png")
-    link(rel="profile", href="http://microformats.org/profile/hcard")
-    style
-      body {
-        margin: 0; padding: 21px 32px;
-        background-color: #771818;
-        background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="70" height="120"><path d="M 35,0 70,60 35,120 0,60 z" style="fill:#000000;fill-opacity:0.1;stroke:none" /><path d="M 0,0 70,120" style="fill:none;stroke:#ffffff;stroke-width:1.5;stroke-opacity:0.1" /><path d="M 70,0 0,120" style="fill:none;stroke:#ffffff;stroke-width:1.5;stroke-opacity:0.1" /></svg>');
-        background-size: 70px 120px;
-        background-position: 35px 60px;
-        font-family: sans-serif;
-      }
+block head
+  title Stuart P. Bentley: résumé
+  link(rel="icon", href="stuhat.svg", size="any", type="image/svg+xml")
+  link(rel="icon", href="stuhat256b.png", sizes="256x256", type="image/png")
+  link(rel="icon", href="stuhat16b.png", sizes="16x16", type="image/png")
+  link(rel="profile", href="http://microformats.org/profile/hcard")
+  style
+    body {
+      margin: 0; padding: 21px 32px;
+      background-color: #771818;
+      background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="70" height="120"><path d="M 35,0 70,60 35,120 0,60 z" style="fill:#000000;fill-opacity:0.1;stroke:none" /><path d="M 0,0 70,120" style="fill:none;stroke:#ffffff;stroke-width:1.5;stroke-opacity:0.1" /><path d="M 70,0 0,120" style="fill:none;stroke:#ffffff;stroke-width:1.5;stroke-opacity:0.1" /></svg>');
+      background-size: 70px 120px;
+      background-position: 35px 60px;
+      font-family: sans-serif;
+    }
 
-      header {
-        margin: 0 0 21px 0; padding: 0;
-        position: relative;
-      }
+    header {
+      margin: 0 0 21px 0; padding: 0;
+      position: relative;
+    }
 
-      header address {
-        margin: 0; padding: 8px 16px;
-        font-style: normal;
-        position: absolute;
-        top: -8px;
-        right: 0;
-        background-color: rgba(255,255,255,.5);
-        border-radius: 6px;
-      }
+    header address {
+      margin: 0; padding: 8px 16px;
+      font-style: normal;
+      position: absolute;
+      top: -8px;
+      right: 0;
+      background-color: rgba(255,255,255,.5);
+      border-radius: 6px;
+    }
 
-      abbr {
-        text-decoration: none;
-        border: none;
-      }
+    abbr {
+      text-decoration: none;
+      border: none;
+    }
 
-      h1 {
-        margin: 0; padding: 0 0 0 100px;
-        font: bolder 78px sans-serif;
-        text-transform: uppercase;
-        color: white;
-        line-height: 100%;
-        background: left no-repeat url("stuhat.svg");
-        background-size: 78px;
-      }
+    h1 {
+      margin: 0; padding: 0 0 0 100px;
+      font: bolder 78px sans-serif;
+      text-transform: uppercase;
+      color: white;
+      line-height: 100%;
+      background: left no-repeat url("stuhat.svg");
+      background-size: 78px;
+    }
 
-      main {
-        margin: 16px auto; padding: 16px;
-        max-width: 960px;
-        background-color: white;
-        border-radius: 12px;
-        display: block;
-      }
+    main {
+      margin: 16px auto; padding: 16px;
+      max-width: 960px;
+      background-color: white;
+      border-radius: 12px;
+      display: block;
+    }
 
-      h2, h3, h4, h5, h6 {
-        margin: 0 0 1rem 0; padding: 0;
-      }
+    h2, h3, h4, h5, h6 {
+      margin: 0 0 1rem 0; padding: 0;
+    }
 
-      ul {
-       margin: 1rem 0; padding: 0 0 0 40px;
-      }
+    ul {
+     margin: 1rem 0; padding: 0 0 0 40px;
+    }
 
-      ul ul {
-        margin: 0;
-      }
+    ul ul {
+      margin: 0;
+    }
 
-      a:link, a:visited {
-        color: navy;
-        text-decoration: none;
-      }
+    a:link, a:visited {
+      color: navy;
+      text-decoration: none;
+    }
 
-      footer {
-        margin: 16px 0; padding: 8px 16px;
-        background-color: rgba(255,255,255,.5);
-        border-radius: 6px;
-      }
-  body
-    header.vcard
-      h1.fn#spb-name
-        span.given-name= contact.name.first
+    footer {
+      margin: 16px 0; padding: 8px 16px;
+      background-color: rgba(255,255,255,.5);
+      border-radius: 6px;
+    }
+
+block body
+  - var marked = require("marked")
+  - var moment = require("moment")
+  header.vcard
+    h1.fn#spb-name
+      span.given-name= contact.name.first
+      =' '
+      abbr.additional-name= contact.name.mi
+      =' '
+      span.family-name= contact.name.last
+    address.adr
+      div
+        span.street-address= contact.address.street + (contact.address.ext? ', ' + contact.address.ext : '')
+      div
+        span.locality= contact.address.city
+        =', '
+        abbr.region(title=contact.address.state.name)= contact.address.state.abbr
         =' '
-        abbr.additional-name= contact.name.mi
-        =' '
-        span.family-name= contact.name.last
-      address.adr
-        div
-          span.street-address= contact.address.street + (contact.address.ext? ', ' + contact.address.ext : '')
-        div
-          span.locality= contact.address.city
-          =', '
-          abbr.region(title=contact.address.state.name)= contact.address.state.abbr
-          =' '
-          span.postal-code= contact.address.zip
-        div
-          ='Email: '
-          a.email(href="mailto:"+contact.email)= contact.email
-        div
-          ='Phone: '
-          a.tel(href="tel:"+contact.phone)= contact.phone
-    main
-      section#tech-experience
-        h2 Tech Experience
-        ul: for techset in techs
-          for items, category in techset
-            li= category + ": "
-              if typeof(items) == "string"
-                != marked(items)
-              else
-                for item, i in items
-                  a.skill(href=links[item], ref='tag')= item
-                  = i < items.length-1 ? ", " : ""
-      section.vcalendar#work-experience
-        h2 Work Experience
-        for job in work
-          div.experience.vevent
-            h3
-              span.vcard
-                a.include(href='#sbp-name')
-                span.title= job.position
-                =', '
-                a.url.org(href=links[job.organization])= job.organization
+        span.postal-code= contact.address.zip
+      div
+        ='Email: '
+        a.email(href="mailto:"+contact.email)= contact.email
+      div
+        ='Phone: '
+        a.tel(href="tel:"+contact.phone)= contact.phone
+  main
+    section#tech-experience
+      h2 Tech Experience
+      ul: for techset in techs
+        for items, category in techset
+          li= category + ": "
+            if typeof(items) == "string"
+              != marked(items)
+            else
+              for item, i in items
+                a.skill(href=links[item], ref='tag')= item
+                = i < items.length-1 ? ", " : ""
+    section.vcalendar#work-experience
+      h2 Work Experience
+      for job in work
+        div.experience.vevent
+          h3
+            span.vcard
+              a.include(href='#sbp-name')
+              span.title= job.position
               =', '
-              +microdate(job.timespan.from).dtstart
-              =' - '
-              +microdate(job.timespan.to).dtend
-          != marked(job.tasks)
-      section#portfolio
-        h2 Portfolio
-        != marked(portfolio)
-      section#education
-        h2 Education
-        ul.vcalendar: for edu in education
-          li.education.vevent
-            span.summary.vcard
-              = edu.accolade + ', '
-              a.url.fn.org(href=links[edu.institution])= edu.institution
-            =' '
-            +microdate(edu.timespan.from).dtstart
+              a.url.org(href=links[job.organization])= job.organization
+            =', '
+            +microdate(job.timespan.from).dtstart
             =' - '
-            +microdate(edu.timespan.to).dtend
-    footer
-      div.
-        Version <span id="version">#{version}<span>,
-        <span id="build-date">#{moment().format('MMM D YYYY')}</span>.
-        The latest version of this resume is kept at
-        <a href="#{online.html}">#{online.html}</a>.
-      div.
-        Plain text / Markdown version: <a href="#{online.markdown}">#{online.markdown}</a> |
-        YAML source: <a href="#{online.yaml}">#{online.yaml}</a>
-      div.
-        The Node.js code that creates this resume, from YAML, through Jade, to HTML5, CSS3, and SVG is online at
-        <a href="#{online.code}">#{online.code}</a>
+            +microdate(job.timespan.to).dtend
+        != marked(job.tasks)
+    section#portfolio
+      h2 Portfolio
+      != marked(portfolio)
+    section#education
+      h2 Education
+      ul.vcalendar: for edu in education
+        li.education.vevent
+          span.summary.vcard
+            = edu.accolade + ', '
+            a.url.fn.org(href=links[edu.institution])= edu.institution
+          =' '
+          +microdate(edu.timespan.from).dtstart
+          =' - '
+          +microdate(edu.timespan.to).dtend
+  footer
+    div.
+      Version <span id="version">#{version}<span>,
+      <span id="build-date">#{moment().format('MMM D YYYY')}</span>.
+      The latest version of this resume is kept at
+      <a href="#{online.html}">#{online.html}</a>.
+    div.
+      Plain text / Markdown version: <a href="#{online.markdown}">#{online.markdown}</a> |
+      YAML source: <a href="#{online.yaml}">#{online.yaml}</a>
+    div.
+      The Node.js code that creates this resume, from YAML, through Jade, to HTML5, CSS3, and SVG is online at
+      <a href="#{online.code}">#{online.code}</a>

@@ -1,18 +1,18 @@
-!!!
-html
-  head
-    meta(charset="utf-8")
-    link(href='https://fonts.googleapis.com/css?family=Arimo',rel='stylesheet',type='text/css')
-    style
-      h1 {font-weight: normal;}
-      body, text {font-family: Arimo, sans-serif;}
-      svg {display: block; margin: auto;}
-    include hair.js
-  body
-    h1 Stuart P. Bentley
-    include base.svg
-    script
-      updateHair();
-      //update every 36 minutes the page is open,
-      //keeping the hair status accurate live to a hundredth of a millimeter
-      setInterval(updateHair,2160000);
+extends ../layout.jade
+
+block head
+  link(href='https://fonts.googleapis.com/css?family=Arimo',rel='stylesheet',type='text/css')
+  style.
+    h1 {font-weight: normal;}
+    body, text {font-family: Arimo, sans-serif;}
+    svg {display: block; margin: auto;}
+  include hair.js
+
+block body
+  h1 Stuart P. Bentley
+  include base.svg
+  script.
+    updateHair();
+    //update every 36 minutes the page is open,
+    //keeping the hair status accurate live to a hundredth of a millimeter
+    setInterval(updateHair,2160000);
