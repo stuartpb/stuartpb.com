@@ -1,6 +1,6 @@
 %YAML 1.2
 ---
-version: "5.3.0"
+version: "5.4.0"
 
 online:
   html: http://stuartpb.com/resume
@@ -24,15 +24,13 @@ contact:
   email: stuart@testtrack4.com
   phone: +1-610-761-0054
 
-skills:
-  - Languages: [HTML, JavaScript, CSS, SVG, Lua, Jade, JSON, YAML, Bash, C / C++, Python, Lisp (Scheme), SQL]
-  - Systems: [Node.js, RethinkDB, Redis, MongoDB, Linux, Docker, Windows, Apache, Git, Mercurial, Bazaar, Subversion, CVS]
-  - Libraries: [Express, IUP, CanvasDraw, IM, Cairo, SDL, OpenGL, dkjson, LPEG]
-  - Tools: [Cloud9, SciTE, Visual Studio, IDLE, PythonWin, nano, Google Chrome, Microsoft Office, nmap, Wireshark]
-  - Hardware: |
-      - Has worked with the internal hardware components of several desktop PC systems
-      - Built two complete PC towers from component parts
-      - Opened, repaired, and re-assembled three personal out-of-warranty notebook computers
+skills: [
+  HTML, JavaScript, CSS, SVG, Lua, Jade, JSON, YAML, Bash, C / C++,
+  Python, Lisp (Scheme), SQL, Node.js, RethinkDB, Redis, MongoDB, Linux,
+  Docker, Windows, Apache, Git, Mercurial, Bazaar, Subversion, CVS, Express,
+  IUP, CanvasDraw, IM, Cairo, SDL, OpenGL, dkjson, LPEG, Cloud9, SciTE,
+  Visual Studio, IDLE, PythonWin, nano, Google Chrome, Microsoft Office, nmap,
+  Wireshark ]
 
 experience:
   - organization: Concurix

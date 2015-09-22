@@ -36,17 +36,6 @@ block body
         ='Phone: '
         a.tel(href="tel:"+contact.phone)= contact.phone
   main
-    section#skills
-      h2 Skills
-      ul: for skillset in skills
-        for items, category in skillset
-          li= category + ": "
-            if typeof(items) == "string"
-              != marked(items)
-            else
-              for item, i in items
-                a.skill(href=links[item], ref='tag')= item
-                = i < items.length-1 ? ", " : ""
     section.vcalendar#experience
       h2 Experience
       for job in experience
@@ -65,6 +54,11 @@ block body
     section#portfolio
       h2 Portfolio
       != marked(portfolio)
+    section#skills
+      h2 Skills
+      p: for skill, i in skills
+        a.skill(href=links[skill], ref='tag')= skill
+        != i < skills.length-1 ? " &bullet; " : ""
     section#education
       h2 Education
       ul.vcalendar: for edu in education
