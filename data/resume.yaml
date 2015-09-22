@@ -1,6 +1,6 @@
 %YAML 1.2
 ---
-version: "5.2.1"
+version: "5.3.0"
 
 online:
   html: http://stuartpb.com/resume
@@ -24,7 +24,7 @@ contact:
   email: stuart@testtrack4.com
   phone: +1-610-761-0054
 
-techs:
+skills:
   - Languages: [HTML, JavaScript, CSS, SVG, Lua, Jade, JSON, YAML, Bash, C / C++, Python, Lisp (Scheme), SQL]
   - Systems: [Node.js, RethinkDB, Redis, MongoDB, Linux, Docker, Windows, Apache, Git, Mercurial, Bazaar, Subversion, CVS]
   - Libraries: [Express, IUP, CanvasDraw, IM, Cairo, SDL, OpenGL, dkjson, LPEG]
@@ -34,9 +34,9 @@ techs:
       - Built two complete PC towers from component parts
       - Opened, repaired, and re-assembled three personal out-of-warranty notebook computers
 
-work:
+experience:
   - organization: Concurix
-    position: Contractor
+    title: Contractor
     timespan: {from: "November 2, 2013", to: "November 9, 2013"}
     tasks: |
       - Streamlined and updated information content
@@ -44,7 +44,7 @@ work:
       - Aligned presentation with desired structure
 
   - organization: Plexipixel
-    position: Contractor
+    title: Contractor
     timespan: {from: "August 5, 2013", to: "August 16, 2013"}
     tasks: |
       - Architected HTML layout of e-commerce site
@@ -52,7 +52,7 @@ work:
       - Created CSS rules to match site elements to PSD mockups
 
   - organization: Underwater Intervention 2012
-    position: Technical Webmaster
+    title: Technical Webmaster
     timespan: {from: November 2011, to: January 2012}
     tasks: |
       - Designed minimalist site for 2012 conference
@@ -64,7 +64,7 @@ work:
         - Back-end Github: https://github.com/stuartpb/u20n-12
 
   - organization: Bentley Systems, Inc.
-    position: Intern
+    title: Intern
     timespan: {from: March 2011, to: June 2011}
     tasks: |
       - Developed source-control-to-bug-tracking integration systems
@@ -73,7 +73,7 @@ work:
       - Maintained ASP.NET devteam-management portal software
 
   - organization: VMC Consulting, Inc.
-    position: On-Call Tester
+    title: On-Call Tester
     timespan: {from: "2007", to: "2010"}
     tasks: |
       - Followed test cases and regiments

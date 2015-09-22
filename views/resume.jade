@@ -13,8 +13,6 @@ block head
   link(rel="profile", href="http://microformats.org/profile/hcard")
 
 block body
-  - var marked = require("marked")
-  - var moment = require("moment")
   header.vcard
     h1.fn#spb-name
       span.given-name= contact.name.first
@@ -38,10 +36,10 @@ block body
         ='Phone: '
         a.tel(href="tel:"+contact.phone)= contact.phone
   main
-    section#tech-experience
-      h2 Tech Experience
-      ul: for techset in techs
-        for items, category in techset
+    section#skills
+      h2 Skills
+      ul: for skillset in skills
+        for items, category in skillset
           li= category + ": "
             if typeof(items) == "string"
               != marked(items)
@@ -49,14 +47,14 @@ block body
               for item, i in items
                 a.skill(href=links[item], ref='tag')= item
                 = i < items.length-1 ? ", " : ""
-    section.vcalendar#work-experience
-      h2 Work Experience
-      for job in work
+    section.vcalendar#experience
+      h2 Experience
+      for job in experience
         div.experience.vevent
           h3
             span.vcard
               a.include(href='#spb-name')
-              span.title= job.position
+              span.title= job.title
               =', '
               a.url.org(href=links[job.organization])= job.organization
             =', '
