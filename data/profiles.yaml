@@ -116,11 +116,7 @@
 
 - site: Hacker News
   name: spb
-  url: http://news.ycombinator.com/user?id=spb
-
-- site: Userscripts.org
-  name: stuart
-  url: http://userscripts.org/users/stuart
+  url: https://news.ycombinator.com/user?id=spb
 
 - site: Scribbls
   name: STUART
