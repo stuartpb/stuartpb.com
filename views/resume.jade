@@ -56,9 +56,8 @@ block body
       != marked(portfolio)
     section#skills
       h2 Skills
-      p: for skill, i in skills
-        a.skill(href=links[skill], ref='tag')= skill
-        != i < skills.length-1 ? " &bullet; " : ""
+      ul.skills: for skill, i in skills
+        li: a.skill(href=links[skill], ref='tag')= skill
     section#education
       h2 Education
       ul.vcalendar: for edu in education

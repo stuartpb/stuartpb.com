@@ -67,3 +67,12 @@ footer {
   background-color: rgba(255,255,255,.5);
   border-radius: 6px;
 }
+
+.skills li {
+  display: inline-block;
+}
+
+.skills li:not(:last-child)::after {
+  content: '\2022';
+  margin: 0 0.5ch;
+}
