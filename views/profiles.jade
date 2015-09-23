@@ -22,6 +22,5 @@ block main
         td= profile.site
         td= profile.name
         td: a(href=profile.url)
-          img(src="http://g.etfv.co/" + encodeURIComponent(profile.url) + "?defaulticon=lightpng",
-            height='16', width='16')
+          img(src=favicon(profile.url))
           = profile.url

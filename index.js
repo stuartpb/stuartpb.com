@@ -1,6 +1,7 @@
 var express = require("express");
 var yaml = require('js-yaml');
 var fs = require('fs');
+var url = require('url');
 
 function loadYamlData(filename) {
   return yaml.load(
@@ -24,7 +25,11 @@ module.exports = function appctor(cfg){
   app.get('/resume.yaml', resume.yaml);
 
   app.get('/profiles', function(req,res) {
-    res.render('profiles.jade', {profiles: profiles});
+    function favicon(pageUrl) {
+      return "https://www.google.com/s2/favicons?domain=" +
+        url.parse(pageUrl).hostname;
+    }
+    res.render('profiles.jade', {profiles: profiles, favicon: favicon});
   });
 
   app.get('/specs', function(req,res) {
