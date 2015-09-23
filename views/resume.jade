@@ -3,10 +3,9 @@ extends layout
 mixin microdate(datestr)
   - var timestamp = isodate(datestr);
   if timestamp
-    abbr(attributes,
-      title=timestamp)= datestr
+    abbr(title=timestamp)&attributes(attributes)= datestr
   else
-    span(attributes)= datestr
+    span&attributes(attributes)= datestr
 
 block title
   title Stuart P. Bentley: résumé
