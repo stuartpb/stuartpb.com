@@ -6,7 +6,7 @@ online:
   html: http://stuartpb.com/resume
   markdown: http://stuartpb.com/resume.md
   yaml: http://stuartpb.com/resume.yaml
-  code: https://github.com/stuartpb/stuartpb.com/tree/master/routes/resume
+  code: https://github.com/stuartpb/stuartpb.com
 
 contact:
   name:
