@@ -24,12 +24,12 @@
       fill-opacity:1;
       stroke:none;
     }
-    
+
     .start-align {
       text-align: start;
       text-anchor: start;
     }
-    
+
     .end-align {
       text-align: end;
       text-anchor: end;
@@ -489,7 +489,7 @@
          x="933.85522"
          y="320.88797"
          id="tspan3864">44 WPM</tspan></text>
-    <g id="hair-label-group" transform="translate(0,0)";>
+    <g id="hair-label-group" transform="translate(0,0)">
       <text
          sodipodi:linespacing="125%"
          class="start-align"
