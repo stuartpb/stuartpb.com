@@ -8,7 +8,7 @@
 
 - site: Stack Overflow
   name: Stuart P. Bentley
-  url: http://stackoverflow.com/users/34799/stuart-p-bentley
+  url: https://stackoverflow.com/users/34799/stuart-p-bentley
 
 - site: Tumblr
   name: stuartpb
@@ -16,15 +16,15 @@
 
 - site: Facebook
   name: Stuart P. Bentley
-  url: http://facebook.com/stuartpb
+  url: https://facebook.com/stuartpb
 
 - site: Reddit
   name: StuartPBentley
-  url: http://reddit.com/u/StuartPBentley
+  url: https://reddit.com/user/StuartPBentley
 
 - site: LinkedIn
   name: stuartpb
-  url: http://linkedin.com/in/stuartpb
+  url: https://linkedin.com/in/stuartpb
 
 - site: Coderbits
   name: spb
@@ -44,11 +44,11 @@
 
 - site: PlugMap
   name: stuartpb
-  url: http://plugmap.com/user/stuartpb
+  url: https://plugmap.com/user/stuartpb
 
 - site: Cloud9
   name: stuartpb
-  url: http://c9.io/stuartpb
+  url: https://c9.io/stuartpb
 
 - site: Trello
   name: stuartpb
@@ -56,11 +56,11 @@
 
 - site: YouTube
   name: YOUsTUBEntley
-  url: http://www.youtube.com/user/YOUsTUBEntley
+  url: https://www.youtube.com/user/YOUsTUBEntley
 
 - site: Wikipedia
   name: Stuart P. Bentley
-  url: http://en.wikipedia.org/wiki/User:Stuart_P._Bentley
+  url: https://en.wikipedia.org/wiki/User:Stuart_P._Bentley
 
 - site: Gittip
   name: stuartpb
@@ -112,7 +112,7 @@
 
 - site: Launchpad
   name: stuart
-  url: http://launchpad.net/~stuart
+  url: https://launchpad.net/~stuart
 
 - site: Hacker News
   name: spb
@@ -128,7 +128,7 @@
 
 - site: Steam
   name: stuart
-  url: http://steamcommunity.com/id/stuart
+  url: https://steamcommunity.com/id/stuart
 
 - site: Steam Forums
   name: STUART
