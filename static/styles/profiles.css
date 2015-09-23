@@ -1,6 +1,7 @@
-body {
+main {
   margin: 0; padding: 24px 32px;
   background-color: #38c;
+  background-image: url("/textures/argyle.svg");
   font-family: Open Sans, sans-serif;
 }
 

@@ -1,18 +1,22 @@
 extends layout
 
+block title
+  title Stuart P. Bentley: specs
+
+block subtitle
+  h2 specs
+
 block head
   link(href='https://fonts.googleapis.com/css?family=Arimo',rel='stylesheet',type='text/css')
   style.
-    h1 {font-weight: normal;}
-    body, text {font-family: Arimo, sans-serif;}
+    main, text {font-family: Arimo, sans-serif;}
     svg {display: block; margin: auto;}
 
-block body
-  h1 Stuart P. Bentley
+block main
   include ../data/specs-base.svg
   script
     include ../lib/specs/hair.js
     | updateHair();
-    | //update every 36 minutes the page is open,
-    | //keeping the hair status accurate live to a hundredth of a millimeter
+    | // update every 36 minutes the page is open,
+    | // keeping the hair status accurate live to a hundredth of a millimeter
     | setInterval(updateHair,2160000);

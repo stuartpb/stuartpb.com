@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'League Spartan';
+  src: url('/fonts/leaguespartan-bold.eot');
+  src: url('/fonts/leaguespartan-bold.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/leaguespartan-bold.woff2') format('woff2'),
+       url('/fonts/leaguespartan-bold.woff') format('woff'),
+       url('/fonts/leaguespartan-bold.ttf') format('truetype'),
+       url('/fonts/leaguespartan-bold.svg#league_spartanbold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background: black;
+  color: white;
+  font-family: League Spartan, Futura, Open Sans, sans-serif;
+  font-weight: 800;
+}
+header a:link, header a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+header hgroup {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+header h1 {
+  display: flex;
+  flex-flow: row;
+  text-transform: uppercase;
+  margin: 12px 0;
+}
+header h1 span {
+  font-size: 64px;
+  line-height: 100%;
+  margin: 10px 0 -10px;
+}
+header h1 img {
+  flex: none;
+  height: 64px;
+  width: 64px;
+  margin: 0 24px;
+}
+header h2 {
+  margin: 24px;
+}

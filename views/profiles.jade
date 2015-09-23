@@ -1,15 +1,17 @@
 extends layout
 
-block head
+block title
   title Stuart P. Bentley: profiles
-  link(rel="icon", href="stuhat.svg", size="any", type="image/svg+xml")
-  link(rel="icon", href="stuhat256b.png", sizes="256x256", type="image/png")
-  link(rel="icon", href="stuhat16b.png", sizes="16x16", type="image/png")
+
+block subtitle
+  h2 profiles
+
+block head
   link(href='http://fonts.googleapis.com/css?family=Open+Sans:400,800',
     rel='stylesheet', type='text/css')
   link(href='/styles/profiles.css', rel='stylesheet', type='text/css')
 
-block body
+block main
   table
     thead: tr
       th On...
