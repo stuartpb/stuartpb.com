@@ -33,33 +33,28 @@ skills: [
   Wireshark ]
 
 experience:
-  - organization: Concurix
-    title: Contractor
-    timespan: {from: "November 2, 2013", to: "November 9, 2013"}
+  - title: Contractor
+    timespan: {from: "August 2013", to: "November 2013"}
     tasks: |
+      #### Plexipixel, August 2013 ####
+      - Reviewed flow and layout of e-commerce site
+      - Architected HTML structure of pages and elements
+
+      #### Concurix, November 2013 ####
       - Streamlined and updated information content
-      - Informed Node.JS site architecture
       - Aligned presentation with desired structure
+      - Refactored Node.js code structure
 
-  - organization: Plexipixel
-    title: Contractor
-    timespan: {from: "August 5, 2013", to: "August 16, 2013"}
-    tasks: |
-      - Architected HTML layout of e-commerce site
-      - Wrote Django templates for abstract models
-      - Created CSS rules to match site elements to PSD mockups
-
-  - organization: Underwater Intervention 2012
-    title: Technical Webmaster
+  - organization: Underwater Intervention
+    title: Conference Webmaster
     timespan: {from: November 2011, to: January 2012}
     tasks: |
-      - Designed minimalist site for 2012 conference
-      - Wrote CSS stylesheet for site
-      - Created HTML generators for page templates in Lua
+      - Designed minimalist site for 2012 conference presentations
       - Worked with 100 presenters to individually integrate each presentation's content into site
+      - Created HTML generators for page templates using Lua
       - Links:
         - Front-end mirror: http://nondynamic.com/mirror/ui2012/schedule.html
-        - Back-end Github: https://github.com/stuartpb/u20n-12
+        - Generator code: https://github.com/stuartpb/u20n-12
 
   - organization: Bentley Systems, Inc.
     title: Intern
@@ -117,6 +112,6 @@ links:
   Node.js: http://nodejs.org/
   Redis: http://redis.io/
   RethinkDB: http://www.rethinkdb.com/
-  Underwater Intervention 2012: http://www.nondynamic.com/mirror/ui2012/schedule.html
+  Underwater Intervention: http://www.underwaterintervention.com/
   VMC Consulting, Inc.: http://www.vmc.com/
   YAML: http://www.yaml.org/

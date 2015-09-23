@@ -26,8 +26,9 @@ block main
             span.vcard
               a.include(href='#spb-name')
               span.title= job.title
-              =', '
-              a.url.org(href=links[job.organization])= job.organization
+              if job.organization
+                =', '
+                a.url.org(href=links[job.organization])= job.organization
             =', '
             +microdate(job.timespan.from).dtstart
             =' - '
