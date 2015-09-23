@@ -4,7 +4,7 @@ main {
   background-image: url("/textures/argyle.svg");
   background-size: 70px 120px;
   background-position: 35px 60px;
-  font-family: sans-serif;
+  font-family: Open Sans, sans-serif;
 }
 
 abbr {
