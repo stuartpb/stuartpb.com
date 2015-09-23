@@ -3,9 +3,9 @@
 version: "6.0.0"
 
 online:
-  html: http://stuartpb.com/resume
-  markdown: http://stuartpb.com/resume.md
-  yaml: http://stuartpb.com/resume.yaml
+  html: https://stuartpb.com/resume
+  markdown: https://stuartpb.com/resume.md
+  yaml: https://stuartpb.com/resume.yaml
   code: https://github.com/stuartpb/stuartpb.com
 
 contact:
