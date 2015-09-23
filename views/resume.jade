@@ -1,11 +1,12 @@
 extends layout
 
 mixin microdate(datestr)
-  -
-    var mdate = datestr.toLowerCase() == 'present' ?
-      moment() : moment(new Date(datestr));
-  abbr(attributes,
-    title=mdate.format("YYYY-MM-DD"))= datestr
+  - var timestamp = isodate(datestr);
+  if timestamp
+    abbr(attributes,
+      title=timestamp)= datestr
+  else
+    span(attributes)= datestr
 
 block title
   title Stuart P. Bentley: résumé
@@ -66,7 +67,7 @@ block main
     .about
       div.
         Version <span id="version">#{version}<span>, rendered
-        <span id="build-date">#{moment().format('MMM D YYYY')}</span>.
+        <span id="build-date">#{today}</span>.
         The latest version of this resume is kept at
         <a href="#{online.html}">#{online.html}</a>.
       div.
