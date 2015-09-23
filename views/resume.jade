@@ -1,8 +1,11 @@
 extends layout
 
 mixin microdate(datestr)
+  -
+    var mdate = datestr.toLowerCase() == 'present' ?
+      moment() : moment(new Date(datestr));
   abbr(attributes,
-    title=moment(new Date(datestr)).format("YYYY-MM-DD"))= datestr
+    title=mdate.format("YYYY-MM-DD"))= datestr
 
 block title
   title Stuart P. Bentley: résumé
@@ -25,10 +28,17 @@ block main
           h3
             span.vcard
               a.include(href='#spb-name')
-              span.title= job.title
-              if job.organization
-                =', '
-                a.url.org(href=links[job.organization])= job.organization
+              if job.title
+                span.title= job.title
+                if job.organization
+                  =', '
+                  a.url.org(href=links[job.organization])= job.organization
+              else
+                if job.organization
+                  a.url.org(href=links[job.organization])= job.organization
+                  if job.summary
+                    =', '
+                    span.summary= job.summary
             =', '
             +microdate(job.timespan.from).dtstart
             =' - '

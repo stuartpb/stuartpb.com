@@ -1,6 +1,6 @@
 %YAML 1.2
 ---
-version: "5.4.0"
+version: "6.0.0"
 
 online:
   html: http://stuartpb.com/resume
@@ -24,15 +24,57 @@ contact:
   email: stuart@testtrack4.com
   phone: +1-610-761-0054
 
-skills: [
-  HTML, JavaScript, CSS, SVG, Lua, Jade, JSON, YAML, Bash, C / C++,
-  Python, Lisp (Scheme), SQL, Node.js, RethinkDB, Redis, MongoDB, Linux,
-  Docker, Windows, Apache, Git, Mercurial, Bazaar, Subversion, CVS, Express,
-  IUP, CanvasDraw, IM, Cairo, SDL, OpenGL, dkjson, LPEG, Cloud9, SciTE,
-  Visual Studio, IDLE, PythonWin, nano, Google Chrome, Microsoft Office, nmap,
-  Wireshark ]
-
 experience:
+  - title: Contributor
+    organization: W3C Web Platform Incubator Community Group
+    timespan: {from: "September 2, 2014", to: Present}
+    tasks: |
+      - Codified [Best Practices documents][wicg-best-practices] for the group
+      - Developed [HTML Parts and Walls][pwalls] specification
+      - Highlighted numerous underserved use cases in the HTML platform
+
+      [wicg-best-practices]: https://github.com/stuartpb/wicg-best-practices
+      [pwalls]: https://github.com/stuartpb/pwalls-spec
+
+  - organization: DingRoll
+    summary: personal project
+    timespan: {from: "May 2015", to: "September 2015"}
+    tasks: |
+      - Designed robust information architecture, addressing several use cases
+      - Organized and moderated prototype community via Slack
+      - Specified in-depth behavior of all interface elements
+
+  - organization: Plushu
+    summary: personal project
+    timespan: {from: "June 2014", to: "June 2015"}
+    tasks: |
+      - Developed Heroku-compatible 12-factor application deployment system
+      - Used GitHub Issues for [extensive task management and design][issues]
+      - Used [waffle.io] for Kanban-style task overview across repositories
+      - Curated a robust style guide for writing Bash scripts without leaks
+
+      [issues]: https://github.com/plushu/plushu/issues
+      [waffle.io]: https://waffle.io/plushu/plushu
+
+  - organization: latertime
+    summary: hackathon/personal project
+    timespan: {from: "May 2014", to: "February 2015"}
+    tasks: |
+      - Designed time-cued, real-time text comment/messaging system
+      - Drew [logo][lt-logo] integrating two word balloons as an hourglass
+      - Implemented real-time prototype with MongoDB, WebSocket, and HTML5 video
+      - Overhauled backend to use RethinkDB, Redis, and Primus
+
+      [lt-logo]: https://github.com/latertime/laterti.me/blob/master/client/latertime.png
+
+  - organization: Chatphrase
+    summary: personal project
+    timespan: {from: "December 2013", to: "February 2014"}
+    tasks: |
+      - Developed zero-login user flow for painless video chat calling
+      - Conducted customer interviews, with on-screen and paper prototypes
+      - Implemented WebRTC prototype
+
   - title: Contractor
     timespan: {from: "August 2013", to: "November 2013"}
     tasks: |
@@ -41,8 +83,7 @@ experience:
       - Architected HTML structure of pages and elements
 
       #### Concurix, November 2013 ####
-      - Streamlined and updated information content
-      - Aligned presentation with desired structure
+      - Streamlined product presentation and messaging
       - Refactored Node.js code structure
 
   - organization: Underwater Intervention
@@ -73,19 +114,33 @@ experience:
       - Wrote test cases for newly-discovered bugs
 
 portfolio: |
-  - Chatphrase, a zero-setup video chat portal: http://chatphrase.com
-  - PlugMap, a map of publicly-accessible power outlets: http://plugmap.com
-  - An automation system for my apartment's admission system: https://github.com/stuartpb/mellonine
-  - [StepDub](https://github.com/stuartpb/stepdub), a PhoneGap app for playing sounds with your footsteps (popular with cosplayers)
-  - [s/keyboard/leopard/g](http://userscripts.org/scripts/show/128626), the browser extension described in http://xkcd.com/1031/
-  - All these projects and more on GitHub: https://github.com/stuartpb
-  - Over 2,000 reputation on Stack Overflow: http://stackoverflow.com/users/34799/stuart-p-bentley
+  - [Lean Notes][], a series of notes on building out projects
+  - PlugMap, a map of publicly-accessible power outlets: https://plugmap.com/
+  - [StepDub][], a PhoneGap app for playing sounds with your footsteps (popular with cosplayers)
+  - A Twilio app for automating my apartment's admission system: https://github.com/stuartpb/mellonine
+  - [s/keyboard/leopard/g][1031], the browser extension described in https://xkcd.com/1031/
+  - Other miscellanous projects and writing on GitHub: https://github.com/stuartpb
+  - Over 3,500 reputation on Stack Overflow: https://stackoverflow.com/users/34799/stuart-p-bentley
   - Articles for humor site Cracked.com (contains coarse language):
     - [7 Reasons Computer Glitches Won't Go Away (Ever)][cracked-1]
     - [5 Things We All Do That Make Hackers' Lives Incredibly Easy][cracked-2]
 
+  [Lean Notes]: https://trello.com/leannotes
+  [StepDub]: https://getstepdub.com/
   [cracked-1]: http://www.cracked.com/article_18808_7-reasons-computer-glitches-wont-go-away-ever.html
   [cracked-2]: http://www.cracked.com/article_18962_5-things-we-all-do-that-make-hackers-lives-incredibly-easy.html
+  [1031]: https://greasyfork.org/en/scripts/5141-s-keyboard-leopard-g
+
+skills: [
+  HTML, JavaScript, CSS, Flexbox, SVG, Canvas, Lua, Jade, JSON, YAML, Bash,
+  C / C++, Python, Lisp, Scheme, SQL, Node.js, Express, Connect, Passport,
+  Leaflet, Cordova, PhoneGap, Pebble, RethinkDB, Redis, PouchDB, CouchDB,
+  MongoDB, Linux, Docker, Nginx, Windows, Apache, Git, Mercurial, Bazaar,
+  Subversion, CVS, IUP, CanvasDraw, IM, ImageMagick, GraphicsMagick, Cairo,
+  OpenGL, SciTE, Visual Studio, IDLE, PythonWin, nano, Google Chrome,
+  Microsoft Office, Wireshark, nmap, HTTP, ssh, SSL, Heroku, Twilio, Cloud9,
+  Trello, GitHub, Slack, Gitter, Stack Overflow, Discourse, Google Sheets,
+  Google Search, Kanban ]
 
 education:
   - accolade: Bachelors, Real Time Interactive Simulation
@@ -108,10 +163,12 @@ links:
   Google Chrome: http://www.google.com/chrome
   Jade: http://jade-lang.com/
   Lua: http://lua.org/
+  latertime: http://laterti.me/
   nmap: http://nmap.org/
   Node.js: http://nodejs.org/
   Redis: http://redis.io/
   RethinkDB: http://www.rethinkdb.com/
   Underwater Intervention: http://www.underwaterintervention.com/
   VMC Consulting, Inc.: http://www.vmc.com/
+  W3C Web Platform Incubator Community Group: https://discourse.wicg.io/
   YAML: http://www.yaml.org/
