@@ -50,7 +50,7 @@ experience:
     tasks: |
       - Developed Heroku-compatible 12-factor application deployment system
       - Used GitHub Issues for [extensive task management and design][issues]
-      - Used [waffle.io] for Kanban-style task overview across repositories
+      - Used [waffle.io][] for Kanban-style task overview across repositories
       - Curated a robust style guide for writing Bash scripts without leaks
 
       [issues]: https://github.com/plushu/plushu/issues
@@ -114,33 +114,37 @@ experience:
       - Wrote test cases for newly-discovered bugs
 
 portfolio: |
+  - Articles for humor site Cracked.com (contains coarse language):
+    - [7 Reasons Computer Glitches Won't Go Away (Ever)][cracked-1]
+    - [5 Things We All Do That Make Hackers' Lives Incredibly Easy][cracked-2]
+  - Various writings on GitHub: https://github.com/stuartpb/collected-writings
   - [Lean Notes][], a series of notes on building out projects
   - PlugMap, a map of publicly-accessible power outlets: https://plugmap.com/
   - [StepDub][], a PhoneGap app for playing sounds with your footsteps (popular with cosplayers)
   - A Twilio app for automating my apartment's admission system: https://github.com/stuartpb/mellonine
   - [s/keyboard/leopard/g][1031], the browser extension described in https://xkcd.com/1031/
-  - Other miscellanous projects and writing on GitHub: https://github.com/stuartpb
-  - Over 3,500 reputation on Stack Overflow: https://stackoverflow.com/users/34799/stuart-p-bentley
-  - Articles for humor site Cracked.com (contains coarse language):
-    - [7 Reasons Computer Glitches Won't Go Away (Ever)][cracked-1]
-    - [5 Things We All Do That Make Hackers' Lives Incredibly Easy][cracked-2]
+  - Ambitious works in progress: https://github.com/stuartpb/help-wanted
+  - Other miscellanous GitHub projects: https://github.com/stuartpb
+  - Over 4,200 reputation on Stack Overflow: https://stackoverflow.com/users/34799/stuart-p-bentley
 
-  [Lean Notes]: https://trello.com/leannotes
-  [StepDub]: https://getstepdub.com/
   [cracked-1]: http://www.cracked.com/article_18808_7-reasons-computer-glitches-wont-go-away-ever.html
   [cracked-2]: http://www.cracked.com/article_18962_5-things-we-all-do-that-make-hackers-lives-incredibly-easy.html
+  [Lean Notes]: https://trello.com/leannotes
+  [StepDub]: https://getstepdub.com/
   [1031]: https://greasyfork.org/en/scripts/5141-s-keyboard-leopard-g
 
 skills: [
-  HTML, JavaScript, CSS, Flexbox, SVG, Canvas, Lua, Jade, JSON, YAML, Bash,
-  C / C++, Python, Lisp, Scheme, SQL, Node.js, Express, Connect, Passport,
-  Leaflet, Cordova, PhoneGap, Pebble, RethinkDB, Redis, PouchDB, CouchDB,
-  MongoDB, Linux, Docker, Nginx, Windows, Apache, Git, Mercurial, Bazaar,
-  Subversion, CVS, IUP, CanvasDraw, IM, ImageMagick, GraphicsMagick, Cairo,
-  OpenGL, SciTE, Visual Studio, IDLE, PythonWin, nano, Google Chrome,
-  Microsoft Office, Wireshark, nmap, HTTP, ssh, SSL, Heroku, Twilio, Cloud9,
-  Trello, GitHub, Slack, Gitter, Stack Overflow, Discourse, Google Sheets,
-  Google Search, Kanban ]
+  HTML, JavaScript, CSS, Flexbox, SVG, Three.js, D3.js, Canvas, Lua, Jade,
+  JSON, YAML, Bash, C / C++, Python, Lisp, Scheme, SQL, Node.js, Express,
+  Connect, Passport, Leaflet, Cordova, PhoneGap, Pebble, RethinkDB, Redis,
+  PouchDB, CouchDB, Cloudant, MongoDB, Linux, Docker, Nginx, Windows, Apache,
+  Git, Mercurial, Bazaar, Subversion, CVS, IUP, CanvasDraw, IM, ImageMagick,
+  GraphicsMagick, Cairo, OpenGL, WebGL, SciTE, Visual Studio, IDLE, PythonWin,
+  nano, Google Chrome, Chrome Apps, Chrome Extensions, GreaseMonkey,
+  Userscripts, Microsoft Office, GIMP, Inkscape, Paint.net, Wireshark, nmap,
+  HTTP, ssh, SSL, DNS, systemd, Heroku, Twilio, Cloud9, Trello, GitHub, Slack,
+  Gitter, Stack Overflow, Discourse, Google Sheets, Google Search, Markdown,
+  Kanban ]
 
 education:
   - accolade: Bachelors, Real Time Interactive Simulation
@@ -152,22 +156,34 @@ education:
     timespan: {from: 'December 2, 2013', to: 'April 7, 2014'}
 
 links:
+  Bash: https://www.gnu.org/software/bash/
   Bentley Systems, Inc.: http://www.bentley.com/
   Concurix: http://concurix.com/
   Cloud9: https://c9.io/
+  Cloudant: https://cloudant.com/
   DigiPen Institute of Technology: http://www.digipen.edu/
   Docker: https://www.docker.io/
+  D3.js: https://d3js.org/
   Express: http://expressjs.com/
   Founder Institute: http://fi.co/
+  GIMP: https://www.gimp.org/
   Git: http://git-scm.com/
+  GitHub: https://github.com/
   Google Chrome: http://www.google.com/chrome
+  Heroku: https://www.heroku.com/
+  Inkscape: https://inkscape.org/
   Jade: http://jade-lang.com/
+  JetWarp: https://www.jetwarp.com/
+  Leaflet: http://leafletjs.com/
   Lua: http://lua.org/
   latertime: http://laterti.me/
   nmap: http://nmap.org/
   Node.js: http://nodejs.org/
+  Paint.net: http://www.getpaint.net/index.html
   Redis: http://redis.io/
   RethinkDB: http://www.rethinkdb.com/
+  Slack: https://slack.com/
+  Three.js: http://threejs.org/
   Underwater Intervention: http://www.underwaterintervention.com/
   VMC Consulting, Inc.: http://www.vmc.com/
   W3C Web Platform Incubator Community Group: https://discourse.wicg.io/
