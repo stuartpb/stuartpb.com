@@ -1,6 +1,6 @@
 %YAML 1.2
 ---
-version: "6.0.1"
+version: "2016-07-01"
 
 online:
   html: https://stuartpb.com/resume
@@ -16,7 +16,7 @@ contact:
 
   address:
     street: 500 Wall St.
-    ext:    Apt. 1209
+    ext:    Apt. 1809
     city:   Seattle
     state:  {name: Washington, abbr: WA}
     zip:    "98121"
