@@ -25,6 +25,14 @@ contact:
   phone: +1-610-761-0054
 
 experience:
+  - title: Head of Product
+    organization: JetWarp
+    timespan: {from: "January 29, 2016", to: Present}
+    tasks: |
+      - Built WebVR app for interactive walkthroughs using spherical panoramas
+      - Designed procedure for capturing whole buildings quickly and thoroughly
+      - Worked with marketing and sales to convey product's selling points
+
   - title: Contributor
     organization: W3C Web Platform Incubator Community Group
     timespan: {from: "September 2, 2014", to: Present}
@@ -35,14 +43,6 @@ experience:
 
       [wicg-best-practices]: https://github.com/stuartpb/wicg-best-practices
       [pwalls]: https://github.com/stuartpb/pwalls-spec
-
-  - organization: DingRoll
-    summary: personal project
-    timespan: {from: "May 2015", to: "September 2015"}
-    tasks: |
-      - Designed robust information architecture, addressing several use cases
-      - Organized and moderated prototype community via Slack
-      - Specified in-depth behavior of all interface elements
 
   - organization: Plushu
     summary: personal project
