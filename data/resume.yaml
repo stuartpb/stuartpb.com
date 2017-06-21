@@ -1,6 +1,6 @@
 %YAML 1.2
 ---
-version: "2016-07-01"
+version: "2017-06-21"
 
 online:
   html: https://stuartpb.com/resume
@@ -21,7 +21,7 @@ contact:
     state:  {name: Washington, abbr: WA}
     zip:    "98121"
 
-  email: stuart@testtrack4.com
+  email: s@stuartpb.com
   phone: +1-610-761-0054
 
 experience:
