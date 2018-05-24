@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/stuartpb
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://stuartpb.com
+  * I am stuartpb (https://keybase.io/stuartpb) on keybase.
+  * I have a public key with fingerprint 03A0 8855 B413 1748 7D1E  6690 FF04 2AE3 ECE2 8BA9
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "010173e262978de7d0712ade39bb9a8adb2aa331a9f91bed2de6b403bb76689829910a",
+      "fingerprint": "03a08855b41317487d1e6690ff042ae3ece28ba9",
+      "host": "keybase.io",
+      "key_id": "ff042ae3ece28ba9",
+      "kid": "010173e262978de7d0712ade39bb9a8adb2aa331a9f91bed2de6b403bb76689829910a",
+      "uid": "b2c09cd5d14737062bcd47f473d41d00",
+      "username": "stuartpb"
+    },
+    "service": {
+      "hostname": "stuartpb.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1527194130,
+  "expire_in": 157680000,
+  "prev": "07c53d4d3dd9596d8ad95cd11d183d576b9b92a58f82d0535262f2f0a9e0bafb",
+  "seqno": 9,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.77
+Comment: https://keybase.io/crypto
+
+yMIdAnicrVJtaE5RHL/jsWURjcQHpbOQ9ljn3Pvcl/N8YFohFPNee7g7555z59rc
+e917n9nMFqHEF2KhUF7ylrYipbBmXpbmZVFE8k5YJCzyNucuvshH58vp/z+/3+/8
+/r/+lwb3l/Jzxl1u/jjJLfmc03lhZ1YqzwMF9YB6rA6k60EV77t4NeNhZFY5DKQB
+RBDpCpc1GesG4zqDOpIJ4wqmFBODMCoToiiIYBsjypnMuEZTUKFU1zQDGzLGCBKQ
+BLbjVvLADxw3imUVAg1DVWkKKUhPGTpDXNMwtG2YkglXuMVlgxIsiMu8MGYIc5SE
+vNjxRE8UZp+9f+D/s+9snxyVLYgtpjKU0hUdajK1WEq3RcFSiEEYA0MeuGQFF+gw
+ypIg8iloSALRrXEsHgcbT/IXotjyVgiuH3iRZ3nV4mVZFPlhOmZGdX4MXcWp+VvE
+pI7LRI6CUcOD0PFckEYCaUVOrIpUWUdYJAqTgNf6TsBNJ0aoumZAceJ/eE0cjm6p
+wjhTGMMq1piIA6sWQ4ghQ2ECTjHFMlEN25AZVBVVxGjLNiSYQ0psCuKxVroeSGNh
+k1TGAzmVLomyAQcN7W2ZhJSTL+UO6Bfvl5Q/cOifrQt25/X6nY8Om5+ebeiZ873t
+U8OJ/UXuEm16b/negpddC333Q/LxFd/skZLzx09+OfbqlJGgvXl948euxqr33wpy
+j66ZVVl6cMf1PU2WaS+q8s+uvjtzwLsly8sfzn96KNuyNvgwHiwYtKlpxy4pe7Nl
+RndpYlY/79gRjG913C8blqlYfObNyZrtB+5s7kjkoUfVT2ZLP+Sc7sJ9Y86dLlo6
+dOuEuUXDb2QSp6YWZuor0qPmPS9uXLfx8b3u82Neb+s11j+YOW3GwotvzfPy9tbE
+0dHPvlcjem9Ia8mX2qZDzS0jynLv/jClCWG05vi1V8tv9zz4durOxC8lXyte9D/G
+B/1cWfs13Jwp3/ILYJtEDg==
+=9I/1
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/stuartpb
+
+==================================================================
