@@ -1,6 +1,6 @@
 %YAML 1.2
 ---
-version: "2017-06-21"
+version: "2018-04-05"
 
 online:
   html: https://stuartpb.com/resume
@@ -25,55 +25,34 @@ contact:
   phone: +1-610-761-0054
 
 experience:
-  - title: Head of Product
-    organization: JetWarp
-    timespan: {from: "January 29, 2016", to: Present}
+  - title: Lead Surveyor / Maintainer
+    organization: Open Profilogical Web Survey
+    timespan: {from: "July 16, 2012", to: "present"}
     tasks: |
-      - Built WebVR app for interactive walkthroughs using spherical panoramas
-      - Designed procedure for capturing whole buildings quickly and thoroughly
-      - Worked with marketing and sales to convey product's selling points
+      - Profiled identity and access management systems of hundreds of websites
+      - Assessed weaknesses and shortcomings in user-facing form behavior
+      - Authored JSON schema with YAML transpilation for concise description
+      - Established continuous integration pipeline using CircleCI
 
-  - title: Contributor
-    organization: W3C Web Platform Incubator Community Group
-    timespan: {from: "September 2, 2014", to: Present}
-    tasks: |
-      - Codified [Best Practices documents][wicg-best-practices] for the group
-      - Developed [HTML Parts and Walls][pwalls] specification
-      - Highlighted numerous underserved use cases in the HTML platform
-
-      [wicg-best-practices]: https://github.com/stuartpb/wicg-best-practices
-      [pwalls]: https://github.com/stuartpb/pwalls-spec
-
-  - organization: Plushu
-    summary: personal project
-    timespan: {from: "June 2014", to: "June 2015"}
+  - title: Maintainer
+    organization: Plushu
+    timespan: {from: "June 2014", to: "present"}
     tasks: |
       - Developed Heroku-compatible 12-factor application deployment system
       - Used GitHub Issues for [extensive task management and design][issues]
       - Used [waffle.io][] for Kanban-style task overview across repositories
-      - Curated a robust style guide for writing Bash scripts without leaks
+      - Curated a style guide dictating how to avoid edge cases in Bash scripts
 
       [issues]: https://github.com/plushu/plushu/issues
       [waffle.io]: https://waffle.io/plushu/plushu
 
-  - organization: latertime
-    summary: hackathon/personal project
-    timespan: {from: "May 2014", to: "February 2015"}
+  - title: Head of Product
+    organization: JetWarp
+    timespan: {from: "January 2016", to: "July 2016"}
     tasks: |
-      - Designed time-cued, real-time text comment/messaging system
-      - Drew [logo][lt-logo] integrating two word balloons as an hourglass
-      - Implemented real-time prototype with MongoDB, WebSocket, and HTML5 video
-      - Overhauled backend to use RethinkDB, Redis, and Primus
-
-      [lt-logo]: https://github.com/latertime/laterti.me/blob/master/client/latertime.png
-
-  - organization: Chatphrase
-    summary: personal project
-    timespan: {from: "December 2013", to: "February 2014"}
-    tasks: |
-      - Developed zero-login user flow for painless video chat calling
-      - Conducted customer interviews, with on-screen and paper prototypes
-      - Implemented WebRTC prototype
+      - Built WebVR app for interactive walkthroughs using spherical panoramas
+      - Designed procedure for capturing whole buildings quickly and thoroughly
+      - Worked with marketing and sales to convey product's selling points
 
   - title: Contractor
     timespan: {from: "August 2013", to: "November 2013"}
@@ -125,7 +104,7 @@ portfolio: |
   - [s/keyboard/leopard/g][1031], the browser extension described in https://xkcd.com/1031/
   - Ambitious works in progress: https://github.com/stuartpb/help-wanted
   - Other miscellanous GitHub projects: https://github.com/stuartpb
-  - Over 4,200 reputation on Stack Overflow: https://stackoverflow.com/users/34799/stuart-p-bentley
+  - Over 6,500 reputation on Stack Overflow: https://stackoverflow.com/users/34799/stuart-p-bentley
 
   [cracked-1]: http://www.cracked.com/article_18808_7-reasons-computer-glitches-wont-go-away-ever.html
   [cracked-2]: http://www.cracked.com/article_18962_5-things-we-all-do-that-make-hackers-lives-incredibly-easy.html
@@ -134,17 +113,19 @@ portfolio: |
   [1031]: https://greasyfork.org/en/scripts/5141-s-keyboard-leopard-g
 
 skills: [
-  HTML, JavaScript, CSS, Flexbox, SVG, Three.js, D3.js, Canvas, Lua, Jade,
-  JSON, YAML, Bash, C / C++, Python, Lisp, Scheme, SQL, Node.js, Express,
-  Connect, Passport, Leaflet, Cordova, PhoneGap, Pebble, RethinkDB, Redis,
-  PouchDB, CouchDB, Cloudant, MongoDB, Linux, Docker, Nginx, Windows, Apache,
-  Git, Mercurial, Bazaar, Subversion, CVS, IUP, CanvasDraw, IM, ImageMagick,
-  GraphicsMagick, Cairo, OpenGL, WebGL, SciTE, Visual Studio, IDLE, PythonWin,
-  nano, Google Chrome, Chrome Apps, Chrome Extensions, GreaseMonkey,
+  HTML, JavaScript, CSS, Flexbox, SVG, Three.js, D3.js, Canvas, Lua, Pug, JSON,
+  YAML, Bash, C, C++, Python, Lisp, Scheme, SQL, Node.js, Express, Connect,
+  Passport, Leaflet, Cordova, PhoneGap, Raspberry Pi, ESP8266, Pebble,
+  NodeMCU, RethinkDB, Redis, PouchDB, CouchDB, Cloudant, MongoDB, Linux,
+  Arch Linux, Nix, NixOS, Debian, Raspbian, Ubuntu, Fedora, Docker, Nginx,
+  Windows, MSYS2, Apache, Git, Mercurial, Bazaar, Subversion, CVS, IUP,
+  CanvasDraw, IM, ImageMagick, GraphicsMagick, Cairo, OpenGL, WebGL, WebVR,
+  WebRTC, SciTE, Visual Studio, IDLE, fnord, PythonWin, nano, Slic3r PE, Cura,
+  OpenSCAD, Atom, Google Chrome, Chrome Apps, Chrome Extensions, GreaseMonkey,
   Userscripts, Microsoft Office, GIMP, Inkscape, Paint.net, Wireshark, nmap,
-  HTTP, ssh, SSL, DNS, systemd, Heroku, Twilio, Cloud9, Trello, GitHub, Slack,
-  Gitter, Stack Overflow, Discourse, Google Sheets, Google Search, Markdown,
-  Kanban ]
+  HTTP, OpenSSH, SSL, OpenVPN, DNS, systemd, Heroku, Twilio, Cloud9, Trello,
+  GitHub, GitLab, CircleCI, Slack, Discord, Gitter, Stack Overflow, Discourse,
+  Google Docs, Google Sheets, Google Search, Markdown, Kanban, magnets ]
 
 education:
   - accolade: Bachelors, Real Time Interactive Simulation
@@ -158,9 +139,10 @@ education:
 links:
   Bash: https://www.gnu.org/software/bash/
   Bentley Systems, Inc.: http://www.bentley.com/
-  Concurix: http://concurix.com/
+  CircleCI: https://circleci.com/
   Cloud9: https://c9.io/
   Cloudant: https://cloudant.com/
+  Concurix: http://concurix.com/
   DigiPen Institute of Technology: http://www.digipen.edu/
   Docker: https://www.docker.io/
   D3.js: https://d3js.org/
@@ -172,13 +154,15 @@ links:
   Google Chrome: http://www.google.com/chrome
   Heroku: https://www.heroku.com/
   Inkscape: https://inkscape.org/
-  Jade: http://jade-lang.com/
+  Pug: https://pugjs.org/
   JetWarp: https://www.jetwarp.com/
   Leaflet: http://leafletjs.com/
   Lua: http://lua.org/
   latertime: http://laterti.me/
+  magnets: https://en.wikipedia.org/wiki/Magnet
   nmap: http://nmap.org/
   Node.js: http://nodejs.org/
+  Open Profilogical Web Survey: https://github.com/opws
   Paint.net: http://www.getpaint.net/index.html
   Redis: http://redis.io/
   RethinkDB: http://www.rethinkdb.com/
@@ -186,5 +170,4 @@ links:
   Three.js: http://threejs.org/
   Underwater Intervention: http://www.underwaterintervention.com/
   VMC Consulting, Inc.: http://www.vmc.com/
-  W3C Web Platform Incubator Community Group: https://discourse.wicg.io/
   YAML: http://www.yaml.org/
