@@ -1,6 +1,6 @@
 %YAML 1.2
 ---
-version: "2018-04-05"
+version: "2019-08-14"
 
 online:
   html: https://stuartpb.com/resume
@@ -25,20 +25,14 @@ contact:
   phone: +1-610-761-0054
 
 experience:
-  - title: Lead Surveyor / Maintainer
-    organization: Open Profilogical Web Survey
-    timespan: {from: "July 16, 2012", to: "present"}
+  - title: Self Employed
+    timespan: {from: "July 2016", to: "present"}
     tasks: |
-      - Profiled identity and access management systems of hundreds of websites
+      - Profiled identity and access management systems of hundreds of websites (OPWS)
       - Assessed weaknesses and shortcomings in user-facing form behavior
       - Authored JSON schema with YAML transpilation for concise description
       - Established continuous integration pipeline using CircleCI
-
-  - title: Maintainer
-    organization: Plushu
-    timespan: {from: "June 2014", to: "present"}
-    tasks: |
-      - Developed Heroku-compatible 12-factor application deployment system
+      - Developed Heroku-compatible 12-factor application deployment system (Plushu)
       - Used GitHub Issues for [extensive task management and design][issues]
       - Used [waffle.io][] for Kanban-style task overview across repositories
       - Curated a style guide dictating how to avoid edge cases in Bash scripts
