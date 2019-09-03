@@ -1,6 +1,6 @@
 %YAML 1.2
 ---
-version: "2019-08-14"
+version: "2019-08-30"
 
 online:
   html: https://stuartpb.com/resume
@@ -26,13 +26,33 @@ contact:
 
 experience:
   - title: Self Employed
-    timespan: {from: "July 2016", to: "present"}
+    organization: Unusual Studio
+    timespan: {from: "January 2019", to: "Present"}
     tasks: |
-      - Profiled identity and access management systems of hundreds of websites (OPWS)
+      - Consulting with clients to hear and hone their needs and ideas
+      - Offering my expertise to suggest minimum-viable solutions
+      - Building functional implementations with clients in one-on-one sessions
+      - Teaching the underlying tech skills necessary for independent development
+
+  - title: Chief Inventor
+    organization: Quadration
+    timespan: {from: "May 2017", to: "November 2018"}
+    tasks: |
+      - Developed tamper-proof time-lock encryption system
+      - Used C to write large-integer exponentiator capable of processing >100MB/s
+      - Architected scalable distributed infrastructure for zero downtime
+
+  - title: Personal projects
+    timespan: {from: "July 2016", to: "May 2017"}
+    tasks: |
+      #### Open Profilogical Web Survey ####
+      - Profiled identity and access management systems of hundreds of websites
       - Assessed weaknesses and shortcomings in user-facing form behavior
       - Authored JSON schema with YAML transpilation for concise description
       - Established continuous integration pipeline using CircleCI
-      - Developed Heroku-compatible 12-factor application deployment system (Plushu)
+
+      #### Plushu ####
+      - Developed Heroku-compatible 12-factor application deployment system
       - Used GitHub Issues for [extensive task management and design][issues]
       - Used [waffle.io][] for Kanban-style task overview across repositories
       - Curated a style guide dictating how to avoid edge cases in Bash scripts
@@ -114,7 +134,7 @@ skills: [
   Arch Linux, Nix, NixOS, Debian, Raspbian, Ubuntu, Fedora, Docker, Nginx,
   Windows, MSYS2, Apache, Git, Mercurial, Bazaar, Subversion, CVS, IUP,
   CanvasDraw, IM, ImageMagick, GraphicsMagick, Cairo, OpenGL, WebGL, WebVR,
-  WebRTC, SciTE, Visual Studio, IDLE, fnord, PythonWin, nano, Slic3r PE, Cura,
+  WebRTC, SciTE, Visual Studio, IDLE, fnord, PythonWin, nano, PrusaSlicer, Cura,
   OpenSCAD, Atom, Google Chrome, Chrome Apps, Chrome Extensions, GreaseMonkey,
   Userscripts, Microsoft Office, GIMP, Inkscape, Paint.net, Wireshark, nmap,
   HTTP, OpenSSH, SSL, OpenVPN, DNS, systemd, Heroku, Twilio, Cloud9, Trello,
