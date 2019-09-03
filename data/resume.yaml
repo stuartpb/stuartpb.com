@@ -38,9 +38,10 @@ experience:
     organization: Quadration
     timespan: {from: "May 2017", to: "November 2018"}
     tasks: |
-      - Developed tamper-proof time-lock encryption system
-      - Used C to write large-integer exponentiator capable of processing >100MB/s
-      - Architected scalable distributed infrastructure for zero downtime
+      - Designed antifragile time-lock encryption system architecture
+      - Implemented encryption and decryption utilities using Node.JS
+      - Developed prototype cryographic processor (very-large-number quadrator) in C
+      - Sourced minimal system with high-single-thread-performance for iteration
 
   - title: Personal projects
     timespan: {from: "July 2016", to: "May 2017"}
