@@ -69,9 +69,20 @@ experience:
       - Designed procedure for capturing whole buildings quickly and thoroughly
       - Worked with marketing and sales to convey product's selling points
 
-  - title: Contractor
-    timespan: {from: "August 2013", to: "November 2013"}
+  - title: CTO
+    organization: Hutpass
+    timespan: {from: "December 2013", to: "December 2015"}
     tasks: |
+      - Developed simple HTTPS-as-a-service reverse proxy
+      - Offered last-mile encryption solution for early-stage websites
+
+  - title: Contractor
+    timespan: {from: "August 2013", to: "January 2016"}
+    tasks: |
+      #### VideoRay, September 2015 ###
+      - Designed SVG-based frontend for piloting software
+      - Worked with R&D to match interface to users' core needs
+
       #### Plexipixel, August 2013 ####
       - Reviewed flow and layout of e-commerce site
       - Architected HTML structure of pages and elements
@@ -133,11 +144,11 @@ skills: [
   Redis, CouchDB, Linux, Docker, Nginx, Git, CircleCI ]
 
 education:
-  - accolade: Bachelors, Real Time Interactive Simulation
+  - accolade: Real Time Interactive Simulation
     institution: DigiPen Institute of Technology
-    timespan: {from: '2007', to: '(incomplete)'}
+    timespan: {from: '2007', to: '2009'}
 
-  - accolade: Graduate
+  - accolade: Startup Incubation
     institution: Founder Institute
     timespan: {from: 'December 2, 2013', to: 'April 7, 2014'}
 
