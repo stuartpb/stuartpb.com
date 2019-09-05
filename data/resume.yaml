@@ -40,7 +40,7 @@ experience:
     tasks: |
       - Designed antifragile time-lock encryption system architecture
       - Implemented encryption and decryption utilities using Node.JS
-      - Developed prototype cryographic processor (very-large-number quadrator) in C
+      - Used C for cryographic quadrator processing 2048-bit integers at <100MB/s
       - Sourced minimal system with high-single-thread-performance for iteration
 
   - title: Personal projects
