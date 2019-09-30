@@ -21,6 +21,18 @@ block head
 
 block main
   article
+    section#highlights
+      h2 Highlights
+      != marked(highlights)
+    section#skills
+      h2 Skills
+      ul.skills: for skillset in skills
+        li
+          = skillset.scope
+          = ': '
+          for skill, i in skillset.list
+            a.skill(href=links[skill], ref='tag')= skill
+            = i < skillset.list.length - 1 ? ', ' : ''
     section.vcalendar#experience
       h2 Experience
       for job in experience
@@ -44,13 +56,6 @@ block main
             =' - '
             +microdate(job.timespan.to).dtend
         != marked(job.tasks)
-    section#portfolio
-      h2 Portfolio
-      != marked(portfolio)
-    section#skills
-      h2 Skills
-      ul.skills: for skill, i in skills
-        li: a.skill(href=links[skill], ref='tag')= skill
     section#education
       h2 Education
       ul.vcalendar: for edu in education

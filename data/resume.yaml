@@ -1,6 +1,6 @@
 %YAML 1.2
 ---
-version: "2019-09-05"
+version: "2019-09-30"
 
 online:
   html: https://stuartpb.com/resume
@@ -23,6 +23,28 @@ contact:
 
   email: s@stuartpb.com
   phone: +1-610-761-0054
+
+highlights: |
+  - Over a decade of web development experience in production
+    - Started writing CSS in 2009, expanding into HTML and JS by 2012
+  - Over 250 personal repos public on GitHub: https://github.com/stuartpb
+  - Over 6,500 reputation on Stack Overflow: https://stackoverflow.com/users/34799/stuart-p-bentley
+  - Published articles with millions of views on humor site Cracked.com (contains coarse language):
+    - [7 Reasons Computer Glitches Won't Go Away (Ever)][cracked-1]
+    - [5 Things We All Do That Make Hackers' Lives Incredibly Easy][cracked-2]
+
+  [cracked-1]: http://www.cracked.com/article_18808_7-reasons-computer-glitches-wont-go-away-ever.html
+  [cracked-2]: http://www.cracked.com/article_18962_5-things-we-all-do-that-make-hackers-lives-incredibly-easy.html
+
+skills:
+  - scope: Languages
+    list: [HTML, JavaScript, CSS, SVG, Lua, Pug, YAML, Bash, C, C++, Python, Scheme, SQL]
+  - scope: Platforms
+    list: [Node.js, Express, PhoneGap, Raspberry Pi, NodeMCU, Linux, Docker, Nginx]
+  - scope: Services
+    list: [Redis, CouchDB, MongoDB, CircleCI]
+  - scope: Tools
+    list: [Git, Visual Studio Code]
 
 experience:
   - title: Self Employed
@@ -117,31 +139,6 @@ experience:
     tasks: |
       - Followed test cases and regiments
       - Wrote test cases for newly-discovered bugs
-
-portfolio: |
-  - Articles for humor site Cracked.com (contains coarse language):
-    - [7 Reasons Computer Glitches Won't Go Away (Ever)][cracked-1]
-    - [5 Things We All Do That Make Hackers' Lives Incredibly Easy][cracked-2]
-  - Various writings on GitHub: https://github.com/stuartpb/collected-writings
-  - [Lean Notes][], a series of notes on building out projects
-  - PlugMap, a map of publicly-accessible power outlets: https://plugmap.com/
-  - [StepDub][], a PhoneGap app for playing sounds with your footsteps (popular with cosplayers)
-  - A Twilio app for automating my apartment's admission system: https://github.com/stuartpb/mellonine
-  - [s/keyboard/leopard/g][1031], the browser extension described in https://xkcd.com/1031/
-  - Ambitious works in progress: https://github.com/stuartpb/help-wanted
-  - Other miscellanous GitHub projects: https://github.com/stuartpb
-  - Over 6,500 reputation on Stack Overflow: https://stackoverflow.com/users/34799/stuart-p-bentley
-
-  [cracked-1]: http://www.cracked.com/article_18808_7-reasons-computer-glitches-wont-go-away-ever.html
-  [cracked-2]: http://www.cracked.com/article_18962_5-things-we-all-do-that-make-hackers-lives-incredibly-easy.html
-  [Lean Notes]: https://trello.com/leannotes
-  [StepDub]: https://getstepdub.com/
-  [1031]: https://greasyfork.org/en/scripts/5141-s-keyboard-leopard-g
-
-skills: [
-  HTML, JavaScript, CSS, SVG, Three.js, D3.js, Lua, Pug, YAML, Bash, C, C++,
-  Python, Scheme, SQL, Node.js, Express, PhoneGap, Raspberry Pi, NodeMCU,
-  Redis, CouchDB, Linux, Docker, Nginx, Git, CircleCI ]
 
 education:
   - accolade: Real Time Interactive Simulation

@@ -54,11 +54,3 @@ footer > * {
 address {
   font-style: normal;
 }
-.skills li {
-  display: inline-block;
-}
-
-.skills li:not(:last-child)::after {
-  content: '\2022';
-  margin: 0 0.5ch;
-}
