@@ -26,10 +26,6 @@
   name: stuartpb
   url: https://linkedin.com/in/stuartpb
 
-- site: Coderbits
-  name: spb
-  url: https://coderbits.com/spb
-
 - site: Keybase
   name: stuartpb
   url: https://keybase.io/stuartpb
@@ -46,10 +42,6 @@
   name: stuartpb
   url: https://plugmap.com/user/stuartpb
 
-- site: Cloud9
-  name: stuartpb
-  url: https://c9.io/stuartpb
-
 - site: Trello
   name: stuartpb
   url: https://trello.com/stuartpb
@@ -62,13 +54,9 @@
   name: Stuart P. Bentley
   url: https://en.wikipedia.org/wiki/User:Stuart_P._Bentley
 
-- site: Gittip
-  name: stuartpb
-  url: https://www.gittip.com/stuartpb/
-
 - site: Bountysource
   name: stuartpb
-  url: https://www.bountysource.com/#users/17953-stuartpb
+  url: https://www.bountysource.com/people/17953-stuartpb
 
 - site: Flattr
   name: stuartpb
@@ -81,14 +69,6 @@
 - site: Wikia
   name: Stuart P. Bentley
   url: http://www.wikia.com/wiki/User:Stuart_P._Bentley
-
-- site: Google+
-  name: Stuart Bentley
-  url: https://plus.google.com/+StuartBentleyP
-
-- site: Koding
-  name: stuartpb
-  url: https://koding.com/stuartpb
 
 - site: CodePen
   name: spb
@@ -106,10 +86,6 @@
   name: stuartpb
   url: http://seattle.bibliocommons.com/collection/show/94601702_stuartpb/library/completed
 
-- site: Geeklist
-  name: stuartpb
-  url: https://geekli.st/stuartpb
-
 - site: Launchpad
   name: stuart
   url: https://launchpad.net/~stuart
@@ -122,17 +98,13 @@
   name: STUART
   url: http://www.scribbls.com/users/STUART-2608
 
-- site: Ohloh
+- site: Open Hub
   name: stuartpb
-  url: https://www.ohloh.net/accounts/stuartpb
+  url: https://www.openhub.net/accounts/stuartpb
 
 - site: Steam
   name: stuart
   url: https://steamcommunity.com/id/stuart
-
-- site: Steam Forums
-  name: STUART
-  url: http://forums.steampowered.com/forums/member.php?u=514292
 
 - site: Xbox Live
   name: Snacman
@@ -146,21 +118,9 @@
   name: stuartpb
   url: http://www.fitocracy.com/profile/stuartpb/
 
-- site: OkCupid
-  name: stuartpb
-  url: http://okcupid.com/profile/stuartpb
-
-- site: GetGlue
-  name: stuartpb
-  url: http://getglue.com/stuartpb
-
 - site: Ward's Wiki
   name: StuartPbBentley
   url: http://c2.com/cgi/wiki?StuartPbBentley
-
-- site: GIMP Plugin Registry
-  name: spb
-  url: http://registry.gimp.org/user/43911
 
 - site: Freesound
   name: Stuart P. Bentley
@@ -174,18 +134,10 @@
   name: Stuart P. Bentley
   url: http://bulbapedia.bulbagarden.net/wiki/User:Stuart_P._Bentley
 
-- site: Telltale Games Forums
-  name: Stuart P. Bentley
-  url: http://www.telltalegames.com/forums/member.php?u=46636
-
 - site: Arch Linux Forums
   name: STUART
   url: https://bbs.archlinux.org/profile.php?id=40320
 
 - site: TF2Maps.net
   name: StuartPB
-  url: http://forums.tf2maps.net/member.php?u=6518
-
-- site: Runic Games
-  name: STUART
-  url: http://forums.runicgames.com/memberlist.php?mode=viewprofile&u=14297
+  url: https://tf2maps.net/members/stuartpb.6518/
