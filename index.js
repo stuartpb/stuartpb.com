@@ -29,11 +29,11 @@ module.exports = function appctor(cfg){
       return "https://www.google.com/s2/favicons?domain=" +
         url.parse(pageUrl).hostname;
     }
-    res.render('profiles.jade', {profiles: profiles, favicon: favicon});
+    res.render('profiles.pug', {profiles: profiles, favicon: favicon});
   });
 
   app.get('/specs', function(req,res) {
-    res.render('specs.jade');
+    res.render('specs.pug');
   });
   app.get('/info', function(req, res) {
     res.redirect('/specs');
